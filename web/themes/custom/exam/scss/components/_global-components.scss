@@ -7,3 +7,11 @@
 .main-content {
   min-height: 100hv;
 }
+
+.alert {
+  top: 25%;
+  position: fixed;
+  right: 25%;
+  z-index: 9999;
+  left: 25%;
+}

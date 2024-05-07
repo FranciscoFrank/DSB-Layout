@@ -160,10 +160,15 @@
               }
 
               &last-services-last-services {
+                margin: 105px 0;
+
                 h2 {
+                  text-transform: uppercase;
                   width: 1220px;
                   margin: 0 auto;
-                  font-size: 36px;
+                  margin-bottom: 85px;
+                  font-size: 32px;
+                  font-weight: bold;
                   position: relative;
                   text-align: center;
 
@@ -200,7 +205,6 @@
                         article {
                           .content {
                             .layout {
-                              margin-bottom: 85px !important;
                               display: flex;
                               flex-direction: column;
                               align-items: center;
@@ -286,9 +290,12 @@
                 h2 {
                   width: 1220px;
                   margin: 0 auto;
-                  font-size: 36px;
+                  text-transform: uppercase;
+                  font-size: 32px;
+                  font-weight: 400;
                   position: relative;
                   text-align: center;
+                  margin-bottom: 25px;
 
                   &::before, &::after {
                     content: ' ';
@@ -310,14 +317,21 @@
 
                 .contextual-region {
                   .view-last-projects {
+                    padding-bottom: 90px;
+                    background: repeating-linear-gradient(-45deg, #fff, #fff 6px, rgba(200,200,200,0.3) 6px, rgba(200,200,200,0.3) 8px);
+
                     .view-content {
                       width: 1220px;
                       margin: 0 auto;
                       display: flex;
+                      padding-top: 50px;
                       flex-wrap: wrap;
                       justify-content: space-between;
 
                       .views-row {
+                        background-color: $main-color;
+                        border-bottom: 1px solid $univerlas-color;
+                        padding-bottom: 10px;
                         margin-bottom: 25px !important;
                         display: flex;
                         flex-direction: column;
@@ -340,13 +354,11 @@
 
                               .block-layout-builder {
                                 &:nth-child(1) {
-                                  margin-top: 10px;
-
                                   &::before, &::after {
                                     display: none;
                                   }
 
-                                  .field--name-field-images {
+                                  .field--name-field-images-projects {
                                     width: fit-content;
                                     margin: 0 auto;
                                     margin-bottom: 30px;
