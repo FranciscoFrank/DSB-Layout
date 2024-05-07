@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:slnt,wght@-10..0,100..900&display=swap");
 @import url("https://fonts.cdnfonts.com/css/nexa-slab-free");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css");
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -45,14 +46,6 @@ p {
 
 .main-content {
   min-height: 100hv;
-}
-
-.alert {
-  top: 25%;
-  position: fixed;
-  right: 25%;
-  z-index: 9999;
-  left: 25%;
 }
 
 .block-social-media-links-block, .block-layout-builder {
@@ -292,6 +285,8 @@ p {
 .top-page-banner-is header .header .region-header .search-block-form form .form-actions::before, .top-page-banner-not header .header .region-header .search-block-form form .form-actions::before {
   position: absolute;
   content: "\f002";
+  color: #C3C3C7;
+  font-family: "FontAwesome";
 }
 .top-page-banner-is header .header .region-header .search-block-form form .form-actions input, .top-page-banner-not header .header .region-header .search-block-form form .form-actions input {
   width: 100%;
@@ -1022,10 +1017,17 @@ p {
   color: #FFFFFF;
   background-color: #373645;
 }
+.main-content-homepage main .region-content-homepage-content article .content .layout .block-views-blocklast-teams-last-teams {
+  margin: 85px 0;
+  margin-bottom: 145px;
+}
 .main-content-homepage main .region-content-homepage-content article .content .layout .block-views-blocklast-teams-last-teams h2 {
+  text-transform: uppercase;
+  font-size: 32px;
+  font-weight: bold;
   width: 1220px;
   margin: 0 auto;
-  font-size: 36px;
+  margin-bottom: 35px;
   position: relative;
   text-align: center;
 }
@@ -1050,15 +1052,6 @@ p {
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.main-content-homepage main .region-content-homepage-content article .content .layout .block-views-blocklast-teams-last-teams .contextual-region .view-last-teams .view-content .views-row {
-  margin: 0 10px;
-}
-.main-content-homepage main .region-content-homepage-content article .content .layout .block-views-blocklast-teams-last-teams .contextual-region .view-last-teams .view-content .views-row:nth-child(4n+1) {
-  margin-left: 0;
-}
-.main-content-homepage main .region-content-homepage-content article .content .layout .block-views-blocklast-teams-last-teams .contextual-region .view-last-teams .view-content .views-row:nth-child(4n) {
-  margin-right: 0;
-}
 .main-content-homepage main .region-content-homepage-content article .content .layout .block-views-blocklast-teams-last-teams .contextual-region .view-last-teams .view-content .views-row article .content .layout {
   width: fit-content;
   display: flex;
@@ -1069,6 +1062,7 @@ p {
   display: none;
 }
 .main-content-homepage main .region-content-homepage-content article .content .layout .block-views-blocklast-teams-last-teams .contextual-region .view-last-teams .view-content .views-row article .content .layout .block-layout-builder:nth-child(1) img {
+  margin-bottom: 30px;
   filter: grayscale(100%);
   transition: filter 1s ease;
 }
@@ -1134,9 +1128,12 @@ p {
 .main-content-homepage main .region-content-homepage-content article .content .layout .block-views-blocklast-news-last-news h2 {
   width: 1220px;
   margin: 0 auto;
-  font-size: 36px;
+  margin-bottom: 20px;
   position: relative;
   text-align: center;
+  text-transform: uppercase;
+  font-size: 32px;
+  font-weight: bold;
 }
 .main-content-homepage main .region-content-homepage-content article .content .layout .block-views-blocklast-news-last-news h2::before, .main-content-homepage main .region-content-homepage-content article .content .layout .block-views-blocklast-news-last-news h2::after {
   content: " ";
@@ -1365,6 +1362,49 @@ p {
 }
 .main-content-homepage main .region-content-homepage-content article .content .layout .block-views-blocklast-news-last-news .contextual-region .view-last-news .view-content .views-row article .content .row:nth-child(1) .bs-region--right .block-layout-builder:nth-child(8) .node--links ul li a:hover {
   background-color: #6A93C0;
+}
+.main-content-homepage main .region-content-homepage-content article .content .layout .block-views-blockslick-clients-slick-clients {
+  margin-top: 25px;
+  margin-bottom: 130px;
+}
+.main-content-homepage main .region-content-homepage-content article .content .layout .block-views-blockslick-clients-slick-clients h2 {
+  text-transform: uppercase;
+  width: 1220px;
+  margin: 0 auto;
+  margin-bottom: 65px;
+  font-size: 32px;
+  font-weight: bold;
+  position: relative;
+  text-align: center;
+}
+.main-content-homepage main .region-content-homepage-content article .content .layout .block-views-blockslick-clients-slick-clients h2::before, .main-content-homepage main .region-content-homepage-content article .content .layout .block-views-blockslick-clients-slick-clients h2::after {
+  content: " ";
+  top: 50%;
+  position: absolute;
+  width: 42%;
+  height: 1px;
+  background-color: #000;
+}
+.main-content-homepage main .region-content-homepage-content article .content .layout .block-views-blockslick-clients-slick-clients h2::after {
+  right: 0;
+}
+.main-content-homepage main .region-content-homepage-content article .content .layout .block-views-blockslick-clients-slick-clients h2::before {
+  left: 0;
+}
+.main-content-homepage main .region-content-homepage-content article .content .layout .block-views-blockslick-clients-slick-clients .contextual-region .view-slick-clients .view-content {
+  width: 1220px;
+  margin: 0 auto;
+}
+.main-content-homepage main .region-content-homepage-content article .content .layout .block-views-blockslick-clients-slick-clients .contextual-region .view-slick-clients .view-content .slick--view .slick-slider .slick-list .slick-track {
+  display: flex;
+  align-items: center;
+}
+.main-content-homepage main .region-content-homepage-content article .content .layout .block-views-blockslick-clients-slick-clients .contextual-region .view-slick-clients .view-content .slick--view .slick-slider .slick-list .slick-track .slide article .content .layout .block-layout-builder::after, .main-content-homepage main .region-content-homepage-content article .content .layout .block-views-blockslick-clients-slick-clients .contextual-region .view-slick-clients .view-content .slick--view .slick-slider .slick-list .slick-track .slide article .content .layout .block-layout-builder::before {
+  display: none;
+}
+.main-content-homepage main .region-content-homepage-content article .content .layout .block-views-blockslick-clients-slick-clients .contextual-region .view-slick-clients .view-content .slick--view .slick-slider .slick-list .slick-track .slide article .content .layout .block-layout-builder .field--name-field-images-clients img {
+  height: auto;
+  width: 140px;
 }
 
 .main-content main .region-content-about .region-content {

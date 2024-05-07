@@ -443,10 +443,16 @@
               }
 
               &last-teams-last-teams {
+                margin: 85px 0;
+                margin-bottom: 145px;
+
                 h2 {
+                  text-transform: uppercase;
+                  font-size: 32px;
+                  font-weight: bold;
                   width: 1220px;
                   margin: 0 auto;
-                  font-size: 36px;
+                  margin-bottom: 35px;
                   position: relative;
                   text-align: center;
 
@@ -478,16 +484,6 @@
                       justify-content: space-between;
 
                       .views-row {
-                        margin: 0 10px;
-
-                        &:nth-child(4n+1) {
-                          margin-left: 0;
-                        }
-
-                        &:nth-child(4n) {
-                          margin-right: 0;
-                        }
-
                         article {
                           .content {
                             .layout {
@@ -503,6 +499,7 @@
                                   }
 
                                   img {
+                                    margin-bottom: 30px;
                                     filter: grayscale(100%);
                                     transition: filter 1s ease;
 
@@ -606,9 +603,12 @@
                 h2 {
                   width: 1220px;
                   margin: 0 auto;
-                  font-size: 36px;
+                  margin-bottom: 20px;
                   position: relative;
                   text-align: center;
+                  text-transform: uppercase;
+                  font-size: 32px;
+                  font-weight: bold;
 
                   &::before, &::after {
                     content: ' ';
@@ -892,6 +892,80 @@
                                                 background-color: $first-color;
                                               }
                                             }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+
+              &slick-clients-slick-clients {
+                margin-top: 25px;
+                margin-bottom: 130px;
+
+                h2 {
+                  text-transform: uppercase;
+                  width: 1220px;
+                  margin: 0 auto;
+                  margin-bottom: 65px;
+                  font-size: 32px;
+                  font-weight: bold;
+                  position: relative;
+                  text-align: center;
+
+                  &::before, &::after {
+                    content: ' ';
+                    top: 50%;
+                    position: absolute;
+                    width: 42%;
+                    height: 1px;
+                    background-color: #000;
+                  }
+
+                  &::after {
+                    right: 0;
+                  }
+
+                  &::before {
+                    left: 0;
+                  }
+                }
+
+                .contextual-region {
+                  .view-slick-clients {
+                    .view-content {
+                      width: 1220px;
+                      margin: 0 auto;
+
+                      .slick--view {
+                        .slick-slider {
+                          .slick-list {
+                            .slick-track {
+                              display: flex;
+                              align-items: center;
+
+                              .slide {
+                                article {
+                                  .content {
+                                    .layout {
+                                      .block-layout-builder {
+                                        &::after, &::before {
+                                          display: none;
+                                        }
+
+                                        .field--name-field-images-clients {
+                                          img {
+                                            height: auto;
+                                            width: 140px;
                                           }
                                         }
                                       }

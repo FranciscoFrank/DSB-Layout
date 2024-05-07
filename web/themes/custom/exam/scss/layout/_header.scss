@@ -159,6 +159,8 @@
               &::before {
                 position: absolute;
                 content: '\F002';
+                color: $second-color;
+                font-family: $FontAwesome;
               }
 
               input {

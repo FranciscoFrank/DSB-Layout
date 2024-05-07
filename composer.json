@@ -49,12 +49,15 @@
         "drupal/search_api": "^1.19",
         "drupal/simple_gmap": "^3.1",
         "drupal/simple_menu_icons": "^3.0",
+        "drupal/slick": "^3.0",
+        "drupal/slick_views": "^3.0",
         "drupal/social_media_links": "^2.9",
         "drupal/twbstools": "2.1.x-dev",
         "drupal/twigsuggest": "^2.0@RC",
         "drupal/views_bootstrap": "^5.4",
         "drupal/webform": "^6.2",
-        "drush/drush": "^10.2"
+        "drush/drush": "^10.2",
+        "kenwheeler/slick": "^1.8"
     },
     "conflict": {
         "drupal/drupal": "*"
