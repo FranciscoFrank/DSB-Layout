@@ -1,0 +1,159 @@
+.main-content {
+  main {
+    .region-content-team {
+      .region-content {
+        padding: 0;
+        width: 1220px;
+        margin: 0 auto;
+
+        .contextual-region {
+          .content {
+            .layout {
+              .block-layout-builder:nth-of-type(1) {
+                &::before {
+                  width: 44%;
+                }
+
+                &::after {
+                  width: 44%;
+                }
+              }
+
+              .block-views {
+                .contextual-region {
+                  .view-all-team {
+                    .view-content {
+                      display: flex;
+                      flex-wrap: wrap;
+
+                      .views-row {
+                        margin: 0 10px;
+
+                        &:nth-child(4n+1) {
+                          margin-left: 0;
+                        }
+
+                        &:nth-child(4n) {
+                          margin-right: 0;
+                        }
+
+                        article {
+                          .content {
+                            .layout {
+                              width: fit-content;
+                              display: flex;
+                              flex-direction: column;
+                              align-items: center;
+
+                              .block-layout-builder {
+                                &:nth-child(1) {
+                                  &::before, &::after {
+                                    display: none;
+                                  }
+
+                                  img {
+                                    filter: grayscale(100%);
+                                    transition: filter 1s ease;
+
+                                    &:hover {
+                                      filter: grayscale(0);
+                                    }
+                                  }
+                                }
+
+                                &:nth-child(2) {
+                                  width: fit-content;
+                                  text-transform: uppercase;
+                                }
+
+                                &:nth-child(3) {
+                                  width: fit-content;
+                                  font-size: $s-small;
+                                  line-height: 1.5;
+                                  text-transform: uppercase;
+                                  margin-bottom: 15px;
+                                  color: $second-color;
+                                }
+
+                                &:nth-child(4) {
+                                  width: fit-content;
+                                  padding: 2.5px;
+                                  color: $second-color;
+
+                                  ul {
+                                    margin-left: 0;
+
+                                    li {
+                                      a {
+                                        padding: 4px;
+                                        background-color: $univerlas-color;
+                                        color: $main-color;
+                                        transition: background-color 0.3s ease;
+
+                                        &:hover {
+                                          background-color: $first-color;
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+
+                            .row {
+                              margin-top: 25px;
+
+                              .col-sm-6 {
+                                &:nth-child(1) {
+                                  width: 60%;
+
+                                  .block-layout-builder {
+                                    margin-top: 0;
+
+                                    &::before, &::after {
+                                      display: none;
+                                    }
+
+                                    ul {
+                                      li {
+                                        padding: 0;
+                                      }
+                                    }
+                                  }
+                                }
+
+                                &:nth-child(2) {
+                                  width: 40%;
+
+                                  .block-layout-builder {
+                                    margin-top: 0;
+
+                                    &::before, &::after {
+                                      display: none;
+                                    }
+
+                                    .likeit {
+                                      .likeit__wrapper {
+                                        .likeit__count {
+                                          display: none;
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

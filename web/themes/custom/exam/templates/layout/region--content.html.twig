@@ -1,0 +1,43 @@
+{% set currentUrl = path('<current>') %}
+
+{% if '/teams/' in currentUrl %}
+  <div class="region region-content-node-team">
+    {{ content }}
+  </div>
+{% elseif '/services/' in currentUrl %}
+  <div class="region region-content-node-services">
+    {{ content }}
+  </div>
+{% elseif '/projects/' in currentUrl %}
+  <div class="region region-content-node-projects">
+    {{ content }}
+  </div>
+{% elseif '/news/' in currentUrl %}
+  <div class="region region-content-node-news">
+    {{ content }}
+  </div>
+{% elseif '/clients/' in currentUrl %}
+  <div class="region region-content-node-clients">
+    {{ content }}
+  </div>
+{% elseif '/simple-news' in currentUrl %}
+  <div class="region region-content-simple-news">
+    {{ content }}
+  </div>
+{% elseif '/simple-projects' in currentUrl %}
+  <div class="region region-content-simple-projects">
+    {{ content }}
+  </div>
+  {% elseif '/login' in currentUrl %}
+    <div class="region region-content-login-page">
+      {{ content }}
+    </div>
+{% elseif '/homepage' in currentUrl %}
+  <div class="region region-content-homepage-content">
+    {{ content }}
+  </div>
+{% else %}
+  <div class="region region-content">
+    {{ content }}
+  </div>
+{% endif %}

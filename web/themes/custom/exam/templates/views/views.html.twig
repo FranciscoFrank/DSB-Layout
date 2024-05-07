@@ -1,0 +1,14 @@
+<div{{ attributes.addClass(classes) }}>
+
+  {% if title is defined %}
+    Title: {{ title }}<br>
+  {% endif %}
+
+  {% if header is defined %}
+    Header: {{ header }}<br>
+  {% endif %}
+
+  {% if content is defined %}
+    Content: {{ content }}<br>
+  {% endif %}
+</div>

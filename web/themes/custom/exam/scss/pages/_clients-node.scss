@@ -1,0 +1,85 @@
+.main-content {
+  main {
+    div {
+      .region-content-node-clients {
+          width: 1220px;
+          margin: 0 auto;
+
+          article {
+            .content {
+              display: flex;
+              flex-direction: column;
+              margin: 40px 0;
+
+              & > * {
+                text-transform: uppercase;
+              }
+
+              .field--name-field-images-clients {
+                article {
+                  .field--type-image {
+                    .field--item {
+                      display: flex;
+                      justify-content: center;
+
+                      img {
+                        height: auto;
+                        width: 250px;
+                      }
+                    }
+                  }
+                }
+              }
+
+              .field--name-body {
+                margin: 25px 0;
+              }
+
+              .field--type-link {
+                a {
+                  color: $first-color;
+
+                  &:hover {
+                    text-decoration: none;
+                    filter: brightness(85%);
+                    color: $first-color;
+                  }
+                }
+              }
+
+/*
+              .field--name {
+                justify-content: center;
+
+                &-field-images-clients {
+                  justify-content: center;
+                  width: fit-content;
+                  margin-left: 20px;
+
+                  & > * {
+                    width: fit-content;
+                  }
+
+                  article {
+                    .field--type-image {
+                      .field--item {
+                        justify-content: center;
+                        display: flex;
+                      }
+                    }
+                  }
+                }
+
+                &-field-website {
+                  a:hover {
+                    text-decoration: none;
+                    filter: none;
+                  }
+                }
+              }*/
+            }
+          }
+        }
+      }
+  }
+}

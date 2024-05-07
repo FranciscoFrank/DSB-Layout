@@ -1,0 +1,188 @@
+@import "../abstracts/mixins/media-query";
+
+.top-page-banner-is, .top-page-banner-not {
+  header {
+    width: 1220px;
+    margin: 0 auto;
+
+    .header {
+      padding-top: 40px;
+
+      .region-header {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+        height: 108px;
+        background-color: $main-color;
+
+        .block-block-content {
+          background-color: $univerlas-color;
+          text-align: center;
+          padding: 25px;
+
+          .field--name-body {
+            p {
+              display: flex;
+              flex-direction: column;
+              margin: 0;
+
+              a {
+
+                text-decoration: none;
+
+                &:hover {
+                  text-decoration: none;
+                  filter: brightness(75%) !important;
+                }
+
+                &:active {
+                  text-decoration: none;
+                }
+
+                &:first-child {
+                  font-family: $FirstFocusFont, sans-serif;
+                  color: $first-color;
+                  font-size: 36px;
+                }
+
+                &:last-child {
+                  font-family: $SecondFocusFont, sans-serif;
+                  font-size: 16px;
+                  color: $second-color;
+                }
+
+              }
+            }
+          }
+        }
+
+        .navigation {
+          height: 100%;
+
+          .main-menu {
+            display: flex;
+            align-items: center;
+            margin: 0 20px;
+            height: 100%;
+
+            ul {
+              margin: 0;
+              height: 100%;
+              text-transform: uppercase;
+              display: flex;
+              list-style: none;
+
+              li {
+                &:first-child {
+                  a {
+                    background-repeat: no-repeat;
+                    background-image: url("../images/Homepage-menu.png");
+                    padding: 0;
+                    display: flex;
+                    background-position: center;
+                  }
+                }
+
+                a {
+                  height: 100%;
+                  display: flex;
+                  align-items: center;
+                  color: $third-color;
+                  margin: 0 10px;
+                  font-size: 14px;
+                  text-decoration: none;
+
+                  &:hover, &:active {
+                    position: relative;
+                    text-decoration: none;
+
+                    &::before {
+                      position: absolute;
+                      content: ' ';
+                      width: 100%;
+                      bottom: 0;
+                      height: 10px;
+                      background-color: $first-button;
+                    }
+                  }
+
+                  &.is-active {
+                    position: relative;
+
+                    &:before {
+                      position: absolute;
+                      content: ' ';
+                      width: 100%;
+                      bottom: 0;
+                      height: 10px;
+                      background-color: $first-button;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .search-block-form {
+          margin-right: 25px;
+          width: 15%;
+
+          form {
+            margin-bottom: 0 !important;
+
+            .form-item {
+              width: 80%;
+              font-size: 10px;
+
+              input {
+                width: 100%;
+                padding: 0;
+                box-shadow: none !important;
+                border-radius: 0;
+                -webkit-appearance: none !important;
+                padding: 0 10px;
+
+                &::placeholder {
+                  opacity: 0;
+                }
+              }
+            }
+
+            .form-actions {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              width: 20%;
+
+              &::before {
+                position: absolute;
+                content: '\F002';
+              }
+
+              input {
+                width: 100%;
+                padding: 0;
+                border-radius: 0;
+                border: 1px solid #cccccc;
+                background-color: transparent !important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include x-large {
+  .top-page-banner-is, .top-page-banner-not {
+    header {
+      .header {
+        padding-top: 0 !important;
+      }
+    }
+  }
+}
+

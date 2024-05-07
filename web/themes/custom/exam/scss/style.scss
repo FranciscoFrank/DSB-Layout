@@ -1,0 +1,46 @@
+// Documents with import of SCSS styles.
+
+// Import media query.
+@import "abstracts/mixins/media-query";
+
+// Styles with variables.
+@import "abstracts/variables/color";
+@import "abstracts/variables/font-family";
+@import "abstracts/variables/font-size";
+
+// Resetting styles and typography.
+@import "base/reset";
+@import "base/typography";
+
+// Styles for the secondary elements on the site.
+@import "components/components";
+
+// Styles for the main elements on the site.
+@import "layout/header";
+@import "layout/footer";
+
+// Styles for other pages.
+@import "pages/search-page";
+@import "pages/logging-page";
+@import "pages/taxonomy-page";
+
+// Styles for main pages.
+@import "pages/homepage";
+@import "pages/about";
+@import "pages/services";
+@import "pages/projects";
+@import "pages/team";
+@import "pages/news";
+@import "pages/clients";
+@import "pages/contact";
+
+// Styles for nodes.
+@import "pages/services-node";
+@import "pages/projects-node";
+@import "pages/teams-node";
+@import "pages/news-node";
+@import "pages/clients-node";
+
+// Styles for additional pages.
+@import "pages/page-not-found";
+

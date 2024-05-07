@@ -1,0 +1,12 @@
+<nav class="main-menu">
+  <ul class="menu">
+    {% for item in items %}
+      <li>
+        {{ link(item.title, item.url, item.attributes.addClass(item.is_expanded ? 'expanded', item.is_collapsed ? 'collapsed', 'menu-item')) }}
+        {% if item.below %}
+          {{ menus.menu_links(item.below) }}
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+</nav>

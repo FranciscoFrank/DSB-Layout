@@ -1,0 +1,67 @@
+{% set currentPath = path('<current>') %}
+{% set isAdminPath = '/admin' in currentPath %}
+{% set isLayoutPath = '/layout' in currentPath %}
+
+{% if not isAdminPath and not isLayoutPath %}
+  {% if is_front %}
+    <div class="top-page-banner-is">
+      <header class="header-wrapper">
+        <div class="header">
+          {{ page.header }}
+        </div>
+      </header>
+      <div class="banner">
+        {{ page.banner }}
+      </div>
+    </div>
+
+    <div class="main-content-homepage">
+      <main class="page-content" role="main">
+        {{ page.content }}
+      </main>
+    </div>
+
+    <div class="footer">
+      {{ page.footer }}
+    </div>
+  {% else %}
+    <div class="top-page-banner-not">
+      <header class="header-wrapper">
+        <div class="header">
+          {{ page.header }}
+        </div>
+      </header>
+    </div>
+
+    <div class="main-content">
+      <main class="page-content" role="main">
+        {% set content_region_class = 'region-content' %}
+        {% set current_path = '' %}
+        {% if node is defined and node.id is defined %}
+          {% set current_path = path('entity.node.canonical', {'node': node.id}) %}
+        {% endif %}
+        <div class="{{ content_region_class }}{{ current_path|clean_class }}">
+          {{ page.content }}
+        </div>
+      </main>
+    </div>
+
+    <div class="footer">
+      {{ page.footer }}
+    </div>
+  {% endif %}
+{% else %}
+  <div class="main-content">
+    <main class="page-content" role="main">
+      {% set content_region_class = 'region-content' %}
+      {% set current_path = '' %}
+      {% if node is defined and node.id is defined %}
+        {% set current_path = path('entity.node.canonical', {'node': node.id}) %}
+      {% endif %}
+      <div class="{{ content_region_class }}{{ current_path|clean_class }}">
+        {{ page.content }}
+      </div>
+    </main>
+  </div>
+{% endif %}
+

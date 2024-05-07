@@ -1,0 +1,34 @@
+.main-content {
+  main {
+    .region-content-error-path {
+      .region-content {
+        width: 1220px;
+        margin: 100px auto;
+        padding: 0;
+
+        article {
+          .content {
+            .layout {
+              .block-layout-builder {
+                &:nth-child(1) {
+                  &::before, &::after {
+                    display: none;
+                  }
+                }
+
+                &:nth-child(2) {
+                  display: flex;
+                  justify-content: center;
+
+                  span {
+                    font-size: $main;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

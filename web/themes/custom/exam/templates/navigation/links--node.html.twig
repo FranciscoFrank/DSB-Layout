@@ -1,0 +1,59 @@
+{% set currentUrl = path('<current>') %}
+
+{% if '/homepage' in currentUrl %}
+  {% if links %}
+    <div class="node--links">
+      {%- if heading -%}
+        {%- if heading.level -%}
+          <{{ heading.level }}{{ heading.attributes }}>{{ heading.text }}</{{ heading.level }}>
+        {%- else -%}
+          <h2{{ heading.attributes }}>{{ heading.text }}</h2>
+        {%- endif -%}
+      {%- endif -%}
+      <ul{{ attributes }}>
+        {%- for item in links -%}
+          <li{{ item.attributes }}>
+            {% set link_url = item.link['#url'].toString() %}
+
+            {% if '/about' in link_url %}
+              <a href="{{ link_url }}" rel="tag">More details</a>
+            {% elseif '/projects' in link_url %}
+              <a href="{{ link_url }}" rel="tag">Details</a>
+            {% elseif '/team' in link_url %}
+              <a href="{{ link_url }}" rel="tag">Look at me</a>
+            {% else %}
+              <a href="{{ link_url }}" rel="tag">Read more</a>
+            {% endif %}
+          </li>
+        {%- endfor -%}
+      </ul>
+    </div>
+  {% endif %}
+{% else %}
+  {% if links %}
+    <div class="node--links">
+      {%- if heading -%}
+        {%- if heading.level -%}
+          <{{ heading.level }}{{ heading.attributes }}>{{ heading.text }}</{{ heading.level }}>
+        {%- else -%}
+          <h2{{ heading.attributes }}>{{ heading.text }}</h2>
+        {%- endif -%}
+      {%- endif -%}
+      <ul{{ attributes }}>
+        {%- for item in links -%}
+          <li{{ item.attributes }}>
+            {% if item.link %}
+              {% if '/team' in currentUrl %}
+                <a href="{{ item.link['#url'] }}" rel="tag">Look at me</a>
+              {% elseif '/projects' in currentUrl %}
+                <a href="{{ item.link['#url'] }}" rel="tag">Details</a>
+              {% else %}
+                <a href="{{ item.link['#url'] }}" rel="tag">Read more</a>
+              {% endif %}
+            {% endif %}
+          </li>
+        {%- endfor -%}
+      </ul>
+    </div>
+  {% endif %}
+{% endif %}

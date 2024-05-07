@@ -1,0 +1,45 @@
+@import "../abstracts/variables/font-size";
+
+.pager {
+  margin: 0;
+  margin-bottom: 20px;
+
+  ul {
+    li {
+      padding: 5px;
+
+      a {
+        padding: 10px 15px;
+        text-decoration: none;
+        border-radius: 50%;
+        color: black;
+        font-size: 18px;
+
+        &:hover {
+          background-color: white;
+        }
+      }
+
+      &.is-active {
+        a {
+          background-color: $second-color;
+
+          &:hover {
+            background-color: $second-color;
+          }
+        }
+      }
+
+      &.pager-item {
+        &--next,
+        &--last {
+          a {
+            span {
+              font-size: $medium;
+            }
+          }
+        }
+      }
+    }
+  }
+}

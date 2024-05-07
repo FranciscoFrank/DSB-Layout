@@ -1,0 +1,29 @@
+.block-layout-builder:nth-of-type(1) {
+  display: flex;
+  position: relative;
+  margin-top: 65px;
+  margin-bottom: 25px;
+  justify-content: center;
+
+  span {
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  &::before, &::after {
+    content: "";
+    top: 50%;
+    position: absolute;
+    width: 44%;
+    height: 1px;
+    background-color: #000;
+  }
+
+  &::before {
+    left: 0;
+  }
+
+  &::after {
+    right: 0;
+  }
+}

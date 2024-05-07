@@ -1,0 +1,139 @@
+.main-content {
+  main {
+    .region-content-projects {
+      .region-content {
+        padding: 0;
+        width: 1220px;
+        margin: 0 auto;
+
+        article {
+          .content {
+            .layout {
+              .views-element-container {
+                .contextual-region {
+                  .view-all-projects {
+                    .view-content {
+                      display: flex;
+                      flex-wrap: wrap;
+                      justify-content: space-between;
+
+                      .views-row {
+                        margin-bottom: 25px !important;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+
+                        & > * {
+                          text-transform: uppercase;
+                        }
+
+                        article {
+                          .content {
+                            .layout {
+                              display: flex;
+                              flex-direction: column;
+                              align-items: center;
+
+                              & > * {
+                                text-transform: uppercase;
+                              }
+
+                              .block-layout-builder {
+                                &:nth-child(1) {
+                                  margin-top: 10px;
+
+                                  &::before, &::after {
+                                    display: none;
+                                  }
+
+                                  .field--name-field-images {
+                                    width: fit-content;
+                                    margin: 0 auto;
+                                    margin-bottom: 30px;
+                                  }
+                                }
+
+                                &:nth-child(2) {
+                                  width: fit-content;
+                                  margin: 0 auto;
+                                  margin-bottom: 10px;
+
+                                  & > * {
+                                    font-weight: 600;
+                                    font-size: $medium;
+                                  }
+                                }
+
+                                &:nth-child(3) {
+                                  font-size: $x-small;
+                                  text-align: center;
+                                  line-height: 1.5;
+                                  margin-bottom: 15px;
+                                  color: $second-color;
+
+                                  a {
+                                    text-decoration: none;
+
+                                    &:hover {
+                                      text-decoration: none;
+                                      filter: none;
+                                    }
+                                  }
+
+                                  a[href*="drupal"] {
+                                    color: $drupal-project;
+                                  }
+
+                                  a[href*="app"] {
+                                    color: $app-development;
+                                  }
+
+                                  a[href*="php"] {
+                                    color: $php-development;
+                                  }
+
+                                  a[href*="web"] {
+                                    color: $web-development;
+                                  }
+                                }
+
+                                &:nth-child(4) {
+                                  width: fit-content;
+                                  padding: 5px;
+
+                                  ul {
+                                    width: fit-content;
+                                    margin: 0;
+                                    padding: 0;
+
+                                    li {
+                                      padding: 0;
+                                      margin: 0;
+                                      width: fit-content;
+
+                                      a {
+                                        padding: 5px;
+                                        font-size: 16px;
+                                        color: $main-color;
+                                        background-color: $univerlas-color;
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+

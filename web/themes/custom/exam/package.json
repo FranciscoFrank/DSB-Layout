@@ -1,0 +1,22 @@
+{
+  "name": "exam",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.mjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FranciscoFrank/DSB-Theme.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FranciscoFrank/DSB-Theme/issues"
+  },
+  "homepage": "https://github.com/FranciscoFrank/DSB-Theme#readme",
+  "devDependencies": {
+    "gulp-clean-css": "^4.3.0"
+  }
+}

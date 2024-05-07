@@ -1,0 +1,27 @@
+.main-content {
+  main {
+    .region-content {
+      .region-content-login-page {
+        width: 1220px;
+        padding: 0;
+        margin: 45px auto;
+
+        .user-login-form {
+          & > * {
+            text-transform: uppercase;
+          }
+
+          * > input {
+            margin: 5px 0;
+            border-radius: 2px;
+          }
+
+          * > .button {
+            text-transform: uppercase;
+            padding: 10px 15px;
+          }
+        }
+      }
+    }
+  }
+}

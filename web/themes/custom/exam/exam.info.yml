@@ -1,0 +1,24 @@
+name: Exam
+type: theme
+base theme: bootstrap5
+package: Core
+version: 1.0
+core_version_requirement: ^9 || ^10
+
+stylesheets-remove:
+  - '@social_media_links/css/social_media_links.theme.css'
+
+bootstrap:
+  css:
+    theme:
+      /libraries/bootstrap/less/scaffolding.less: false
+
+libraries:
+  - exam/exam
+
+regions:
+  header: Header
+  banner: Banner
+  highlighted: Highlighted
+  content: Content
+  footer: Footer

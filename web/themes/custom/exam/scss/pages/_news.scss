@@ -1,0 +1,286 @@
+.main-content {
+  main {
+    .region-content-news {
+      .region-content {
+        padding: 0;
+        width: 1220px;
+        margin: 0 auto;
+
+        article {
+          .content {
+            .layout {
+              .block-views {
+                .contextual-region {
+                  .view-search-news {
+                    .view-filters {
+                      .views-exposed-form {
+                        .form--inline {
+                          margin-bottom: 120px;
+
+                          .form-wrapper {
+                            margin: 0;
+                            padding: 0;
+                            clear: none;
+
+                            input {
+                              font-size: 16px;
+                              margin-left: 2.5px;
+                              border: 1px solid rgb(103, 191, 220);
+                              border-radius: 2.5px;
+                              background-color: rgb(103, 191, 220);
+                            }
+                          }
+
+                          .form-item {
+                            margin: 0;
+                            padding: 0;
+                            margin-right: 2.5px;
+
+                            label {
+                              display: none;
+                            }
+
+                            input {
+                              border-radius: 2.5px;
+                              font-size: 16px;
+                              position: relative;
+
+                              &::before {
+                                position: absolute;
+                                color: $second-color;
+                                content: "Search";
+                                z-index: 9999;
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+
+                    .view-content {
+                      display: flex;
+                      flex-wrap: wrap;
+                      justify-content: space-between;
+
+                      .views-row {
+                        width: 47%;
+                        padding: 0;
+                        margin: 0;
+                        margin-bottom: 25px;
+
+                        article {
+                          display: flex;
+                          flex-direction: column;
+                          align-items: center;
+
+                          .content {
+                            & > * {
+                              text-transform: uppercase;
+                              margin: 0;
+                              padding: 0;
+                            }
+
+                            .row {
+                              &:nth-child(1) {
+                                & > * {
+                                  padding: 0;
+                                }
+
+                                .bs-region--left {
+                                  width: fit-content;
+                                  display: flex;
+                                  flex-direction: column;
+                                  align-items: center;
+                                  padding-right: 15px;
+
+                                  & > * {
+                                    margin: 0;
+                                    padding: 0;
+                                    width: fit-content;
+                                  }
+
+                                  .block-layout-builder {
+                                    &::before, &::after {
+                                      display: none;
+                                    }
+
+                                    &:nth-child(1) {
+                                      font-size: 20px;
+                                      line-height: normal;
+                                      font-weight: 400;
+                                    }
+
+                                    &:nth-child(2) {
+                                      color: $first-color;
+                                      font-weight: 700;
+                                      font-size: 42px;
+                                      line-height: 0.75;
+                                    }
+
+                                    &:nth-child(3) {
+                                      line-height: 1;
+                                      font-size: 16px;
+                                      color: $second-color;
+                                    }
+                                  }
+                                }
+
+                                .bs-region--right {
+                                  position: relative;
+                                  display: flex;
+                                  flex-wrap: wrap;
+                                  width: 88%;
+
+                                  & > * {
+                                    margin: 0;
+                                    padding: 0;
+                                  }
+
+                                  .block-layout-builder {
+                                    & > * {
+                                      font-size: 10px;
+                                      line-height: 0.75;
+                                    }
+
+                                    &::before, &::after {
+                                      display: none;
+                                    }
+
+                                    &:nth-child(1) {
+                                      width: fit-content;
+                                      height: fit-content;
+                                      border-left: 1px solid $second-color;
+                                      padding-left: 15px;
+
+                                      .field--name-field-images-news {
+                                        img {
+                                          width: auto;
+                                          height: 72px;
+                                        }
+                                      }
+                                    }
+
+                                    &:nth-child(2) {
+                                      margin-left: 10px;
+                                      height: fit-content;
+
+                                      .field--name-field-job-news {
+                                        color: $second-color;
+                                      }
+                                    }
+
+                                    &:nth-child(3) {
+                                      height: fit-content;
+                                      width: fit-content;
+                                      white-space: nowrap;
+                                      margin-left: 2.5px;
+
+                                      .field::after {
+                                        content: '/';
+                                        display: inline;
+                                        margin: 0 2.5px;
+                                      }
+                                    }
+
+                                    &:nth-child(4) {
+                                      height: fit-content;
+
+                                      .field--name-field-news-topic {
+                                        a {
+                                          text-decoration: none;
+                                          color: $first-color;
+                                        }
+                                      }
+                                    }
+
+                                    &:nth-child(5) {
+                                      height: fit-content;
+                                      color: $second-color;
+                                      display: flex;
+                                      justify-content: flex-end;
+                                      position: absolute;
+                                      right: 0;
+                                    }
+
+                                    &:nth-child(6) {
+                                      border-left: 1px solid $second-color;
+                                      padding-left: 15px;
+                                      margin-top: 20px;
+                                      line-height: 0.75;
+                                      justify-content: normal;
+                                      padding-bottom: 15px;
+                                      width: 100%;
+
+                                      span {
+                                        font-weight: 400;
+                                        font-size: 24px;
+                                      }
+                                    }
+
+                                    &:nth-child(7) {
+                                      width: 100%;
+                                      border-left: 1px solid $second-color;
+                                      padding-left: 15px;
+                                      padding-bottom: 20px;
+
+                                      .field--name-body {
+                                        p {
+                                          font-size: 14px;
+                                          letter-spacing: 0;
+                                          word-spacing: -1px;
+                                          line-height: 1;
+                                        }
+                                      }
+                                    }
+
+                                    &:nth-child(8) {
+                                      border-left: 1px solid $second-color;
+                                      width: 100%;
+                                      justify-content: flex-end;
+                                      height: fit-content;
+
+                                      & * {
+                                        display: flex;
+                                        height: fit-content;
+                                        padding: 0;
+                                      }
+
+                                      .node--links {
+                                        ul {
+                                          li {
+                                            height: fit-content;
+
+                                            a {
+                                              font-size: 18px;
+                                              font-weight: 400;
+                                              padding: 7px;
+                                              background-color: $univerlas-color;
+                                              color: $main-color;
+                                              transition: background-color 0.3s ease;
+
+                                              &:hover {
+                                                background-color: $first-color;
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
