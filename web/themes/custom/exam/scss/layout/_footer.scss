@@ -1,12 +1,12 @@
 .footer {
   margin-bottom: 0;
   border: 0;
-  background-color: $univerlas-color;
+  background-color: $fourth-color;
   padding: 65px 0;
   margin-top: auto;
 
   .region-footer {
-    width: 1220px;
+    max-width: 1220px;
     margin: 0 auto;
     display: flex;
     padding: 0;
@@ -25,7 +25,7 @@
             &:first-child {
               font-family: $FirstFocusFont, sans-serif;
               display: flex;
-              font-size: $x-large;
+              font-size: 38px;
               justify-content: center;
               color: $first-color;
             }
@@ -49,6 +49,14 @@
           }
         }
       }
+    }
+  }
+}
+
+@include x-large {
+  .footer {
+    .region-footer {
+      padding: 0 10px;
     }
   }
 }

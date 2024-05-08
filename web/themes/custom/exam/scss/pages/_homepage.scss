@@ -59,7 +59,7 @@
                 .contextual-region {
                   .view-about {
                     .view-content {
-                      width: 1220px;
+                      max-width: 1220px;
                       margin: 0 auto;
 
                       .views-row {
@@ -91,7 +91,6 @@
 
                             .layout {
                               padding: 15px 0;
-                              width: 1220px;
                               border-top: 5px solid $third-color;
                               border-bottom: 5px solid $first-color;
                               display: flex;
@@ -120,7 +119,7 @@
                                   font-weight: 300;
                                   letter-spacing: -1px;
                                   color: $second-color;
-                                  font-size: 20px;
+                                  font-size: $average;
                                   padding-left: 15px;
                                 }
                               }
@@ -144,7 +143,7 @@
                                         padding: 5px 10px;
                                         display: flex;
                                         color: $main-color;
-                                        font-size: 16px;
+                                        font-size: $small;
                                       }
                                     }
                                   }
@@ -164,7 +163,7 @@
 
                 h2 {
                   text-transform: uppercase;
-                  width: 1220px;
+                  max-width: 1220px;
                   margin: 0 auto;
                   margin-bottom: 85px;
                   font-size: 32px;
@@ -193,7 +192,7 @@
                 .contextual-region {
                   .view-last-services {
                     .view-content {
-                      width: 1220px;
+                      max-width: 1220px;
                       margin: 0 auto;
                       display: flex;
                       flex-wrap: wrap;
@@ -263,13 +262,13 @@
 
                                       a {
                                         padding: 5px;
-                                        font-size: 16px;
+                                        font-size: $small;
                                         color: $main-color;
-                                        background-color: $first-button;
+                                        background-color: $first-color;
                                         transition: background-color 0.3s ease;
 
                                         &:hover {
-                                          background-color: $univerlas-color
+                                          background-color: $fourth-color
                                         }
 
                                       }
@@ -288,7 +287,7 @@
 
               &last-projects-last-projects {
                 h2 {
-                  width: 1220px;
+                  max-width: 1220px;
                   margin: 0 auto;
                   text-transform: uppercase;
                   font-size: 32px;
@@ -321,7 +320,7 @@
                     background: repeating-linear-gradient(-45deg, #fff, #fff 6px, rgba(200,200,200,0.3) 6px, rgba(200,200,200,0.3) 8px);
 
                     .view-content {
-                      width: 1220px;
+                      max-width: 1220px;
                       margin: 0 auto;
                       display: flex;
                       padding-top: 50px;
@@ -330,7 +329,7 @@
 
                       .views-row {
                         background-color: $main-color;
-                        border-bottom: 1px solid $univerlas-color;
+                        border-bottom: 1px solid $fourth-color;
                         padding-bottom: 10px;
                         margin-bottom: 25px !important;
                         display: flex;
@@ -425,9 +424,9 @@
 
                                       a {
                                         padding: 5px;
-                                        font-size: 16px;
+                                        font-size: $small;
                                         color: $main-color;
-                                        background-color: $univerlas-color;
+                                        background-color: $fourth-color;
                                       }
                                     }
                                   }
@@ -450,7 +449,7 @@
                   text-transform: uppercase;
                   font-size: 32px;
                   font-weight: bold;
-                  width: 1220px;
+                  max-width: 1220px;
                   margin: 0 auto;
                   margin-bottom: 35px;
                   position: relative;
@@ -477,7 +476,7 @@
                 .contextual-region {
                   .view-last-teams {
                     .view-content {
-                      width: 1220px;
+                      max-width: 1220px;
                       margin: 0 auto;
                       display: flex;
                       flex-wrap: wrap;
@@ -534,7 +533,7 @@
                                     li {
                                       a {
                                         padding: 4px;
-                                        background-color: $univerlas-color;
+                                        background-color: $fourth-color;
                                         color: $main-color;
                                         transition: background-color 0.3s ease;
 
@@ -549,9 +548,12 @@
                             }
 
                             .row {
+                              --bs-gutter-x: 0;
                               margin-top: 25px;
 
                               .col-sm-6 {
+                                padding: 0;
+
                                 &:nth-child(1) {
                                   width: 60%;
 
@@ -571,6 +573,7 @@
                                 }
 
                                 &:nth-child(2) {
+                                  margin: 0;
                                   width: 40%;
 
                                   .block-layout-builder {
@@ -601,7 +604,7 @@
 
               &last-news-last-news {
                 h2 {
-                  width: 1220px;
+                  max-width: 1220px;
                   margin: 0 auto;
                   margin-bottom: 20px;
                   position: relative;
@@ -635,7 +638,7 @@
 
                     .view-filters {
                       padding: 25px 0;
-                      width: 1220px;
+                      max-width: 1220px;
                       margin: 0 auto;
                       justify-content: space-between;
 
@@ -649,7 +652,7 @@
                             clear: none;
 
                             input {
-                              font-size: 16px;
+                              font-size: $small;
                               margin-left: 2.5px;
                               border: 1px solid rgb(103, 191, 220);
                               border-radius: 2.5px;
@@ -668,7 +671,7 @@
 
                             input {
                               border-radius: 2.5px;
-                              font-size: 16px;
+                              font-size: $small;
                               position: relative;
 
                               &::before {
@@ -684,7 +687,7 @@
                     }
 
                     .view-content {
-                      width: 1220px;
+                      max-width: 1220px;
                       margin: 0 auto;
                       display: flex;
                       flex-wrap: wrap;
@@ -735,7 +738,7 @@
                                     }
 
                                     &:nth-child(1) {
-                                      font-size: 20px;
+                                      font-size: $average;
                                       line-height: normal;
                                       font-weight: 400;
                                     }
@@ -749,7 +752,7 @@
 
                                     &:nth-child(3) {
                                       line-height: 1;
-                                      font-size: 16px;
+                                      font-size: $small;
                                       color: $second-color;
                                     }
                                   }
@@ -843,7 +846,7 @@
 
                                       span {
                                         font-weight: 400;
-                                        font-size: 24px;
+                                        font-size: $main;
                                       }
                                     }
 
@@ -855,7 +858,7 @@
 
                                       .field--name-body {
                                         p {
-                                          font-size: 14px;
+                                          font-size: $x-small;
                                           letter-spacing: 0;
                                           word-spacing: -1px;
                                           line-height: 1;
@@ -884,7 +887,7 @@
                                               font-size: 18px;
                                               font-weight: 400;
                                               padding: 7px;
-                                              background-color: $univerlas-color;
+                                              background-color: $fourth-color;
                                               color: $main-color;
                                               transition: background-color 0.3s ease;
 
@@ -914,7 +917,7 @@
 
                 h2 {
                   text-transform: uppercase;
-                  width: 1220px;
+                  max-width: 1220px;
                   margin: 0 auto;
                   margin-bottom: 65px;
                   font-size: 32px;
@@ -943,7 +946,7 @@
                 .contextual-region {
                   .view-slick-clients {
                     .view-content {
-                      width: 1220px;
+                      max-width: 1220px;
                       margin: 0 auto;
 
                       .slick--view {
@@ -955,9 +958,13 @@
 
                               .slide {
                                 article {
+                                  width: fit-content;
+
                                   .content {
                                     .layout {
                                       .block-layout-builder {
+                                        width: fit-content;
+
                                         &::after, &::before {
                                           display: none;
                                         }
@@ -988,3 +995,138 @@
     }
   }
 }
+
+@include x-large {
+  .top-page-banner-is {
+    background-size: cover;
+
+    .banner {
+      .region-banner {
+        .block-block-content {
+          .field--name-body {
+            margin-bottom: 110px;
+            margin-top: 160px;
+            width: 310px;
+
+            p {
+              font-weight: 300;
+              line-height: 0.9;
+              text-transform: uppercase;
+
+              &:nth-child(1) {
+                letter-spacing: -3px;
+                color: $main-color;
+                font-size: 60px;
+              }
+
+              &:nth-child(2) {
+                letter-spacing: -3px;
+                color: $third-color;
+                font-size: 40px;
+              }
+
+              &:nth-child(3) {
+                margin-top: 5px;
+                line-height: 1;
+                letter-spacing: -2px;
+                color: $first-color;
+                font-size: 15px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .main-content-homepage {
+    main {
+      .region-content-homepage-content {
+        article {
+          .content {
+            .layout {
+              .block-views-block {
+                &about-about {
+                  .contextual-region {
+                    .view-about {
+                      .view-content {
+                        padding: 0 10px;
+                      }
+                    }
+                  }
+                }
+
+                &last-services-last-services {
+                  .contextual-region {
+                    .view-last-services {
+                      .view-content {
+                        padding: 0 10px;
+                      }
+                    }
+                  }
+                }
+
+                &last-projects-last-projects {
+                  .contextual-region {
+                    .view-last-projects {
+                      .view-content {
+                        padding-left: 10px;
+                        padding-right: 10px;
+                      }
+                    }
+                  }
+                }
+
+                &last-teams-last-teams {
+                  .contextual-region {
+                    .view-last-teams {
+                      .view-content {
+                        padding-left: 10px;
+                        padding-right: 10px;
+                      }
+                    }
+                  }
+                }
+
+                &last-news-last-news {
+                  .contextual-region {
+                    .view-last-news {
+                      .view-filters {
+                        padding-left: 10px;
+                      }
+
+                      .view-content {
+                        padding-left: 10px;
+                        padding-right: 10px;
+
+                        .views-row {
+                          article {
+                            .content {
+                              padding: 10px;
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+
+                &slick-clients-slick-clients {
+                  .contextual-region {
+                    .view-slick-clients {
+                      .view-content {
+                        padding: 0 10px;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+

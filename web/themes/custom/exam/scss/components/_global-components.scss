@@ -1,5 +1,9 @@
 // Styles for the banner.
 .top-page-banner-is {
+  display: flex;
+  flex-direction: column;
+  background-repeat: no-repeat;
+  background-size: cover;
   background-image: url("../images/header.png");
 }
 

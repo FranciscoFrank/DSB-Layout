@@ -6,3 +6,11 @@
     @content
   }
 }
+
+@mixin large {
+  @media only all and (max-width: 980px) {
+    @content
+  }
+}
+
+

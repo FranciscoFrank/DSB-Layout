@@ -57,7 +57,7 @@
                             }
 
                             &:nth-child(1) {
-                              font-size: 20px;
+                              font-size: $average;
                               line-height: normal;
                               font-weight: 400;
                             }
@@ -71,7 +71,7 @@
 
                             &:nth-child(3) {
                               line-height: 1;
-                              font-size: 16px;
+                              font-size: $small;
                               color: $second-color;
                             }
                           }
@@ -165,7 +165,7 @@
 
                               span {
                                 font-weight: 400;
-                                font-size: 24px;
+                                font-size: $main;
                               }
                             }
 
@@ -177,7 +177,7 @@
 
                               .field--name-body {
                                 p {
-                                  font-size: 14px;
+                                  font-size: $x-small;
                                   letter-spacing: 0;
                                   word-spacing: -1px;
                                   line-height: 1;
@@ -206,7 +206,7 @@
                                       font-size: 18px;
                                       font-weight: 400;
                                       padding: 7px;
-                                      background-color: $univerlas-color;
+                                      background-color: $fourth-color;
                                       color: $main-color;
                                       transition: background-color 0.3s ease;
 
@@ -358,9 +358,9 @@
 
                               a {
                                 padding: 5px;
-                                font-size: 16px;
+                                font-size: $small;
                                 color: $main-color;
-                                background-color: $univerlas-color;
+                                background-color: $fourth-color;
                               }
                             }
                           }
