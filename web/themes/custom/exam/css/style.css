@@ -47,6 +47,11 @@ p {
   background-size: cover;
   background-image: url("../images/header.png");
 }
+@media only all and (max-width: 980px) {
+  .top-page-banner-is {
+    background-size: contain;
+  }
+}
 
 .main-content {
   min-height: 100hv;
@@ -103,11 +108,6 @@ p {
 }
 .block-social-media-links-block .social-media-links--platforms li a .fa-linkedin:hover, .block-layout-builder .social-media-links--platforms li a .fa-linkedin:hover {
   filter: brightness(75%);
-}
-@media only all and (max-width: 1220px) {
-  .block-social-media-links-block .social-media-links--platforms li a span::before, .block-layout-builder .social-media-links--platforms li a span::before {
-    font-size: 20px;
-  }
 }
 
 .block-layout-builder:nth-of-type(1) {
@@ -228,7 +228,6 @@ p {
 }
 .top-page-banner-is header .header .region-header .navigation .main-menu ul li:first-child a, .top-page-banner-not header .header .region-header .navigation .main-menu ul li:first-child a {
   background-repeat: no-repeat;
-  background-image: url("../images/Homepage-menu.png");
   padding: 0;
   display: flex;
   background-position: center;
@@ -358,6 +357,7 @@ p {
     padding-top: 0 !important;
   }
   .top-page-banner-is header .header .region-header, .top-page-banner-not header .header .region-header {
+    width: 100vw;
     height: fit-content;
   }
   .top-page-banner-is header .header .region-header .block-block-content, .top-page-banner-not header .header .region-header .block-block-content {
@@ -398,13 +398,13 @@ p {
   .top-page-banner-is header .header .region-header .search-block-form form .form-actions input, .top-page-banner-not header .header .region-header .search-block-form form .form-actions input {
     font-size: 20px;
   }
+  .top-page-banner-is header .header .region-header .block-social-media-links ul li a, .top-page-banner-not header .header .region-header .block-social-media-links ul li a {
+    font-size: 20px;
+  }
 }
 @media only all and (max-width: 980px) {
   .top-page-banner-is header .header, .top-page-banner-not header .header {
     padding-top: 0 !important;
-  }
-  .top-page-banner-is header .header .region-header, .top-page-banner-not header .header .region-header {
-    width: 750px;
   }
   .top-page-banner-is header .header .region-header #block-main-navigation, .top-page-banner-is header .header .region-header .block-social-media-links, .top-page-banner-is header .header .region-header .block-search, .top-page-banner-not header .header .region-header #block-main-navigation, .top-page-banner-not header .header .region-header .block-social-media-links, .top-page-banner-not header .header .region-header .block-search {
     display: none;
@@ -443,6 +443,7 @@ p {
   color: #6A93C0;
 }
 .footer .region-footer .block-block-content .field--name-body p a:last-child {
+  line-height: 1;
   font-family: "Nexa Slab Regular FREE", sans-serif;
   display: flex;
   font-size: 16px;
@@ -460,6 +461,30 @@ p {
 @media only all and (max-width: 1220px) {
   .footer .region-footer {
     padding: 0 10px;
+  }
+  .footer .region-footer .block-block-content .field--name-body p a:first-child {
+    font-size: 28px;
+  }
+  .footer .region-footer .block-block-content .field--name-body p a:last-child {
+    font-size: 12px;
+  }
+}
+@media only all and (max-width: 576px) {
+  .footer .region-footer {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .footer .region-footer .block-block-content {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .footer .region-footer .block-social-media-links {
+    width: 100%;
+    justify-content: center;
+  }
+  .footer .region-footer .block-social-media-links .social-media-links--platforms li a {
+    height: 15px;
+    font-size: 20px;
   }
 }
 .main-content main .region-content .region-content .search-form {
@@ -1535,41 +1560,34 @@ p {
 }
 
 @media only all and (max-width: 1220px) {
-  .top-page-banner-is {
-    background-size: cover;
+  .top-page-banner-is .banner {
+    padding: 0 25px;
+    width: 100vw !important;
   }
   .top-page-banner-is .banner .region-banner .block-block-content .field--name-body {
-    margin-bottom: 110px;
-    margin-top: 160px;
-    width: 310px;
-  }
-  .top-page-banner-is .banner .region-banner .block-block-content .field--name-body p {
-    font-weight: 300;
-    line-height: 0.9;
-    text-transform: uppercase;
+    margin-bottom: 120px !important;
+    margin-top: 140px !important;
+    width: 310px !important;
   }
   .top-page-banner-is .banner .region-banner .block-block-content .field--name-body p:nth-child(1) {
-    letter-spacing: -3px;
-    color: #FFFFFF;
-    font-size: 60px;
+    font-size: 60px !important;
   }
   .top-page-banner-is .banner .region-banner .block-block-content .field--name-body p:nth-child(2) {
-    letter-spacing: -3px;
-    color: #000000;
-    font-size: 40px;
+    font-size: 40px !important;
   }
   .top-page-banner-is .banner .region-banner .block-block-content .field--name-body p:nth-child(3) {
-    margin-top: 5px;
-    line-height: 1;
-    letter-spacing: -2px;
-    color: #6A93C0;
-    font-size: 15px;
+    font-size: 15px !important;
   }
   .main-content-homepage main .region-content-homepage-content article .content .layout .block-views-blockabout-about .contextual-region .view-about .view-content {
     padding: 0 10px;
   }
   .main-content-homepage main .region-content-homepage-content article .content .layout .block-views-blocklast-services-last-services .contextual-region .view-last-services .view-content {
     padding: 0 10px;
+    justify-content: center;
+  }
+  .main-content-homepage main .region-content-homepage-content article .content .layout .block-views-blocklast-services-last-services .contextual-region .view-last-services .view-content .views-row {
+    margin-bottom: 25px;
+    width: 30%;
   }
   .main-content-homepage main .region-content-homepage-content article .content .layout .block-views-blocklast-projects-last-projects .contextual-region .view-last-projects .view-content {
     padding-left: 10px;
@@ -1586,11 +1604,96 @@ p {
     padding-left: 10px;
     padding-right: 10px;
   }
+  .main-content-homepage main .region-content-homepage-content article .content .layout .block-views-blocklast-news-last-news .contextual-region .view-last-news .view-content .views-row {
+    width: 100% !important;
+  }
   .main-content-homepage main .region-content-homepage-content article .content .layout .block-views-blocklast-news-last-news .contextual-region .view-last-news .view-content .views-row article .content {
     padding: 10px;
   }
+  .main-content-homepage main .region-content-homepage-content article .content .layout .block-views-blocklast-news-last-news .contextual-region .view-last-news .view-content .views-row article .content .row .bs-region--right {
+    width: 85vw !important;
+  }
   .main-content-homepage main .region-content-homepage-content article .content .layout .block-views-blockslick-clients-slick-clients .contextual-region .view-slick-clients .view-content {
     padding: 0 10px;
+  }
+}
+@media only all and (max-width: 980px) {
+  .top-page-banner-is .banner {
+    padding: 0 25px;
+    width: 100vw !important;
+  }
+  .top-page-banner-is .banner .region-banner .block-block-content .field--name-body {
+    margin-bottom: 105px !important;
+    margin-top: 80px !important;
+    width: 205px !important;
+  }
+  .top-page-banner-is .banner .region-banner .block-block-content .field--name-body p:nth-child(1) {
+    font-size: 40px !important;
+  }
+  .top-page-banner-is .banner .region-banner .block-block-content .field--name-body p:nth-child(2) {
+    font-size: 28px !important;
+  }
+  .top-page-banner-is .banner .region-banner .block-block-content .field--name-body p:nth-child(3) {
+    font-size: 12px !important;
+  }
+  .main-content-homepage main .region-content-homepage-content article .content .layout .block-views-blocklast-services-last-services .contextual-region .view-last-services .view-content .views-row {
+    width: 45%;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  .main-content-homepage main .region-content-homepage-content article .content .layout .block-views-blockslick-clients-slick-clients {
+    margin-top: 25px;
+    margin-bottom: 130px;
+  }
+  .main-content-homepage main .region-content-homepage-content article .content .layout .block-views-blockslick-clients-slick-clients h2 {
+    text-transform: uppercase;
+    max-width: 1220px;
+    margin: 0 auto;
+    margin-bottom: 65px;
+    font-size: 32px;
+    font-weight: bold;
+    position: relative;
+    text-align: center;
+  }
+  .main-content-homepage main .region-content-homepage-content article .content .layout .block-views-blockslick-clients-slick-clients h2::before, .main-content-homepage main .region-content-homepage-content article .content .layout .block-views-blockslick-clients-slick-clients h2::after {
+    content: " ";
+    top: 50%;
+    position: absolute;
+    width: 42%;
+    height: 1px;
+    background-color: #000;
+  }
+  .main-content-homepage main .region-content-homepage-content article .content .layout .block-views-blockslick-clients-slick-clients h2::after {
+    right: 0;
+  }
+  .main-content-homepage main .region-content-homepage-content article .content .layout .block-views-blockslick-clients-slick-clients h2::before {
+    left: 0;
+  }
+  .main-content-homepage main .region-content-homepage-content article .content .layout .block-views-blockslick-clients-slick-clients .contextual-region .view-slick-clients .view-content {
+    max-width: 1220px;
+    margin: 0 auto;
+  }
+  .main-content-homepage main .region-content-homepage-content article .content .layout .block-views-blockslick-clients-slick-clients .contextual-region .view-slick-clients .view-content .slick--view .slick-slider .slick-list .slick-track {
+    display: flex;
+    align-items: center;
+  }
+  .main-content-homepage main .region-content-homepage-content article .content .layout .block-views-blockslick-clients-slick-clients .contextual-region .view-slick-clients .view-content .slick--view .slick-slider .slick-list .slick-track .slide article {
+    width: fit-content;
+  }
+  .main-content-homepage main .region-content-homepage-content article .content .layout .block-views-blockslick-clients-slick-clients .contextual-region .view-slick-clients .view-content .slick--view .slick-slider .slick-list .slick-track .slide article .content .layout .block-layout-builder {
+    width: fit-content;
+  }
+  .main-content-homepage main .region-content-homepage-content article .content .layout .block-views-blockslick-clients-slick-clients .contextual-region .view-slick-clients .view-content .slick--view .slick-slider .slick-list .slick-track .slide article .content .layout .block-layout-builder::after, .main-content-homepage main .region-content-homepage-content article .content .layout .block-views-blockslick-clients-slick-clients .contextual-region .view-slick-clients .view-content .slick--view .slick-slider .slick-list .slick-track .slide article .content .layout .block-layout-builder::before {
+    display: none;
+  }
+  .main-content-homepage main .region-content-homepage-content article .content .layout .block-views-blockslick-clients-slick-clients .contextual-region .view-slick-clients .view-content .slick--view .slick-slider .slick-list .slick-track .slide article .content .layout .block-layout-builder .field--name-field-images-clients img {
+    height: auto;
+    width: 140px;
+  }
+}
+@media only all and (max-width: 768px) {
+  .main-content-homepage main .region-content-homepage-content article .content .layout .block-views-blocklast-services-last-services .contextual-region .view-last-services .view-content .views-row {
+    width: 100%;
   }
 }
 .main-content main .region-content-about .region-content {

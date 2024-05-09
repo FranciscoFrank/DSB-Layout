@@ -77,7 +77,6 @@
                 &:first-child {
                   a {
                     background-repeat: no-repeat;
-                    background-image: url("../images/Homepage-menu.png");
                     padding: 0;
                     display: flex;
                     background-position: center;
@@ -241,6 +240,7 @@
         padding-top: 0 !important;
 
         .region-header {
+          width: 100vw;
           height: fit-content;
 
           .block-block-content {
@@ -306,6 +306,16 @@
               }
             }
           }
+
+          .block-social-media-links {
+            ul {
+              li {
+                a {
+                  font-size: 20px;
+                }
+              }
+            }
+          }
         }
       }
     }
@@ -319,8 +329,6 @@
         padding-top: 0 !important;
 
         .region-header {
-          width: 750px;
-
           #block-main-navigation, .block-social-media-links, .block-search {
             display: none;
           }

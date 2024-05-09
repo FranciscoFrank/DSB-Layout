@@ -65,14 +65,6 @@
             filter: brightness(75%);
           }
         }
-
-        @include x-large {
-          span {
-            &::before {
-              font-size: 20px;
-            }
-          }
-        }
       }
     }
   }

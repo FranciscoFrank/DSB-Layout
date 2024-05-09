@@ -31,6 +31,7 @@
             }
 
             &:last-child {
+              line-height: 1;
               font-family: $SecondFocusFont, sans-serif;
               display: flex;
               font-size: $small;
@@ -57,7 +58,52 @@
   .footer {
     .region-footer {
       padding: 0 10px;
+
+      .block-block-content {
+        .field--name-body {
+          p {
+            a {
+              &:first-child {
+                font-size: 28px;
+              }
+
+              &:last-child {
+                font-size: $s-small;
+              }
+            }
+          }
+        }
+      }
     }
   }
 }
+
+@include small {
+  .footer {
+    .region-footer {
+      display: flex;
+      flex-wrap: wrap;
+
+      .block-block-content {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+
+      .block-social-media-links {
+        width: 100%;
+        justify-content: center;
+
+        .social-media-links--platforms {
+          li {
+            a {
+              height: 15px;
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 

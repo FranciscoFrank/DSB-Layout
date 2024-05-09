@@ -13,4 +13,25 @@
   }
 }
 
+@mixin medium {
+  @media only all and (max-width: 768px) {
+    @content
+  }
+}
+
+
+@mixin small {
+  @media only all and (max-width: 576px) {
+    @content
+  }
+}
+
+@mixin x-small {
+  @media only all and (max-width: 375px) {
+    @content
+  }
+}
+
+
+
 

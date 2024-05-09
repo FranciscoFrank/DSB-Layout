@@ -1,3 +1,5 @@
+@import "../abstracts/mixins/media-query";
+
 // Styles for the banner.
 .top-page-banner-is {
   display: flex;
@@ -5,6 +7,10 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url("../images/header.png");
+
+  @include large {
+    background-size: contain;
+  }
 }
 
 // Styles for the main content.
