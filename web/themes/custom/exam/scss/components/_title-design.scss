@@ -1,0 +1,36 @@
+h2 {
+  text-transform: uppercase;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-size: 32px;
+  position: relative;
+  text-align: center;
+
+  &::before, &::after {
+    content: ' ';
+    top: 50%;
+    position: absolute;
+    width: 40vw;
+    max-width: 40vw;
+    height: 1px;
+    background-color: #000;
+  }
+
+  &::after {
+    right: 0;
+  }
+
+  &::before {
+    left: 0;
+  }
+}
+
+@include x-large {
+  h2 {
+    &::before, &::after {
+      width: 40vw;
+      max-width: 40vw;
+    }
+  }
+}
+

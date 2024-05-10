@@ -1,0 +1,23 @@
+#block-cheeseburger-menu {
+  .cheeseburger-menu__main-navigation-area {
+    div {
+      ul {
+        li {
+          .in-active-trail {
+            position: relative;
+
+            &:before {
+              position: absolute;
+              content: ' ';
+              width: 100%;
+              bottom: 0;
+              height: 10px;
+              background-color: $first-color;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+}

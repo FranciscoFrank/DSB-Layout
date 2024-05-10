@@ -32,6 +32,7 @@
         "drupal/bootstrap5": "^3.0",
         "drupal/bootstrap_layouts": "^5.3",
         "drupal/cache_control_override": "^1.0",
+        "drupal/cheeseburger_menu": "^5.0@RC",
         "drupal/config_pages": "^2.15",
         "drupal/content_entity_clone": "^1.0",
         "drupal/content_snippets": "^2.0",

@@ -15,12 +15,28 @@ document.addEventListener('DOMContentLoaded', function() {
   document.body.appendChild(overlay);
 
   burgerMenuIcon.addEventListener('click', function() {
-    if (burgerMenuList.style.display === 'none' || burgerMenuList.style.display === '') {
-      burgerMenuList.style.transform = 'translateX(0)';
-      overlay.style.display = 'block';
+    if (burgerMenuList.style.transform === 'translateX(0)') {
+      closeMenu();
     } else {
-      burgerMenuList.style.transform = 'translateX(100%)';
-      overlay.style.display = 'none';
+      openMenu();
     }
   });
+
+  function openMenu() {
+    burgerMenuList.style.transform = 'translateX(0)';
+    overlay.style.display = 'block';
+    document.addEventListener('click', closeMenuOutside);
+  }
+
+  function closeMenu() {
+    burgerMenuList.style.transform = 'translateX(150%)';
+    overlay.style.display = 'none';
+    document.removeEventListener('click', closeMenuOutside);
+  }
+
+  function closeMenuOutside(event) {
+    if (!burgerMenuList.contains(event.target) && event.target !== burgerMenuIcon && !burgerMenuIcon.contains(event.target)) {
+      closeMenu();
+    }
+  }
 });

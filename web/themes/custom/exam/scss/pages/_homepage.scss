@@ -56,6 +56,8 @@
 
             .block-views-block {
               &about-about {
+                display: none;
+
                 .contextual-region {
                   .view-about {
                     .view-content {
@@ -162,31 +164,8 @@
                 margin: 105px 0;
 
                 h2 {
-                  text-transform: uppercase;
-                  max-width: 1220px;
-                  margin: 0 auto;
-                  margin-bottom: 85px;
-                  font-size: 32px;
                   font-weight: bold;
-                  position: relative;
-                  text-align: center;
-
-                  &::before, &::after {
-                    content: ' ';
-                    top: 50%;
-                    position: absolute;
-                    width: 42%;
-                    height: 1px;
-                    background-color: #000;
-                  }
-
-                  &::after {
-                    right: 0;
-                  }
-
-                  &::before {
-                    left: 0;
-                  }
+                  margin-bottom: 85px;
                 }
 
                 .contextual-region {
@@ -287,31 +266,8 @@
 
               &last-projects-last-projects {
                 h2 {
-                  max-width: 1220px;
-                  margin: 0 auto;
-                  text-transform: uppercase;
-                  font-size: 32px;
                   font-weight: 400;
-                  position: relative;
-                  text-align: center;
                   margin-bottom: 25px;
-
-                  &::before, &::after {
-                    content: ' ';
-                    top: 50%;
-                    position: absolute;
-                    width: 42%;
-                    height: 1px;
-                    background-color: #000;
-                  }
-
-                  &::after {
-                    right: 0;
-                  }
-
-                  &::before {
-                    left: 0;
-                  }
                 }
 
                 .contextual-region {
@@ -320,6 +276,7 @@
                     background: repeating-linear-gradient(-45deg, #fff, #fff 6px, rgba(200,200,200,0.3) 6px, rgba(200,200,200,0.3) 8px);
 
                     .view-content {
+                      padding: 0 10px;
                       max-width: 1220px;
                       margin: 0 auto;
                       display: flex;
@@ -446,36 +403,14 @@
                 margin-bottom: 145px;
 
                 h2 {
-                  text-transform: uppercase;
-                  font-size: 32px;
                   font-weight: bold;
-                  max-width: 1220px;
-                  margin: 0 auto;
                   margin-bottom: 35px;
-                  position: relative;
-                  text-align: center;
-
-                  &::before, &::after {
-                    content: ' ';
-                    top: 50%;
-                    position: absolute;
-                    width: 42%;
-                    height: 1px;
-                    background-color: #000;
-                  }
-
-                  &::after {
-                    right: 0;
-                  }
-
-                  &::before {
-                    left: 0;
-                  }
                 }
 
                 .contextual-region {
                   .view-last-teams {
                     .view-content {
+                      padding: 0 10px;
                       max-width: 1220px;
                       margin: 0 auto;
                       display: flex;
@@ -604,31 +539,8 @@
 
               &last-news-last-news {
                 h2 {
-                  max-width: 1220px;
-                  margin: 0 auto;
                   margin-bottom: 20px;
-                  position: relative;
-                  text-align: center;
-                  text-transform: uppercase;
-                  font-size: 32px;
                   font-weight: bold;
-
-                  &::before, &::after {
-                    content: ' ';
-                    top: 50%;
-                    position: absolute;
-                    width: 42%;
-                    height: 1px;
-                    background-color: #000;
-                  }
-
-                  &::after {
-                    right: 0;
-                  }
-
-                  &::before {
-                    left: 0;
-                  }
                 }
 
                 .contextual-region {
@@ -637,7 +549,7 @@
                     background: repeating-linear-gradient(-45deg, #fff, #fff 6px, rgba(200,200,200,0.3) 6px, rgba(200,200,200,0.3) 8px);
 
                     .view-filters {
-                      padding: 25px 0;
+                      padding: 25px 10px;
                       max-width: 1220px;
                       margin: 0 auto;
                       justify-content: space-between;
@@ -687,6 +599,7 @@
                     }
 
                     .view-content {
+                      padding: 0 10px;
                       max-width: 1220px;
                       margin: 0 auto;
                       display: flex;
@@ -694,9 +607,16 @@
                       justify-content: space-between;
 
                       .views-row {
-                        width: 49%;
                         margin: 0;
                         margin-bottom: 25px;
+
+                        &:first-child {
+                          width: 50%;
+                        }
+
+                        &:last-child {
+                          width: 48%;
+                        }
 
                         article {
                           display: flex;
@@ -762,7 +682,7 @@
                                   position: relative;
                                   display: flex;
                                   flex-wrap: wrap;
-                                  width: 88%;
+                                  width: 87%;
 
                                   & > * {
                                     margin: 0;
@@ -911,41 +831,19 @@
                 }
               }
 
-              &slick-clients-slick-clients {
+              &clients-slick-clients {
                 margin-top: 25px;
                 margin-bottom: 130px;
 
                 h2 {
-                  text-transform: uppercase;
-                  max-width: 1220px;
-                  margin: 0 auto;
                   margin-bottom: 65px;
-                  font-size: 32px;
                   font-weight: bold;
-                  position: relative;
-                  text-align: center;
-
-                  &::before, &::after {
-                    content: ' ';
-                    top: 50%;
-                    position: absolute;
-                    width: 42%;
-                    height: 1px;
-                    background-color: #000;
-                  }
-
-                  &::after {
-                    right: 0;
-                  }
-
-                  &::before {
-                    left: 0;
-                  }
                 }
 
                 .contextual-region {
-                  .view-slick-clients {
+                  .view-clients {
                     .view-content {
+                      padding: 0 10px;
                       max-width: 1220px;
                       margin: 0 auto;
 
@@ -1053,6 +951,8 @@
                         justify-content: center;
 
                         .views-row {
+                          margin-right: 15px;
+                          margin-left: 15px;
                           margin-bottom: 25px;
                           width: 30%;
                         }
@@ -1065,12 +965,14 @@
                   .contextual-region {
                     .view-last-projects {
                       .view-content {
-                        padding-left: 10px;
-                        padding-right: 10px;
+                        padding: 0 10px;
+                        padding-top: 50px;
+                        justify-content: center;
 
                         .views-row {
+                          margin-right: 25px;
+                          margin-left: 25px;
                           margin-bottom: 25px;
-                          width: 30%;
                         }
                       }
                     }
@@ -1081,8 +983,14 @@
                   .contextual-region {
                     .view-last-teams {
                       .view-content {
-                        padding-left: 10px;
-                        padding-right: 10px;
+                        padding: 0 10px;
+                        justify-content: center;
+
+                        .views-row {
+                          margin-right: 25px;
+                          margin-left: 25px;
+                          margin-bottom: 25px;
+                        }
                       }
                     }
                   }
@@ -1091,6 +999,9 @@
                 &last-news-last-news {
                   .contextual-region {
                     .view-last-news {
+                      display: flex;
+                      flex-direction: column;
+
                       .view-filters {
                         padding-left: 10px;
                       }
@@ -1100,9 +1011,13 @@
                         padding-right: 10px;
 
                         .views-row {
+                          display: flex;
+                          justify-content: center;
                           width: 100% !important;
 
                           article {
+                            width: fit-content;
+
                             .content {
                               padding: 10px;
 
@@ -1119,140 +1034,33 @@
                   }
                 }
 
-                &slick-clients-slick-clients {
+                &clients-slick-clients {
                   .contextual-region {
-                    .view-slick-clients {
+                    .view-clients {
                       .view-content {
                         padding: 0 10px;
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-}
-
-@include large {
-  .top-page-banner-is {
-    .banner {
-      padding: 0 25px;
-      width: 100vw !important;
-
-      .region-banner {
-        .block-block-content {
-          .field--name-body {
-            margin-bottom: 105px !important;
-            margin-top: 80px !important;
-            width: 205px !important;
-
-            p {
-              &:nth-child(1) {
-                font-size: 40px !important;
-              }
-
-              &:nth-child(2) {
-                font-size: 28px !important;
-              }
-
-              &:nth-child(3) {
-                font-size: $s-small !important;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-
-  .main-content-homepage {
-    main {
-      .region-content-homepage-content {
-        article {
-          .content {
-            .layout {
-              .block-views-block {
-                &last-services-last-services {
-                  .contextual-region {
-                    .view-last-services {
-                      .view-content {
-                        .views-row {
-                          width: 45%;
-                          margin-left: 15px;
-                          margin-right: 15px;
-                        }
-                      }
-                    ;
-                    }
-                  }
-                }
-
-                &slick-clients-slick-clients {
-                  margin-top: 25px;
-                  margin-bottom: 130px;
-
-                  h2 {
-                    text-transform: uppercase;
-                    max-width: 1220px;
-                    margin: 0 auto;
-                    margin-bottom: 65px;
-                    font-size: 32px;
-                    font-weight: bold;
-                    position: relative;
-                    text-align: center;
-
-                    &::before, &::after {
-                      content: ' ';
-                      top: 50%;
-                      position: absolute;
-                      width: 42%;
-                      height: 1px;
-                      background-color: #000;
-                    }
-
-                    &::after {
-                      right: 0;
-                    }
-
-                    &::before {
-                      left: 0;
-                    }
-                  }
-
-                  .contextual-region {
-                    .view-slick-clients {
-                      .view-content {
-                        max-width: 1220px;
-                        margin: 0 auto;
 
                         .slick--view {
                           .slick-slider {
                             .slick-list {
+                              padding: 0 25px;
+
                               .slick-track {
-                                display: flex;
-                                align-items: center;
+                                transform: none;
 
                                 .slide {
-                                  article {
-                                    width: fit-content;
+                                  display: flex;
+                                  justify-content: center;
 
+                                  article {
                                     .content {
                                       .layout {
                                         .block-layout-builder {
-                                          width: fit-content;
-
-                                          &::after, &::before {
-                                            display: none;
-                                          }
-
                                           .field--name-field-images-clients {
-                                            img {
-                                              height: auto;
-                                              width: 140px;
+                                            a {
+                                              img {
+                                                max-width: 130px !important;
+                                              }
                                             }
                                           }
                                         }
@@ -1277,7 +1085,72 @@
   }
 }
 
+@include large {
+  .top-page-banner-is {
+    .banner {
+      padding: 0 25px;
+      width: 100vw !important;
+
+      .region-banner {
+        .block-block-content {
+          .field--name-body {
+            min-width: 26vw !important;
+            margin-bottom: 100px !important;
+            margin-top: 110px !important;
+            width: 25vw !important;
+            max-width: 25vw !important;
+
+            p {
+              &:nth-child(1) {
+                font-size: 40px !important;
+              }
+
+              &:nth-child(2) {
+                font-size: 28px !important;
+              }
+
+              &:nth-child(3) {
+                font-size: 12px !important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 @include medium {
+  .top-page-banner-is {
+    .banner {
+      .region-banner {
+        .block-block-content {
+          .field--name-body {
+            min-width: 24vw !important;
+            margin-bottom: 110px !important;
+            margin-top: 100px !important;
+            width: 20vw !important;
+            max-width: 20vw !important;
+
+            p {
+              &:nth-child(1) {
+                font-size: 36px !important;
+              }
+
+              &:nth-child(2) {
+                font-size: 25px !important;
+              }
+
+              &:nth-child(3) {
+                font-size: 12px !important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
   .main-content-homepage {
     main {
       .region-content-homepage-content {
@@ -1300,7 +1173,34 @@
                 &last-projects-last-projects {
                   .contextual-region {
                     .view-last-projects {
-                      .view-content
+                      .view-content {
+                        padding: 0 10px;
+                        padding-top: 50px;
+                        justify-content: center;
+
+                        .views-row {
+                          margin-right: 25px;
+                          margin-left: 25px;
+                          margin-bottom: 25px;
+                        }
+                      }
+                    }
+                  }
+                }
+
+                &last-teams-last-teams {
+                  .contextual-region {
+                    .view-last-teams {
+                      .view-content {
+                        padding: 0 10px;
+                        justify-content: center;
+
+                        .views-row {
+                          margin-right: 25px;
+                          margin-left: 25px;
+                          margin-bottom: 25px;
+                        }
+                      }
                     }
                   }
                 }
@@ -1312,3 +1212,27 @@
     }
   }
 }
+
+@include small {
+  .top-page-banner-is {
+    .banner {
+      .region-banner {
+        .block-block-content {
+          display: flex;
+          justify-content: center;
+
+          .field--name-body {
+            display: flex;
+            text-align: center;
+            flex-direction: column;
+            margin-bottom: 110px !important;
+            margin-top: 100px !important;
+            width: 200px !important;
+            min-width: initial !important;
+            max-width: initial !important;
+          }
+        }
+      }
+    }
+  }
+};
