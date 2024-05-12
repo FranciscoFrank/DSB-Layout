@@ -347,6 +347,11 @@
             display: none;
           }
 
+          .search-block-form {
+            margin-right: 0 !important;
+            width: 20%;
+          }
+
           #block-burger-menu-icon {
             display: block;
           }
@@ -363,8 +368,60 @@
         padding-top: 0 !important;
 
         .region-header {
+          .block-block-content {
+            padding: 16px;
+
+            .field--name-body {
+              p {
+                a {
+                  &:first-child {
+                    font-size: 23px;
+                    line-height: 1;
+                  }
+
+                  &:last-child {
+                    font-size: 10px;
+                  }
+                }
+              }
+            }
+          }
+
           .block-social-media-links {
             display: none;
+          }
+
+          .search-block-form {
+            width: 30%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include x-small {
+  .top-page-banner-is, .top-page-banner-not {
+    header {
+      .header {
+        .region-header {
+          .block-block-content {
+            padding: 16px;
+
+            .field--name-body {
+              p {
+                a {
+                  &:first-child {
+                    font-size: 23px;
+                    line-height: 1;
+                  }
+
+                  &:last-child {
+                    font-size: 10px;
+                  }
+                }
+              }
+            }
           }
         }
       }

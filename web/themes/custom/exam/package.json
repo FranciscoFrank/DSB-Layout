@@ -18,5 +18,11 @@
   "homepage": "https://github.com/FranciscoFrank/DSB-Theme#readme",
   "devDependencies": {
     "gulp-clean-css": "^4.3.0"
+  },
+  "dependencies": {
+    "gulp": "^5.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.77.1"
   }
 }

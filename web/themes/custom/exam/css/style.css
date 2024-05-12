@@ -161,7 +161,7 @@ p {
 h2 {
   text-transform: uppercase;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 0 auto !important;
   font-size: 32px;
   position: relative;
   text-align: center;
@@ -188,10 +188,17 @@ h2::before {
     max-width: 40vw;
   }
 }
-#block-cheeseburger-menu .cheeseburger-menu__main-navigation-area div ul li .in-active-trail.is-active {
+.block-cheeseburger-menu-trigger {
+  padding: 20px;
+}
+
+.block-cheeseburger-menu {
+  display: none;
+}
+.block-cheeseburger-menu .cheeseburger-menu__main-navigation-area div ul li .in-active-trail {
   position: relative;
 }
-#block-cheeseburger-menu .cheeseburger-menu__main-navigation-area div ul li .in-active-trail.is-active:before {
+.block-cheeseburger-menu .cheeseburger-menu__main-navigation-area div ul li .in-active-trail:before {
   position: absolute;
   content: " ";
   width: 100%;
@@ -199,7 +206,25 @@ h2::before {
   height: 10px;
   background-color: #6A93C0;
 }
+.block-cheeseburger-menu .cheeseburger-menu__main-navigation-area .block-social-media-links-block.duplicated {
+  display: block !important;
+}
+.block-cheeseburger-menu .cheeseburger-menu__main-navigation-area .block-social-media-links-block.duplicated ul {
+  display: flex !important;
+  justify-content: center;
+}
+.block-cheeseburger-menu .cheeseburger-menu__main-navigation-area .block-social-media-links-block.duplicated ul li {
+  padding: 0 10px !important;
+}
+.block-cheeseburger-menu .cheeseburger-menu__main-navigation-area .block-social-media-links-block.duplicated ul li a span::before {
+  font-size: 24px;
+}
 
+@media only all and (max-width: 980px) {
+  .block-cheeseburger-menu {
+    display: block;
+  }
+}
 .top-page-banner-is header, .top-page-banner-not header {
   max-width: 1220px;
   margin: 0 auto;
@@ -458,6 +483,10 @@ h2::before {
   .top-page-banner-is header .header .region-header #block-main-navigation, .top-page-banner-not header .header .region-header #block-main-navigation {
     display: none;
   }
+  .top-page-banner-is header .header .region-header .search-block-form, .top-page-banner-not header .header .region-header .search-block-form {
+    margin-right: 0 !important;
+    width: 20%;
+  }
   .top-page-banner-is header .header .region-header #block-burger-menu-icon, .top-page-banner-not header .header .region-header #block-burger-menu-icon {
     display: block;
   }
@@ -466,8 +495,33 @@ h2::before {
   .top-page-banner-is header .header, .top-page-banner-not header .header {
     padding-top: 0 !important;
   }
+  .top-page-banner-is header .header .region-header .block-block-content, .top-page-banner-not header .header .region-header .block-block-content {
+    padding: 16px;
+  }
+  .top-page-banner-is header .header .region-header .block-block-content .field--name-body p a:first-child, .top-page-banner-not header .header .region-header .block-block-content .field--name-body p a:first-child {
+    font-size: 23px;
+    line-height: 1;
+  }
+  .top-page-banner-is header .header .region-header .block-block-content .field--name-body p a:last-child, .top-page-banner-not header .header .region-header .block-block-content .field--name-body p a:last-child {
+    font-size: 10px;
+  }
   .top-page-banner-is header .header .region-header .block-social-media-links, .top-page-banner-not header .header .region-header .block-social-media-links {
     display: none;
+  }
+  .top-page-banner-is header .header .region-header .search-block-form, .top-page-banner-not header .header .region-header .search-block-form {
+    width: 30%;
+  }
+}
+@media only all and (max-width: 375px) {
+  .top-page-banner-is header .header .region-header .block-block-content, .top-page-banner-not header .header .region-header .block-block-content {
+    padding: 16px;
+  }
+  .top-page-banner-is header .header .region-header .block-block-content .field--name-body p a:first-child, .top-page-banner-not header .header .region-header .block-block-content .field--name-body p a:first-child {
+    font-size: 23px;
+    line-height: 1;
+  }
+  .top-page-banner-is header .header .region-header .block-block-content .field--name-body p a:last-child, .top-page-banner-not header .header .region-header .block-block-content .field--name-body p a:last-child {
+    font-size: 10px;
   }
 }
 .footer {

@@ -1,4 +1,10 @@
-#block-cheeseburger-menu {
+.block-cheeseburger-menu-trigger {
+  padding: 20px;
+}
+
+.block-cheeseburger-menu {
+  display: none;
+
   .cheeseburger-menu__main-navigation-area {
     div {
       ul {
@@ -18,6 +24,32 @@
         }
       }
     }
+
+    .block-social-media-links-block.duplicated {
+      display: block !important;
+
+      ul {
+        display: flex !important;
+        justify-content: center;
+
+        li {
+          padding: 0 10px !important;
+
+          a {
+            span {
+              &::before {
+                font-size: 24px;
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }
+
+@include large {
+  .block-cheeseburger-menu {
+    display: block;
+  }
 }
