@@ -56,9 +56,7 @@
 
             .block-views-block {
               &about-about {
-                display: none;
-
-                .contextual-region {
+                div {
                   .view-about {
                     .view-content {
                       max-width: 1220px;
@@ -161,14 +159,14 @@
               }
 
               &last-services-last-services {
-                margin: 105px 0;
+                margin: 105px 0 !important;
 
                 h2 {
                   font-weight: bold;
-                  margin-bottom: 85px;
+                  margin-bottom: 85px !important;
                 }
 
-                .contextual-region {
+                div {
                   .view-last-services {
                     .view-content {
                       max-width: 1220px;
@@ -267,10 +265,10 @@
               &last-projects-last-projects {
                 h2 {
                   font-weight: 400;
-                  margin-bottom: 25px;
+                  margin-bottom: 25px !important;
                 }
 
-                .contextual-region {
+                div {
                   .view-last-projects {
                     padding-bottom: 90px;
                     background: repeating-linear-gradient(-45deg, #fff, #fff 6px, rgba(200,200,200,0.3) 6px, rgba(200,200,200,0.3) 8px);
@@ -404,10 +402,10 @@
 
                 h2 {
                   font-weight: bold;
-                  margin-bottom: 35px;
+                  margin-bottom: 35px !important;
                 }
 
-                .contextual-region {
+                div {
                   .view-last-teams {
                     .view-content {
                       padding: 0 10px;
@@ -539,11 +537,11 @@
 
               &last-news-last-news {
                 h2 {
-                  margin-bottom: 20px;
+                  margin-bottom: 20px !important;
                   font-weight: bold;
                 }
 
-                .contextual-region {
+                div {
                   .view-last-news {
                     padding-bottom: 85px;
                     background: repeating-linear-gradient(-45deg, #fff, #fff 6px, rgba(200,200,200,0.3) 6px, rgba(200,200,200,0.3) 8px);
@@ -836,14 +834,14 @@
                 margin-bottom: 130px;
 
                 h2 {
-                  margin-bottom: 65px;
+                  margin-bottom: 65px !important;
                   font-weight: bold;
                 }
 
-                .contextual-region {
+                div {
                   .view-clients {
+
                     .view-content {
-                      padding: 0 10px;
                       max-width: 1220px;
                       margin: 0 auto;
 
@@ -861,16 +859,16 @@
                                   .content {
                                     .layout {
                                       .block-layout-builder {
-                                        width: fit-content;
-
                                         &::after, &::before {
-                                          display: none;
+                                          display: none !important;
                                         }
 
                                         .field--name-field-images-clients {
-                                          img {
-                                            height: auto;
-                                            width: 140px;
+                                          a {
+                                            img {
+                                              height: auto;
+                                              width: 140px;
+                                            }
                                           }
                                         }
                                       }
@@ -934,10 +932,41 @@
             .layout {
               .block-views-block {
                 &about-about {
-                  .contextual-region {
+                  div {
                     .view-about {
                       .view-content {
                         padding: 0 10px;
+
+                        .views-row {
+                          article {
+                            .content {
+                              .layout {
+                                justify-content: center;
+                                flex-wrap: wrap;
+
+                                .block-field-block {
+                                  &nodepagetitle {
+                                    width: 100%
+                                  }
+
+                                  &nodepagebody {
+                                    width: fit-content;
+
+                                    .field--name-body {
+                                      text-align: center;
+                                      padding: 0;
+                                    }
+                                  }
+                                }
+
+                                .block-extra-field-blocknodepagelinks {
+                                  justify-content: center;
+                                  width: 100%;
+                                }
+                              }
+                            }
+                          }
+                        }
                       }
                     }
                   }
@@ -950,7 +979,7 @@
                     }
                   }
 
-                  .contextual-region {
+                  div {
                     .view-last-services {
                       .view-content {
                         padding: 0 10px;
@@ -974,7 +1003,7 @@
                     }
                   }
 
-                  .contextual-region {
+                  div {
                     .view-last-projects {
                       .view-content {
                         padding: 0 10px;
@@ -998,7 +1027,7 @@
                     }
                   }
 
-                  .contextual-region {
+                  div {
                     .view-last-teams {
                       .view-content {
                         padding: 0 10px;
@@ -1015,7 +1044,7 @@
                 }
 
                 &last-news-last-news {
-                  .contextual-region {
+                  div {
                     .view-last-news {
                       display: flex;
                       flex-direction: column;
@@ -1053,7 +1082,7 @@
                 }
 
                 &clients-slick-clients {
-                  .contextual-region {
+                  div {
                     .view-clients {
                       .view-content {
                         padding: 0 10px;
@@ -1077,7 +1106,7 @@
                                           .field--name-field-images-clients {
                                             a {
                                               img {
-                                                max-width: 130px !important;
+
                                               }
                                             }
                                           }
@@ -1136,6 +1165,32 @@
       }
     }
   }
+
+  .main-content-homepage {
+    main {
+      .region-content-homepage-content {
+        article {
+          .content {
+            .layout {
+              .block-views-block {
+                &last-services-last-services {
+                  div {
+                    .view-last-services {
+                      .view-content {
+                        .views-row {
+                          width: 45%;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 @include medium {
@@ -1176,8 +1231,54 @@
           .content {
             .layout {
               .block-views-block {
+                &about-about {
+                  div {
+                    .view-about {
+                      .view-content {
+                        .views-row {
+                          article {
+                            .content {
+                              .layout {
+                                .block-field-block {
+                                  &nodepagetitle {
+                                    span {
+                                      font-size: 26px;
+                                    }
+                                  }
+
+                                  &nodepagebody {
+                                    margin-bottom: 7px;
+
+                                    .field--name-body {
+                                      font-size: 16px;
+                                      line-height: 1;
+                                    }
+                                  }
+                                }
+
+                                .block-extra-field-blocknodepagelinks {
+                                  .node--links {
+                                    ul {
+                                      li {
+                                        a {
+                                          font-size: 14px;
+                                          padding: 0.5px 5px;
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+
                 &last-services-last-services {
-                  .contextual-region {
+                  div {
                     .view-last-services {
                       .view-content {
                         .views-row {
@@ -1189,7 +1290,7 @@
                 }
 
                 &last-projects-last-projects {
-                  .contextual-region {
+                  div {
                     .view-last-projects {
                       .view-content {
                         padding: 0 10px;
@@ -1207,7 +1308,7 @@
                 }
 
                 &last-teams-last-teams {
-                  .contextual-region {
+                  div {
                     .view-last-teams {
                       .view-content {
                         padding: 0 10px;
@@ -1253,5 +1354,69 @@
       }
     }
   }
+
+  .main-content-homepage {
+    main {
+      .region-content-homepage-content {
+        article {
+          .content {
+            .layout {
+              .block-views-block {
+                &about-about {
+                  div {
+                    .view-about {
+                      .view-content {
+                        .views-row {
+                          article {
+                            .content {
+                              .layout {
+                                justify-content: center;
+                                flex-wrap: wrap;
+
+                                .block-field-block {
+                                  &nodepagetitle {
+                                    span {
+                                      font-size: 24px;
+                                    }
+                                  }
+
+                                  &nodepagebody {
+                                    margin-bottom: 7px;
+
+                                    .field--name-body {
+                                      font-size: 14px;
+                                      line-height: 1;
+                                    }
+                                  }
+                                }
+
+                                .block-extra-field-blocknodepagelinks {
+                                  .node--links {
+                                    ul {
+                                      li {
+                                        a {
+                                          font-size: 12px;
+                                          padding: 0.5px 5px;
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
+
 

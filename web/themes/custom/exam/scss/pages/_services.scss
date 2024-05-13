@@ -3,10 +3,10 @@
     .region-content-services {
       .region-content {
         padding: 0;
-        width: 1220px;
+        max-width: 1220px;
         margin: 0 auto;
 
-        .contextual-region {
+        article {
           .content {
             .layout {
               .block-layout-builder:nth-of-type(1) {
@@ -20,7 +20,7 @@
               }
 
               .block-views {
-                .contextual-region {
+                div {
                   .view-all-services {
                     .view-content {
                       display: flex;
@@ -121,3 +121,104 @@
     }
   }
 }
+
+@include x-large {
+  .main-content {
+    main {
+      .region-content-services {
+        .region-content {
+          article {
+            .content {
+              .layout {
+                .block-views {
+                  div {
+                    .view-all-services {
+                      .view-content {
+                        padding: 0 10px;
+                        justify-content: center;
+
+                        .views-row {
+                          margin-right: 15px;
+                          margin-left: 15px;
+                          margin-bottom: 25px;
+                          width: 30%;
+
+                          article {
+                            .content {
+                              .layout {
+                                margin-bottom: 35px !important;
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include large {
+  .main-content {
+    main {
+      .region-content-services {
+        .region-content {
+          article {
+            .content {
+              .layout {
+                .block-views {
+                  div {
+                    .view-all-services {
+                      .view-content {
+                        .views-row {
+                          width: 45%;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+};
+
+@include medium {
+  .main-content {
+    main {
+      .region-content-services {
+        .region-content {
+          article {
+            .content {
+              .layout {
+                .block-views {
+                  div {
+                    .view-all-services {
+                      .view-content {
+                        .views-row {
+                          width: 100%;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+

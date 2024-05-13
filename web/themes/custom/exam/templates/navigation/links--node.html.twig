@@ -17,7 +17,7 @@
 
             {% if '/about' in link_url %}
               <a href="{{ link_url }}" rel="tag">More details</a>
-            {% elseif '/projects' in link_url %}
+            {% elseif '/projects' in link_url and '/projects/' in link_url %}
               <a href="{{ link_url }}" rel="tag">Details</a>
             {% elseif '/team' in link_url %}
               <a href="{{ link_url }}" rel="tag">Look at me</a>
@@ -43,9 +43,9 @@
         {%- for item in links -%}
           <li{{ item.attributes }}>
             {% if item.link %}
-              {% if '/team' in currentUrl %}
+              {% if '/team' in currentUrl and '/team/' in currentUrl %}
                 <a href="{{ item.link['#url'] }}" rel="tag">Look at me</a>
-              {% elseif '/projects' in currentUrl %}
+              {% elseif '/projects' in currentUrl and '/projects/' in currentUrl%}
                 <a href="{{ item.link['#url'] }}" rel="tag">Details</a>
               {% else %}
                 <a href="{{ item.link['#url'] }}" rel="tag">Read more</a>

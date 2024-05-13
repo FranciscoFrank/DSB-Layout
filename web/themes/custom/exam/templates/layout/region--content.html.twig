@@ -28,16 +28,20 @@
   <div class="region region-content-simple-projects">
     {{ content }}
   </div>
-  {% elseif '/login' in currentUrl %}
-    <div class="region region-content-login-page">
-      {{ content }}
-    </div>
+{% elseif '/login' in currentUrl %}
+  <div class="region region-content-login-page">
+    {{ content }}
+  </div>
 {% elseif '/homepage' in currentUrl %}
   <div class="region region-content-homepage-content">
     {{ content }}
   </div>
-{% else %}
-  <div class="region region-content">
+{% elseif '/search' in currentUrl %}
+  <div class="region region-content-search-page">
     {{ content }}
   </div>
+  {% else %}
+    <div class="region region-content">
+      {{ content }}
+    </div>
 {% endif %}

@@ -1,7 +1,11 @@
 .main-content {
   main {
     .region-content {
-      .region-content {
+      .region-content-search-page {
+        width: 1220px;
+        margin: 0 auto;
+        margin-top: 50px;
+
         .search-form {
           margin-bottom: 30px;
 
@@ -36,16 +40,23 @@
         }
 
         h2 {
-          font-size: 36px;
+          font-size: 32px;
           color: $third-color;
-          margin-bottom: 0;
+          margin: 0 !important;
+
+          &::before, &::after {
+            width: 35%;
+          }
         }
 
         .item-list {
           h3 {
-            font-size: 36px;
+            font-size: 32px;
+            width: fit-content;
             color: $third-color;
-            margin-bottom: 0;
+            margin: 55px auto;
+            padding: 10px 15px;
+            border: 1px solid $third-color;
           }
 
           .search-results {

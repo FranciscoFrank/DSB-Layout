@@ -76,8 +76,10 @@
               li {
                 &:first-child {
                   a {
+                    color: transparent;
                     background-repeat: no-repeat;
-                    padding: 0;
+                    padding: 0 10px;
+                    justify-content: center;
                     display: flex;
                     background-position: center;
                   }

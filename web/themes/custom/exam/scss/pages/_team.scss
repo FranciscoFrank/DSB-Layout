@@ -6,7 +6,7 @@
         width: 1220px;
         margin: 0 auto;
 
-        .contextual-region {
+        article {
           .content {
             .layout {
               .block-layout-builder:nth-of-type(1) {
@@ -20,7 +20,7 @@
               }
 
               .block-views {
-                .contextual-region {
+                div {
                   .view-all-team {
                     .view-content {
                       display: flex;
