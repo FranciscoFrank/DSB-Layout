@@ -58,7 +58,6 @@ p {
 }
 .block-social-media-links-block .social-media-links--platforms, .block-layout-builder .social-media-links--platforms {
   display: block !important;
-  margin: 0 10px;
 }
 .block-social-media-links-block .social-media-links--platforms li, .block-layout-builder .social-media-links--platforms li {
   display: inline-block !important;
@@ -170,8 +169,7 @@ h2::before, h2::after {
   content: " ";
   top: 50%;
   position: absolute;
-  width: 40vw;
-  max-width: 40vw;
+  width: 42%;
   height: 1px;
   background-color: #000;
 }
@@ -182,12 +180,6 @@ h2::before {
   left: 0;
 }
 
-@media only all and (max-width: 1220px) {
-  h2::before, h2::after {
-    width: 40vw;
-    max-width: 40vw;
-  }
-}
 .block-cheeseburger-menu-trigger {
   padding: 20px;
 }
@@ -325,6 +317,9 @@ h2::before {
   bottom: 0;
   height: 10px;
   background-color: #6A93C0;
+}
+.top-page-banner-is header .header .region-header .block-social-media-links-block .platforms, .top-page-banner-not header .header .region-header .block-social-media-links-block .platforms {
+  margin: 0 10px;
 }
 .top-page-banner-is header .header .region-header .search-block-form, .top-page-banner-not header .header .region-header .search-block-form {
   margin-right: 25px;
@@ -1604,6 +1599,9 @@ h2::before {
   .main-content-homepage main .region-content-homepage-content article .content .layout .block-views-blockabout-about .contextual-region .view-about .view-content {
     padding: 0 10px;
   }
+  .main-content-homepage main .region-content-homepage-content article .content .layout .block-views-blocklast-services-last-services h2::before, .main-content-homepage main .region-content-homepage-content article .content .layout .block-views-blocklast-services-last-services h2::after {
+    width: 40%;
+  }
   .main-content-homepage main .region-content-homepage-content article .content .layout .block-views-blocklast-services-last-services .contextual-region .view-last-services .view-content {
     padding: 0 10px;
     justify-content: center;
@@ -1614,6 +1612,9 @@ h2::before {
     margin-bottom: 25px;
     width: 30%;
   }
+  .main-content-homepage main .region-content-homepage-content article .content .layout .block-views-blocklast-projects-last-projects h2::before, .main-content-homepage main .region-content-homepage-content article .content .layout .block-views-blocklast-projects-last-projects h2::after {
+    width: 40%;
+  }
   .main-content-homepage main .region-content-homepage-content article .content .layout .block-views-blocklast-projects-last-projects .contextual-region .view-last-projects .view-content {
     padding: 0 10px;
     padding-top: 50px;
@@ -1623,6 +1624,9 @@ h2::before {
     margin-right: 25px;
     margin-left: 25px;
     margin-bottom: 25px;
+  }
+  .main-content-homepage main .region-content-homepage-content article .content .layout .block-views-blocklast-teams-last-teams h2::before, .main-content-homepage main .region-content-homepage-content article .content .layout .block-views-blocklast-teams-last-teams h2::after {
+    width: 40%;
   }
   .main-content-homepage main .region-content-homepage-content article .content .layout .block-views-blocklast-teams-last-teams .contextual-region .view-last-teams .view-content {
     padding: 0 10px;

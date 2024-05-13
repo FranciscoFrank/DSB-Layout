@@ -944,6 +944,12 @@
                 }
 
                 &last-services-last-services {
+                  h2 {
+                    &::before, &::after {
+                      width: 40%;
+                    }
+                  }
+
                   .contextual-region {
                     .view-last-services {
                       .view-content {
@@ -962,6 +968,12 @@
                 }
 
                 &last-projects-last-projects {
+                  h2 {
+                    &::before, &::after {
+                      width: 40%;
+                    }
+                  }
+
                   .contextual-region {
                     .view-last-projects {
                       .view-content {
@@ -980,6 +992,12 @@
                 }
 
                 &last-teams-last-teams {
+                  h2 {
+                    &::before, &::after {
+                      width: 40%;
+                    }
+                  }
+
                   .contextual-region {
                     .view-last-teams {
                       .view-content {

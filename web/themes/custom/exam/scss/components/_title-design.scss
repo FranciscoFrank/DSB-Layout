@@ -10,8 +10,7 @@ h2 {
     content: ' ';
     top: 50%;
     position: absolute;
-    width: 40vw;
-    max-width: 40vw;
+    width: 42%;
     height: 1px;
     background-color: #000;
   }
@@ -22,15 +21,6 @@ h2 {
 
   &::before {
     left: 0;
-  }
-}
-
-@include x-large {
-  h2 {
-    &::before, &::after {
-      width: 40vw;
-      max-width: 40vw;
-    }
   }
 }
 
