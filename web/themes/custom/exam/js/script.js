@@ -8,27 +8,26 @@ document.addEventListener('DOMContentLoaded', function() {
       if (!navigationArea) return false;
 
       let existingSocialMediaBlock = navigationArea.querySelector('#block-exam-socialmedialinks');
-      if (!existingSocialMediaBlock) {
-        existingSocialMediaBlock = socialMediaBlock.cloneNode(true);
-        existingSocialMediaBlock.classList.add('duplicated');
-        navigationArea.appendChild(existingSocialMediaBlock);
+      if (window.innerWidth > 576) {
+        if (existingSocialMediaBlock) {
+          existingSocialMediaBlock.remove();
+          existingSocialMediaBlock = null;
+        }
       } else {
-        existingSocialMediaBlock.classList.add('duplicated');
+        if (!existingSocialMediaBlock) {
+          existingSocialMediaBlock = socialMediaBlock.cloneNode(true);
+          existingSocialMediaBlock.classList.add('duplicated');
+          navigationArea.appendChild(existingSocialMediaBlock);
+        } else {
+          existingSocialMediaBlock.classList.add('duplicated');
+        }
       }
 
       return true;
     }
 
     function checkAndAddBlock() {
-      if (window.innerWidth <= 576 && !hasSocialMediaBlockInBurgerMenu()) {
-        const socialMediaBlock = document.getElementById('block-exam-socialmedialinks');
-        if (!socialMediaBlock) return;
-
-        const navigationArea = document.querySelector('.cheeseburger-menu__main-navigation-area');
-        if (!navigationArea) return;
-
-        navigationArea.appendChild(socialMediaBlock);
-      }
+      hasSocialMediaBlockInBurgerMenu();
     }
 
     checkAndAddBlock();
@@ -39,6 +38,7 @@ document.addEventListener('DOMContentLoaded', function() {
     addSocialMediaLinksToBurgerMenu();
   };
 });
+
 
 document.addEventListener('DOMContentLoaded', function() {
   const links = document.querySelectorAll('a');
@@ -60,4 +60,3 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 });
-

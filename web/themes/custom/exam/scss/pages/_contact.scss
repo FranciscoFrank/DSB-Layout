@@ -3,7 +3,7 @@
     .region-content-contacts {
       .region-content {
         padding: 0;
-        width: 1220px;
+        max-width: 1220px;
         margin: 0 auto;
 
         article {
@@ -111,6 +111,30 @@
               }
             }
           }
+        }
+      }
+    }
+  }
+}
+
+@include x-large {
+  .main-content {
+    main {
+      .region-content-contacts {
+        .region-content {
+          padding: 0 10px;
+        }
+      }
+    }
+  }
+}
+
+@include medium {
+  .main-content {
+    main {
+      .region-content-contacts {
+        .region-content {
+          padding: 0 10px;
         }
       }
     }

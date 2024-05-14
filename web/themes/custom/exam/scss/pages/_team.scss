@@ -2,10 +2,6 @@
   main {
     .region-content-team {
       .region-content {
-        padding: 0;
-        width: 1220px;
-        margin: 0 auto;
-
         article {
           .content {
             .layout {
@@ -23,20 +19,14 @@
                 div {
                   .view-all-team {
                     .view-content {
+                      padding: 0 10px;
+                      max-width: 1220px;
+                      margin: 0 auto;
                       display: flex;
                       flex-wrap: wrap;
+                      justify-content: space-between;
 
                       .views-row {
-                        margin: 0 10px;
-
-                        &:nth-child(4n+1) {
-                          margin-left: 0;
-                        }
-
-                        &:nth-child(4n) {
-                          margin-right: 0;
-                        }
-
                         article {
                           .content {
                             .layout {
@@ -85,7 +75,10 @@
 
                                     li {
                                       a {
+                                        font-size: 16px;
                                         padding: 4px;
+                                        font-weight: 400;
+                                        text-transform: uppercase;
                                         background-color: $fourth-color;
                                         color: $main-color;
                                         transition: background-color 0.3s ease;
@@ -101,9 +94,12 @@
                             }
 
                             .row {
+                              --bs-gutter-x: 0;
                               margin-top: 25px;
 
                               .col-sm-6 {
+                                padding: 0 !important;
+
                                 &:nth-child(1) {
                                   width: 60%;
 
@@ -144,6 +140,72 @@
                               }
                             }
                           }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include x-large {
+  .main-content {
+    main {
+      .region-content-team {
+        .region-content {
+          article {
+            .content {
+              .layout {
+                .block-views {
+                  div {
+                    .view-all-team {
+                      .view-content {
+                        padding: 0 10px;
+                        justify-content: center;
+
+                        .views-row {
+                          margin-right: 25px;
+                          margin-left: 25px;
+                          margin-bottom: 25px;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include medium {
+  .main-content {
+    main {
+      .region-content-team {
+        .region-content {
+          article {
+            .content {
+              .layout {
+                .block-views {
+                  div {
+                    .view-all-team {
+                      .view-content {
+                        padding: 0 10px;
+                        justify-content: center;
+
+                        .views-row {
+                          margin-right: 25px;
+                          margin-left: 25px;
+                          margin-bottom: 25px;
                         }
                       }
                     }

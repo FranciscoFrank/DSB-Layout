@@ -20,7 +20,7 @@
         .block-block-content {
           background-color: $fourth-color;
           text-align: center;
-          padding: 31px;
+          padding: 26px;
 
           .field--name-body {
             p {
@@ -41,6 +41,7 @@
                 }
 
                 &:first-child {
+                  line-height: 1.1;
                   font-family: $FirstFocusFont, sans-serif;
                   color: $first-color;
                   font-size: 36px;
@@ -420,16 +421,21 @@
               p {
                 a {
                   &:first-child {
-                    font-size: 23px;
+                    font-size: 20px;
                     line-height: 1;
                   }
 
                   &:last-child {
-                    font-size: 10px;
+                    font-size: 9px;
                   }
                 }
               }
             }
+          }
+
+          .search-block-form {
+            margin-right: 25px;
+            width: 35%;
           }
         }
       }

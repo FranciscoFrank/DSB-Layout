@@ -3,7 +3,7 @@
     .region-content-clients {
       .region-content {
         padding: 0;
-        width: 1220px;
+        max-width: 1220px;
         margin: 0 auto;
 
         article {
@@ -43,6 +43,55 @@
                                       img {
                                         height: auto;
                                         width: 300px;
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include medium {
+  .main-content {
+    main {
+      .region-content-clients {
+        .region-content {
+          article {
+            .content {
+              .layout {
+                .block-views {
+                  div {
+                    .view-all-clients {
+                      .view-content {
+                        justify-content: center;
+
+                        .views-row {
+                          width: fit-content;
+
+                          article {
+                            .content {
+                              .layout {
+                                .block-layout-builder {
+                                  &:nth-child(1) {
+                                    .field--name-field-images-clients {
+                                      a {
+                                        img {
+                                          height: auto;
+                                          width: 260px;
+                                        }
                                       }
                                     }
                                   }

@@ -465,7 +465,10 @@
 
                                     li {
                                       a {
+                                        font-size: 16px;
                                         padding: 4px;
+                                        font-weight: 400;
+                                        text-transform: uppercase;
                                         background-color: $fourth-color;
                                         color: $main-color;
                                         transition: background-color 0.3s ease;
@@ -554,6 +557,9 @@
 
                       .views-exposed-form {
                         .form--inline {
+                          width: fit-content;
+                          background-color: $second-color;
+                          padding: 2.5px;
                           display: flex;
 
                           .form-wrapper {
@@ -594,6 +600,15 @@
                           }
                         }
                       }
+                    }
+
+                    .view-empty {
+                      text-transform: uppercase;
+                      width: fit-content;
+                      margin: 10px auto;
+                      padding: 10px 15px;
+                      max-width: 1220px;
+                      background-color: $main-color;
                     }
 
                     .view-content {
@@ -669,7 +684,7 @@
                                     }
 
                                     &:nth-child(3) {
-                                      line-height: 1;
+                                      line-height: 1.5;
                                       font-size: $small;
                                       color: $second-color;
                                     }
@@ -1320,6 +1335,15 @@
                           margin-bottom: 25px;
                         }
                       }
+                    }
+                  }
+                }
+
+                &last-news-last-news {
+                  div {
+                    .view-empty {
+                      font-size: 18px;
+                      line-height: 1;
                     }
                   }
                 }
