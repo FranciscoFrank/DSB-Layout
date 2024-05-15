@@ -41,7 +41,7 @@
                 }
 
                 &:first-child {
-                  line-height: 1.1;
+                  line-height: 1.1 !important;
                   font-family: $FirstFocusFont, sans-serif;
                   color: $first-color;
                   font-size: 36px;

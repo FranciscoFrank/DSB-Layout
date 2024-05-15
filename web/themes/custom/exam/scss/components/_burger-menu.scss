@@ -1,11 +1,23 @@
 .block-cheeseburger-menu-trigger {
   padding: 20px;
+  z-index: 15 !important;
 }
 
 .block-cheeseburger-menu {
+  z-index: 9999;
   display: none;
 
+  .cheeseburger-menu__side-menu {
+    .cheeseburger-menu__side-trigger {
+      min-height: fit-content !important;
+      height: fit-content !important;
+      padding-top: 40px;
+    }
+  }
+
   .cheeseburger-menu__main-navigation-area {
+    position: relative;
+    padding-top: 35px;
 
     & > div {
       border-bottom: none;
@@ -40,6 +52,8 @@
     }
 
     .block-social-media-links-block.duplicated {
+      position: absolute;
+      bottom: 0;
       display: block !important;
 
       ul {

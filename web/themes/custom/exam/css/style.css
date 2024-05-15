@@ -182,10 +182,21 @@ h2::before {
 
 .block-cheeseburger-menu-trigger {
   padding: 20px;
+  z-index: 15 !important;
 }
 
 .block-cheeseburger-menu {
+  z-index: 9999;
   display: none;
+}
+.block-cheeseburger-menu .cheeseburger-menu__side-menu .cheeseburger-menu__side-trigger {
+  min-height: fit-content !important;
+  height: fit-content !important;
+  padding-top: 40px;
+}
+.block-cheeseburger-menu .cheeseburger-menu__main-navigation-area {
+  position: relative;
+  padding-top: 35px;
 }
 .block-cheeseburger-menu .cheeseburger-menu__main-navigation-area > div {
   border-bottom: none;
@@ -206,6 +217,8 @@ h2::before {
   position: relative;
 }
 .block-cheeseburger-menu .cheeseburger-menu__main-navigation-area .block-social-media-links-block.duplicated {
+  position: absolute;
+  bottom: 0;
   display: block !important;
 }
 .block-cheeseburger-menu .cheeseburger-menu__main-navigation-area .block-social-media-links-block.duplicated ul {
@@ -270,7 +283,7 @@ h2::before {
   text-decoration: none;
 }
 .top-page-banner-is header .header .region-header .block-block-content .field--name-body p a:first-child, .top-page-banner-not header .header .region-header .block-block-content .field--name-body p a:first-child {
-  line-height: 1.1;
+  line-height: 1.1 !important;
   font-family: "Nexa Slab Bold FREE", sans-serif;
   color: #6A93C0;
   font-size: 36px;
@@ -526,7 +539,7 @@ h2::before {
     width: 30%;
   }
 }
-@media only all and (max-width: 375px) {
+@media only all and (max-width: 425px) {
   .top-page-banner-is header .header .region-header .block-block-content, .top-page-banner-not header .header .region-header .block-block-content {
     padding: 16px;
   }
@@ -565,9 +578,10 @@ h2::before {
   text-decoration: none;
 }
 .footer .region-footer .block-block-content .field--name-body p a:first-child {
+  line-height: 1.1 !important;
   font-family: "Nexa Slab Bold FREE", sans-serif;
   display: flex;
-  font-size: 38px;
+  font-size: 36px;
   justify-content: center;
   color: #6A93C0;
 }
@@ -1375,7 +1389,7 @@ h2::before {
 }
 .main-content-homepage main .region-content-homepage-content article .content .layout .block-views-blocklast-news-last-news div .view-last-news .view-filters .views-exposed-form .form--inline {
   width: fit-content;
-  background-color: #C3C3C7;
+  background-color: #ebebed;
   padding: 2.5px;
   display: flex;
 }
@@ -1563,11 +1577,13 @@ h2::before {
   padding-left: 15px;
   padding-bottom: 20px;
 }
+.main-content-homepage main .region-content-homepage-content article .content .layout .block-views-blocklast-news-last-news div .view-last-news .view-content .views-row article .content .row:nth-child(1) .bs-region--right .block-layout-builder:nth-child(7) .field--name-body {
+  line-height: 1.2;
+}
 .main-content-homepage main .region-content-homepage-content article .content .layout .block-views-blocklast-news-last-news div .view-last-news .view-content .views-row article .content .row:nth-child(1) .bs-region--right .block-layout-builder:nth-child(7) .field--name-body p {
   font-size: 14px;
   letter-spacing: 0;
   word-spacing: -1px;
-  line-height: 1;
 }
 .main-content-homepage main .region-content-homepage-content article .content .layout .block-views-blocklast-news-last-news div .view-last-news .view-content .views-row article .content .row:nth-child(1) .bs-region--right .block-layout-builder:nth-child(8) {
   border-left: 1px solid #C3C3C7;
@@ -1759,6 +1775,9 @@ h2::before {
   .top-page-banner-is .banner .region-banner .block-block-content .field--name-body p:nth-child(3) {
     font-size: 12px !important;
   }
+  .main-content-homepage main .region-content-homepage-content article .content .layout .block-views > h2::before, .main-content-homepage main .region-content-homepage-content article .content .layout .block-views > h2::after {
+    width: 35%;
+  }
   .main-content-homepage main .region-content-homepage-content article .content .layout .block-views-blocklast-services-last-services div .view-last-services .view-content .views-row {
     width: 45%;
   }
@@ -1779,6 +1798,9 @@ h2::before {
   }
   .top-page-banner-is .banner .region-banner .block-block-content .field--name-body p:nth-child(3) {
     font-size: 12px !important;
+  }
+  .main-content-homepage main .region-content-homepage-content article .content .layout .block-views > h2::before, .main-content-homepage main .region-content-homepage-content article .content .layout .block-views > h2::after {
+    width: 30%;
   }
   .main-content-homepage main .region-content-homepage-content article .content .layout .block-views-blockabout-about div .view-about .view-content .views-row article .content .layout .block-field-blocknodepagetitle span {
     font-size: 26px;
@@ -1816,9 +1838,43 @@ h2::before {
     margin-left: 25px;
     margin-bottom: 25px;
   }
-  .main-content-homepage main .region-content-homepage-content article .content .layout .block-views-blocklast-news-last-news div .view-empty {
+  .main-content-homepage main .region-content-homepage-content article .content .layout .block-views-blocklast-news-last-news div .view-last-news .view-empty {
     font-size: 18px;
     line-height: 1;
+  }
+  .main-content-homepage main .region-content-homepage-content article .content .layout .block-views-blocklast-news-last-news div .view-last-news .view-content .views-row article .content .row {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .main-content-homepage main .region-content-homepage-content article .content .layout .block-views-blocklast-news-last-news div .view-last-news .view-content .views-row article .content .row .bs-region--left {
+    padding: 0 !important;
+    padding-bottom: 15px !important;
+    width: 100% !important;
+  }
+  .main-content-homepage main .region-content-homepage-content article .content .layout .block-views-blocklast-news-last-news div .view-last-news .view-content .views-row article .content .row .bs-region--right {
+    border-top: 1px solid #C3C3C7;
+    width: 90vw !important;
+    max-width: 100% !important;
+    padding-top: 15px !important;
+  }
+  .main-content-homepage main .region-content-homepage-content article .content .layout .block-views-blocklast-news-last-news div .view-last-news .view-content .views-row article .content .row .bs-region--right .block-layout-builder:nth-child(1) {
+    padding-left: 0 !important;
+    border-left: none !important;
+  }
+  .main-content-homepage main .region-content-homepage-content article .content .layout .block-views-blocklast-news-last-news div .view-last-news .view-content .views-row article .content .row .bs-region--right .block-layout-builder:nth-child(1) .field--name-field-images-news img {
+    height: 48px !important;
+  }
+  .main-content-homepage main .region-content-homepage-content article .content .layout .block-views-blocklast-news-last-news div .view-last-news .view-content .views-row article .content .row .bs-region--right .block-layout-builder:nth-child(6) {
+    padding-left: 0 !important;
+    border-left: none !important;
+  }
+  .main-content-homepage main .region-content-homepage-content article .content .layout .block-views-blocklast-news-last-news div .view-last-news .view-content .views-row article .content .row .bs-region--right .block-layout-builder:nth-child(7) {
+    padding-left: 0 !important;
+    border-left: none !important;
+  }
+  .main-content-homepage main .region-content-homepage-content article .content .layout .block-views-blocklast-news-last-news div .view-last-news .view-content .views-row article .content .row .bs-region--right .block-layout-builder:nth-child(8) {
+    padding-left: 0 !important;
+    border-left: none !important;
   }
 }
 @media only all and (max-width: 576px) {
@@ -1835,6 +1891,9 @@ h2::before {
     width: 200px !important;
     min-width: initial !important;
     max-width: initial !important;
+  }
+  .main-content-homepage main .region-content-homepage-content article .content .layout .block-views > h2::before, .main-content-homepage main .region-content-homepage-content article .content .layout .block-views > h2::after {
+    width: 25%;
   }
   .main-content-homepage main .region-content-homepage-content article .content .layout .block-views-blockabout-about div .view-about .view-content .views-row article .content .layout {
     justify-content: center;
@@ -1853,6 +1912,43 @@ h2::before {
   .main-content-homepage main .region-content-homepage-content article .content .layout .block-views-blockabout-about div .view-about .view-content .views-row article .content .layout .block-extra-field-blocknodepagelinks .node--links ul li a {
     font-size: 12px;
     padding: 0.5px 5px;
+  }
+  .main-content-homepage main .region-content-homepage-content article .content .layout .block-views-blocklast-teams-last-teams .view-content .views-row article .content .row:nth-child(1) .bs-region--right .block-layout-builder:nth-child(6) span {
+    line-height: 1 !important;
+    font-weight: 500;
+    font-size: 24px;
+  }
+}
+@media only all and (max-width: 425px) {
+  .main-content-homepage main .region-content-homepage-content article .content .layout .block-views > h2::before, .main-content-homepage main .region-content-homepage-content article .content .layout .block-views > h2::after {
+    width: 20%;
+  }
+  .main-content-homepage main .region-content-homepage-content article .content .layout .block-views-blocklast-news-last-news div .view-last-news .view-empty {
+    font-size: 18px;
+    line-height: 1;
+  }
+  .main-content-homepage main .region-content-homepage-content article .content .layout .block-views-blocklast-news-last-news div .view-last-news .view-content .views-row article .content {
+    padding: 0;
+  }
+  .main-content-homepage main .region-content-homepage-content article .content .layout .block-views-blocklast-news-last-news div .view-last-news .view-content .views-row article .content .row {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .main-content-homepage main .region-content-homepage-content article .content .layout .block-views-blocklast-news-last-news div .view-last-news .view-content .views-row article .content .row .bs-region--right {
+    justify-content: center;
+  }
+  .main-content-homepage main .region-content-homepage-content article .content .layout .block-views-blocklast-news-last-news div .view-last-news .view-content .views-row article .content .row .bs-region--right .block-layout-builder:nth-child(1) {
+    padding-bottom: 10px;
+    width: 100% !important;
+  }
+  .main-content-homepage main .region-content-homepage-content article .content .layout .block-views-blocklast-news-last-news div .view-last-news .view-content .views-row article .content .row .bs-region--right .block-layout-builder:nth-child(1) .field--name-field-images-news img {
+    height: 48px !important;
+  }
+  .main-content-homepage main .region-content-homepage-content article .content .layout .block-views-blocklast-news-last-news div .view-last-news .view-content .views-row article .content .row .bs-region--right .block-layout-builder:nth-child(2) {
+    margin-left: 0 !important;
+  }
+  .main-content-homepage main .region-content-homepage-content article .content .layout .block-views-blocklast-news-last-news div .view-last-news .view-content .views-row article .content .row .bs-region--right .block-layout-builder:nth-child(4) {
+    height: fit-content;
   }
 }
 .main-content main .region-content-about .region-content {
@@ -1896,7 +1992,7 @@ h2::before {
     font-size: 16px;
   }
 }
-@media only all and (max-width: 375px) {
+@media only all and (max-width: 425px) {
   .main-content main .region-content-about .region-content article .content .layout .block-field-blocknodepagebody .field--name-body p {
     font-size: 14px;
   }
@@ -2127,6 +2223,11 @@ h2::before {
     margin-bottom: 25px;
   }
 }
+.main-content main .region-content-team .region-content {
+  margin: 0 auto;
+  max-width: 1220px;
+  padding: 0;
+}
 .main-content main .region-content-team .region-content article .content .layout .block-layout-builder:nth-of-type(1)::before {
   width: 44%;
 }
@@ -2134,7 +2235,6 @@ h2::before {
   width: 44%;
 }
 .main-content main .region-content-team .region-content article .content .layout .block-views div .view-all-team .view-content {
-  padding: 0 10px;
   max-width: 1220px;
   margin: 0 auto;
   display: flex;
@@ -2178,8 +2278,8 @@ h2::before {
   margin-left: 0;
 }
 .main-content main .region-content-team .region-content article .content .layout .block-views div .view-all-team .view-content .views-row article .content .layout .block-layout-builder:nth-child(4) ul li a {
-  font-size: 16px;
-  padding: 4px;
+  font-size: 14px;
+  padding: 6px;
   font-weight: 400;
   text-transform: uppercase;
   background-color: #373645;
@@ -2515,7 +2615,12 @@ h2::before {
   bottom: 0;
   background-color: #C3C3C7;
 }
+.main-content main .region-content-contacts .region-content article .content .layout--twocol-section {
+  display: flex;
+  flex-wrap: wrap;
+}
 .main-content main .region-content-contacts .region-content article .content .layout--twocol-section .layout__region--first {
+  flex: 0 1 50%;
   padding-right: 10px;
 }
 .main-content main .region-content-contacts .region-content article .content .layout--twocol-section .layout__region--first .block-webform form .form-item {
@@ -2539,6 +2644,7 @@ h2::before {
   padding: 15px 20px;
 }
 .main-content main .region-content-contacts .region-content article .content .layout--twocol-section .layout__region--second {
+  flex: 0 1 50%;
   padding-left: 10px;
 }
 .main-content main .region-content-contacts .region-content article .content .layout--twocol-section .layout__region--second .block-layout-builder > * {
@@ -2574,6 +2680,56 @@ h2::before {
 @media only all and (max-width: 768px) {
   .main-content main .region-content-contacts .region-content {
     padding: 0 10px;
+  }
+  .main-content main .region-content-contacts .region-content article .content .layout--twocol-section .layout__region--first {
+    padding-right: 0;
+    flex: 0 1 100%;
+  }
+  .main-content main .region-content-contacts .region-content article .content .layout--twocol-section .layout__region--second {
+    flex: 0 1 100%;
+    padding-left: 0;
+  }
+}
+@media only all and (max-width: 576px) {
+  .main-content main .region-content-contacts .region-content {
+    padding: 0 10px;
+  }
+  .main-content main .region-content-contacts .region-content article .content .layout .block-layout-builder:first-of-type span {
+    padding-bottom: 10px;
+    font-size: 20px;
+  }
+  .main-content main .region-content-contacts .region-content article .content .layout .layout--twocol-section .layout__region--first .block-webform form .form-item input, .main-content main .region-content-contacts .region-content article .content .layout .layout--twocol-section .layout__region--first .block-webform form .form-item textarea {
+    font-size: 16px;
+    padding: 10px 10px;
+  }
+  .main-content main .region-content-contacts .region-content article .content .layout .layout--twocol-section .layout__region--first .block-webform form .form-item textarea {
+    height: 200px;
+  }
+  .main-content main .region-content-contacts .region-content article .content .layout .layout--twocol-section .layout__region--first .block-webform form .form-actions .webform-button--submit {
+    font-size: 16px;
+    padding: 10px 15px;
+  }
+  .main-content main .region-content-contacts .region-content article .content .layout .layout--twocol-section .layout__region--second {
+    flex: 0 1 100%;
+    padding-left: 0;
+  }
+  .main-content main .region-content-contacts .region-content article .content .layout .layout--twocol-section .layout__region--second .block-layout-builder:nth-child(1) {
+    font-size: 20px;
+  }
+  .main-content main .region-content-contacts .region-content article .content .layout .layout--twocol-section .layout__region--second .block-layout-builder:nth-child(2) {
+    font-size: 16px;
+    margin-bottom: 40px;
+  }
+  .main-content main .region-content-contacts .region-content article .content .layout .layout--twocol-section .layout__region--second .block-layout-builder:nth-child(3) {
+    width: 100%;
+  }
+  .main-content main .region-content-contacts .region-content article .content .layout .layout--twocol-section .layout__region--second .block-layout-builder:nth-child(3) .field--name-field-maps {
+    width: 100%;
+    height: 270px;
+  }
+  .main-content main .region-content-contacts .region-content article .content .layout .layout--twocol-section .layout__region--second .block-layout-builder:nth-child(3) .field--name-field-maps iframe {
+    height: 100%;
+    width: 100%;
   }
 }
 .main-content main div .region-content-node-services {

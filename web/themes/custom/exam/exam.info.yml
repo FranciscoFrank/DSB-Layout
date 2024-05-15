@@ -7,6 +7,7 @@ core_version_requirement: ^9 || ^10
 
 stylesheets-remove:
   - '@social_media_links/css/social_media_links.theme.css'
+  - '@stable9/layouts/layout_builder/twocol_section/twocol_section.css'
 
 bootstrap:
   css:

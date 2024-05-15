@@ -23,9 +23,10 @@
             text-decoration: none;
 
             &:first-child {
+              line-height: 1.1 !important;
               font-family: $FirstFocusFont, sans-serif;
               display: flex;
-              font-size: 38px;
+              font-size: 36px;
               justify-content: center;
               color: $first-color;
             }

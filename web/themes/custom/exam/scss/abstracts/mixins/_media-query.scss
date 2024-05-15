@@ -29,6 +29,12 @@
 
 
 @mixin x-small {
+  @media only all and (max-width: 425px) {
+    @content
+  }
+}
+
+@mixin xs-small {
   @media only all and (max-width: 375px) {
     @content
   }

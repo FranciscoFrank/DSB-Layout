@@ -18,6 +18,19 @@ document.addEventListener('DOMContentLoaded', function() {
           existingSocialMediaBlock = socialMediaBlock.cloneNode(true);
           existingSocialMediaBlock.classList.add('duplicated');
           navigationArea.appendChild(existingSocialMediaBlock);
+
+          // Додайте обробники подій до дублікованих посилань
+          const duplicatedLinks = existingSocialMediaBlock.querySelectorAll('a');
+          duplicatedLinks.forEach(link => {
+            link.addEventListener('click', (event) => {
+              const isExtLink = isExternal(event.currentTarget);
+
+              if (isExtLink) {
+                event.preventDefault();
+                window.open(event.currentTarget.href, '_blank');
+              }
+            });
+          });
         } else {
           existingSocialMediaBlock.classList.add('duplicated');
         }
@@ -38,7 +51,6 @@ document.addEventListener('DOMContentLoaded', function() {
     addSocialMediaLinksToBurgerMenu();
   };
 });
-
 
 document.addEventListener('DOMContentLoaded', function() {
   const links = document.querySelectorAll('a');

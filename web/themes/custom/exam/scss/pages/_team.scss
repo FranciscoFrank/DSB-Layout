@@ -2,6 +2,10 @@
   main {
     .region-content-team {
       .region-content {
+        margin: 0 auto;
+        max-width: 1220px;
+        padding: 0;
+
         article {
           .content {
             .layout {
@@ -19,7 +23,6 @@
                 div {
                   .view-all-team {
                     .view-content {
-                      padding: 0 10px;
                       max-width: 1220px;
                       margin: 0 auto;
                       display: flex;
@@ -75,8 +78,8 @@
 
                                     li {
                                       a {
-                                        font-size: 16px;
-                                        padding: 4px;
+                                        font-size: 14px;
+                                        padding: 6px;
                                         font-weight: 400;
                                         text-transform: uppercase;
                                         background-color: $fourth-color;
