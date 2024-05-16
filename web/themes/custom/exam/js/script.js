@@ -19,7 +19,6 @@ document.addEventListener('DOMContentLoaded', function() {
           existingSocialMediaBlock.classList.add('duplicated');
           navigationArea.appendChild(existingSocialMediaBlock);
 
-          // Додайте обробники подій до дублікованих посилань
           const duplicatedLinks = existingSocialMediaBlock.querySelectorAll('a');
           duplicatedLinks.forEach(link => {
             link.addEventListener('click', (event) => {
@@ -61,14 +60,27 @@ document.addEventListener('DOMContentLoaded', function() {
     return targetDomain && targetDomain !== currentDomain && !targetDomain.endsWith(currentDomain);
   }
 
-  links.forEach(link => {
-    link.addEventListener('click', (event) => {
-      const isExtLink = isExternal(event.currentTarget);
+  function handleLinkClick(link) {
+    const isExtLink = isExternal(link);
 
-      if (isExtLink) {
-        event.preventDefault();
-        window.open(event.currentTarget.href, '_blank');
-      }
+    if (isExtLink) {
+      event.preventDefault();
+      window.open(link.href, '_blank');
+    }
+  }
+
+  function checkForNewLinks() {
+    const allLinks = document.querySelectorAll('a'); // Отримуємо всі посилання
+    allLinks.forEach(link => {
+      link.classList.add('processed'); // Додаємо клас "processed" для всіх посилань
+      link.addEventListener('click', () => handleLinkClick(link));
     });
+  }
+
+  links.forEach(link => {
+    link.classList.add('processed');
+    link.addEventListener('click', () => handleLinkClick(link));
   });
-});
+
+  window.addEventListener('resize', checkForNewLinks);
+}); 

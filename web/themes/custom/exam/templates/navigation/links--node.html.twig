@@ -43,9 +43,9 @@
         {%- for item in links -%}
           <li{{ item.attributes }}>
             {% if item.link %}
-              {% if '/team' in currentUrl %}
+              {% if '/team/' in currentUrl %}
                 <a href="{{ item.link['#url'] }}" rel="tag">Look at me</a>
-              {% elseif '/projects' in currentUrl %}
+              {% elseif '/projects/' in currentUrl %}
                 <a href="{{ item.link['#url'] }}" rel="tag">Details</a>
               {% else %}
                 <a href="{{ item.link['#url'] }}" rel="tag">Read more</a>
