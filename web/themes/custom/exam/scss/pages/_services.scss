@@ -138,15 +138,13 @@
                         justify-content: center;
 
                         .views-row {
-                          margin-right: 15px;
-                          margin-left: 15px;
-                          margin-bottom: 25px;
+                          margin: 0;
                           width: 30%;
 
                           article {
                             .content {
                               .layout {
-                                margin-bottom: 35px !important;
+                                margin-bottom: 15px !important;
                               }
                             }
                           }

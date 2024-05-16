@@ -30,6 +30,8 @@
                       justify-content: space-between;
 
                       .views-row {
+                        margin: 0 10px;
+
                         article {
                           .content {
                             .layout {
@@ -46,6 +48,8 @@
 
                                   img {
                                     filter: grayscale(100%);
+                                    width: 270px;
+                                    height: auto;
                                     transition: filter 1s ease;
 
                                     &:hover {
@@ -165,18 +169,16 @@
           article {
             .content {
               .layout {
+                .block-layout-builder:nth-of-type(1) {
+                  margin-top: 35px;
+                }
+
                 .block-views {
                   div {
                     .view-all-team {
                       .view-content {
                         padding: 0 10px;
-                        justify-content: center;
-
-                        .views-row {
-                          margin-right: 25px;
-                          margin-left: 25px;
-                          margin-bottom: 25px;
-                        }
+                        justify-content: space-around;
                       }
                     }
                   }
@@ -203,13 +205,6 @@
                     .view-all-team {
                       .view-content {
                         padding: 0 10px;
-                        justify-content: center;
-
-                        .views-row {
-                          margin-right: 25px;
-                          margin-left: 25px;
-                          margin-bottom: 25px;
-                        }
                       }
                     }
                   }

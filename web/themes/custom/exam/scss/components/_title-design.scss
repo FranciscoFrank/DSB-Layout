@@ -24,3 +24,66 @@ h2 {
   }
 }
 
+@include x-large {
+  h2, .block-field-blocknodepagetitle {
+    &::before, &::after {
+      width: 40% !important;
+    }
+  }
+}
+
+@include large {
+  h2, .block-field-blocknodepagetitle {
+    &::before, &::after {
+      width: 35% !important;
+    }
+  }
+
+  .block-field-blocknodepagetitle {
+    font-size: 22px !important;
+  }
+}
+
+@include medium {
+  h2 {
+    font-size: 28px !important;
+  }
+
+  .block-field-blocknodepagetitle {
+    &::before, &::after {
+      width: 40% !important;
+    }
+  }
+}
+
+@include small {
+  h2 {
+    font-size: 26px !important;
+
+    &::before, &::after {
+      width: 30% !important;
+    }
+  }
+
+  .block-field-blocknodepagetitle {
+    &::before, &::after {
+      width: 35% !important;
+    }
+  }
+}
+
+@include x-small {
+  h2 {
+    &::before, &::after {
+      width: 25% !important;
+    }
+  }
+
+  .block-field-blocknodepagetitle {
+    font-size: 20px !important;
+
+    &::before, &::after {
+      width: 30% !important;
+    }
+  }
+}

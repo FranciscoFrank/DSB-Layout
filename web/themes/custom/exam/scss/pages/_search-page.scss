@@ -2,7 +2,7 @@
   main {
     .region-content {
       .region-content-search-page {
-        width: 1220px;
+        max-width: 1220px;
         margin: 0 auto;
         margin-top: 50px;
 
@@ -43,10 +43,6 @@
           font-size: 32px;
           color: $third-color;
           margin: 0 !important;
-
-          &::before, &::after {
-            width: 35%;
-          }
         }
 
         .item-list {

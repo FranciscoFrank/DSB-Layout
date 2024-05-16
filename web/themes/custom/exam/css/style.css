@@ -180,6 +180,49 @@ h2::before {
   left: 0;
 }
 
+@media only all and (max-width: 1220px) {
+  h2::before, h2::after, .block-field-blocknodepagetitle::before, .block-field-blocknodepagetitle::after {
+    width: 40% !important;
+  }
+}
+@media only all and (max-width: 980px) {
+  h2::before, h2::after, .block-field-blocknodepagetitle::before, .block-field-blocknodepagetitle::after {
+    width: 35% !important;
+  }
+  .block-field-blocknodepagetitle {
+    font-size: 22px !important;
+  }
+}
+@media only all and (max-width: 768px) {
+  h2 {
+    font-size: 28px !important;
+  }
+  .block-field-blocknodepagetitle::before, .block-field-blocknodepagetitle::after {
+    width: 40% !important;
+  }
+}
+@media only all and (max-width: 576px) {
+  h2 {
+    font-size: 26px !important;
+  }
+  h2::before, h2::after {
+    width: 30% !important;
+  }
+  .block-field-blocknodepagetitle::before, .block-field-blocknodepagetitle::after {
+    width: 35% !important;
+  }
+}
+@media only all and (max-width: 425px) {
+  h2::before, h2::after {
+    width: 25% !important;
+  }
+  .block-field-blocknodepagetitle {
+    font-size: 20px !important;
+  }
+  .block-field-blocknodepagetitle::before, .block-field-blocknodepagetitle::after {
+    width: 30% !important;
+  }
+}
 .block-cheeseburger-menu-trigger {
   padding: 20px;
   z-index: 15 !important;
@@ -217,6 +260,7 @@ h2::before {
   position: relative;
 }
 .block-cheeseburger-menu .cheeseburger-menu__main-navigation-area .block-social-media-links-block.duplicated {
+  margin-bottom: 100px;
   position: absolute;
   bottom: 0;
   display: block !important;
@@ -634,7 +678,7 @@ h2::before {
   }
 }
 .main-content main .region-content .region-content-search-page {
-  width: 1220px;
+  max-width: 1220px;
   margin: 0 auto;
   margin-top: 50px;
 }
@@ -666,9 +710,6 @@ h2::before {
   font-size: 32px;
   color: #000000;
   margin: 0 !important;
-}
-.main-content main .region-content .region-content-search-page h2::before, .main-content main .region-content .region-content-search-page h2::after {
-  width: 35%;
 }
 .main-content main .region-content .region-content-search-page .item-list h3 {
   font-size: 32px;
@@ -706,7 +747,7 @@ h2::before {
 }
 
 .main-content main .region-content .region-content-login-page {
-  width: 1220px;
+  max-width: 1220px;
   padding: 0;
   margin: 45px auto;
 }
@@ -723,7 +764,7 @@ h2::before {
 }
 
 .main-content main .region-content .region-content-simple-news {
-  width: 1220px;
+  max-width: 1220px;
   margin: 35px auto;
   padding: 0;
 }
@@ -894,7 +935,7 @@ h2::before {
 }
 
 .main-content main .region-content .region-content-simple-projects {
-  width: 1220px;
+  max-width: 1220px;
   margin: 0 auto;
   padding: 0;
 }
@@ -987,6 +1028,7 @@ h2::before {
 
 .top-page-banner-is {
   position: relative;
+  background-position-x: 25%;
 }
 .top-page-banner-is .banner {
   width: 970px;
@@ -1330,8 +1372,8 @@ h2::before {
   margin-left: 0;
 }
 .main-content-homepage main .region-content-homepage-content article .content .layout .block-views-blocklast-teams-last-teams div .view-last-teams .view-content .views-row article .content .layout .block-layout-builder:nth-child(4) ul li a {
-  font-size: 16px;
-  padding: 4px;
+  font-size: 14px;
+  padding: 6px;
   font-weight: 400;
   text-transform: uppercase;
   background-color: #373645;
@@ -1389,8 +1431,9 @@ h2::before {
 }
 .main-content-homepage main .region-content-homepage-content article .content .layout .block-views-blocklast-news-last-news div .view-last-news .view-filters .views-exposed-form .form--inline {
   width: fit-content;
-  background-color: #ebebed;
-  padding: 2.5px;
+  background-color: #f5f5f5;
+  padding: 5px;
+  padding-right: 15px;
   display: flex;
 }
 .main-content-homepage main .region-content-homepage-content article .content .layout .block-views-blocklast-news-last-news div .view-last-news .view-filters .views-exposed-form .form--inline .form-wrapper {
@@ -1677,9 +1720,6 @@ h2::before {
     justify-content: center;
     width: 100%;
   }
-  .main-content-homepage main .region-content-homepage-content article .content .layout .block-views-blocklast-services-last-services h2::before, .main-content-homepage main .region-content-homepage-content article .content .layout .block-views-blocklast-services-last-services h2::after {
-    width: 40%;
-  }
   .main-content-homepage main .region-content-homepage-content article .content .layout .block-views-blocklast-services-last-services div .view-last-services .view-content {
     padding: 0 10px;
     justify-content: center;
@@ -1690,9 +1730,6 @@ h2::before {
     margin-bottom: 25px;
     width: 30%;
   }
-  .main-content-homepage main .region-content-homepage-content article .content .layout .block-views-blocklast-projects-last-projects h2::before, .main-content-homepage main .region-content-homepage-content article .content .layout .block-views-blocklast-projects-last-projects h2::after {
-    width: 40%;
-  }
   .main-content-homepage main .region-content-homepage-content article .content .layout .block-views-blocklast-projects-last-projects div .view-last-projects .view-content {
     padding: 0 10px;
     padding-top: 50px;
@@ -1702,9 +1739,6 @@ h2::before {
     margin-right: 25px;
     margin-left: 25px;
     margin-bottom: 25px;
-  }
-  .main-content-homepage main .region-content-homepage-content article .content .layout .block-views-blocklast-teams-last-teams h2::before, .main-content-homepage main .region-content-homepage-content article .content .layout .block-views-blocklast-teams-last-teams h2::after {
-    width: 40%;
   }
   .main-content-homepage main .region-content-homepage-content article .content .layout .block-views-blocklast-teams-last-teams div .view-last-teams .view-content {
     padding: 0 10px;
@@ -1775,14 +1809,14 @@ h2::before {
   .top-page-banner-is .banner .region-banner .block-block-content .field--name-body p:nth-child(3) {
     font-size: 12px !important;
   }
-  .main-content-homepage main .region-content-homepage-content article .content .layout .block-views > h2::before, .main-content-homepage main .region-content-homepage-content article .content .layout .block-views > h2::after {
-    width: 35%;
-  }
   .main-content-homepage main .region-content-homepage-content article .content .layout .block-views-blocklast-services-last-services div .view-last-services .view-content .views-row {
     width: 45%;
   }
 }
 @media only all and (max-width: 768px) {
+  .top-page-banner-is {
+    background-position-x: 50%;
+  }
   .top-page-banner-is .banner .region-banner .block-block-content .field--name-body {
     min-width: 24vw !important;
     margin-bottom: 110px !important;
@@ -1794,13 +1828,11 @@ h2::before {
     font-size: 36px !important;
   }
   .top-page-banner-is .banner .region-banner .block-block-content .field--name-body p:nth-child(2) {
+    text-wrap: nowrap;
     font-size: 25px !important;
   }
   .top-page-banner-is .banner .region-banner .block-block-content .field--name-body p:nth-child(3) {
     font-size: 12px !important;
-  }
-  .main-content-homepage main .region-content-homepage-content article .content .layout .block-views > h2::before, .main-content-homepage main .region-content-homepage-content article .content .layout .block-views > h2::after {
-    width: 30%;
   }
   .main-content-homepage main .region-content-homepage-content article .content .layout .block-views-blockabout-about div .view-about .view-content .views-row article .content .layout .block-field-blocknodepagetitle span {
     font-size: 26px;
@@ -1878,22 +1910,33 @@ h2::before {
   }
 }
 @media only all and (max-width: 576px) {
+  .top-page-banner-is {
+    background-position-x: 57%;
+  }
+  .top-page-banner-is .banner {
+    padding: 0 10px;
+  }
   .top-page-banner-is .banner .region-banner .block-block-content {
     display: flex;
-    justify-content: center;
+    justify-content: left;
   }
   .top-page-banner-is .banner .region-banner .block-block-content .field--name-body {
-    display: flex;
-    text-align: center;
-    flex-direction: column;
-    margin-bottom: 110px !important;
-    margin-top: 100px !important;
-    width: 200px !important;
+    margin-bottom: 75px !important;
+    margin-top: 135px !important;
+    width: 190px !important;
     min-width: initial !important;
     max-width: initial !important;
   }
-  .main-content-homepage main .region-content-homepage-content article .content .layout .block-views > h2::before, .main-content-homepage main .region-content-homepage-content article .content .layout .block-views > h2::after {
-    width: 25%;
+  .top-page-banner-is .banner .region-banner .block-block-content .field--name-body p:nth-child(1) {
+    font-size: 32px !important;
+  }
+  .top-page-banner-is .banner .region-banner .block-block-content .field--name-body p:nth-child(2) {
+    text-wrap: nowrap;
+    font-size: 22px !important;
+  }
+  .top-page-banner-is .banner .region-banner .block-block-content .field--name-body p:nth-child(3) {
+    letter-spacing: 0;
+    font-size: 12px !important;
   }
   .main-content-homepage main .region-content-homepage-content article .content .layout .block-views-blockabout-about div .view-about .view-content .views-row article .content .layout {
     justify-content: center;
@@ -1913,15 +1956,35 @@ h2::before {
     font-size: 12px;
     padding: 0.5px 5px;
   }
-  .main-content-homepage main .region-content-homepage-content article .content .layout .block-views-blocklast-teams-last-teams .view-content .views-row article .content .row:nth-child(1) .bs-region--right .block-layout-builder:nth-child(6) span {
+  .main-content-homepage main .region-content-homepage-content article .content .layout .block-views-blocklast-news-last-news div .view-last-news .view-content .views-row article .content .row:nth-child(1) .bs-region--right .block-layout-builder:nth-child(6) span {
     line-height: 1 !important;
     font-weight: 500;
     font-size: 24px;
   }
+  .main-content-homepage main .region-content-homepage-content article .content .layout .block-views-blocklast-news-last-news div .view-last-news .view-content .views-row article .content .row:nth-child(1) .bs-region--right .block-layout-builder:nth-child(8) {
+    padding-bottom: 10px;
+  }
 }
 @media only all and (max-width: 425px) {
-  .main-content-homepage main .region-content-homepage-content article .content .layout .block-views > h2::before, .main-content-homepage main .region-content-homepage-content article .content .layout .block-views > h2::after {
-    width: 20%;
+  .top-page-banner-is {
+    background-position-x: 57%;
+  }
+  .top-page-banner-is .banner {
+    padding: 0 10px;
+  }
+  .top-page-banner-is .banner .region-banner .block-block-content .field--name-body {
+    width: 170px !important;
+  }
+  .top-page-banner-is .banner .region-banner .block-block-content .field--name-body p:nth-child(1) {
+    font-size: 32px !important;
+  }
+  .top-page-banner-is .banner .region-banner .block-block-content .field--name-body p:nth-child(2) {
+    text-wrap: nowrap;
+    font-size: 22px !important;
+  }
+  .top-page-banner-is .banner .region-banner .block-block-content .field--name-body p:nth-child(3) {
+    margin-top: 0;
+    font-size: 10px !important;
   }
   .main-content-homepage main .region-content-homepage-content article .content .layout .block-views-blocklast-news-last-news div .view-last-news .view-empty {
     font-size: 18px;
@@ -2086,13 +2149,11 @@ h2::before {
     justify-content: center;
   }
   .main-content main .region-content-services .region-content article .content .layout .block-views div .view-all-services .view-content .views-row {
-    margin-right: 15px;
-    margin-left: 15px;
-    margin-bottom: 25px;
+    margin: 0;
     width: 30%;
   }
   .main-content main .region-content-services .region-content article .content .layout .block-views div .view-all-services .view-content .views-row article .content .layout {
-    margin-bottom: 35px !important;
+    margin-bottom: 15px !important;
   }
 }
 @media only all and (max-width: 980px) {
@@ -2208,7 +2269,6 @@ h2::before {
   .main-content main .region-content-projects .region-content article .content .layout .views-element-container div .view-all-projects .view-content .views-row {
     margin-right: 25px;
     margin-left: 25px;
-    margin-bottom: 25px;
   }
 }
 @media only all and (max-width: 768px) {
@@ -2216,11 +2276,6 @@ h2::before {
     padding: 0 10px;
     padding-top: 50px;
     justify-content: center;
-  }
-  .main-content main .region-content-projects .region-content article .content .layout .views-element-container div .view-all-projects .view-content .views-row {
-    margin-right: 25px;
-    margin-left: 25px;
-    margin-bottom: 25px;
   }
 }
 .main-content main .region-content-team .region-content {
@@ -2241,6 +2296,9 @@ h2::before {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+.main-content main .region-content-team .region-content article .content .layout .block-views div .view-all-team .view-content .views-row {
+  margin: 0 10px;
+}
 .main-content main .region-content-team .region-content article .content .layout .block-views div .view-all-team .view-content .views-row article .content .layout {
   width: fit-content;
   display: flex;
@@ -2252,6 +2310,8 @@ h2::before {
 }
 .main-content main .region-content-team .region-content article .content .layout .block-views div .view-all-team .view-content .views-row article .content .layout .block-layout-builder:nth-child(1) img {
   filter: grayscale(100%);
+  width: 270px;
+  height: auto;
   transition: filter 1s ease;
 }
 .main-content main .region-content-team .region-content article .content .layout .block-views div .view-all-team .view-content .views-row article .content .layout .block-layout-builder:nth-child(1) img:hover {
@@ -2322,34 +2382,32 @@ h2::before {
 }
 
 @media only all and (max-width: 1220px) {
+  .main-content main .region-content-team .region-content article .content .layout .block-layout-builder:nth-of-type(1) {
+    margin-top: 35px;
+  }
   .main-content main .region-content-team .region-content article .content .layout .block-views div .view-all-team .view-content {
     padding: 0 10px;
-    justify-content: center;
-  }
-  .main-content main .region-content-team .region-content article .content .layout .block-views div .view-all-team .view-content .views-row {
-    margin-right: 25px;
-    margin-left: 25px;
-    margin-bottom: 25px;
+    justify-content: space-around;
   }
 }
 @media only all and (max-width: 768px) {
   .main-content main .region-content-team .region-content article .content .layout .block-views div .view-all-team .view-content {
     padding: 0 10px;
-    justify-content: center;
-  }
-  .main-content main .region-content-team .region-content article .content .layout .block-views div .view-all-team .view-content .views-row {
-    margin-right: 25px;
-    margin-left: 25px;
-    margin-bottom: 25px;
   }
 }
 .main-content main .region-content-news .region-content {
   padding: 0;
-  width: 1220px;
+  max-width: 1220px;
   margin: 0 auto;
 }
+.main-content main .region-content-news .region-content article .content .layout .block-views div .view-search-news .view-filters {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding-bottom: 25px;
+}
 .main-content main .region-content-news .region-content article .content .layout .block-views div .view-search-news .view-filters .views-exposed-form .form--inline {
-  margin-bottom: 120px;
+  width: fit-content;
+  display: flex;
 }
 .main-content main .region-content-news .region-content article .content .layout .block-views div .view-search-news .view-filters .views-exposed-form .form--inline .form-wrapper {
   margin: 0;
@@ -2548,6 +2606,113 @@ h2::before {
   background-color: #6A93C0;
 }
 
+@media only all and (max-width: 1220px) {
+  .main-content main .region-content-news .region-content article .content .layout .block-views div .view-search-news {
+    display: flex;
+    flex-direction: column;
+  }
+  .main-content main .region-content-news .region-content article .content .layout .block-views div .view-search-news .view-filters {
+    padding: 0 10px;
+    padding-bottom: 25px;
+  }
+  .main-content main .region-content-news .region-content article .content .layout .block-views div .view-search-news .view-content {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .main-content main .region-content-news .region-content article .content .layout .block-views div .view-search-news .view-content .views-row {
+    display: flex;
+    justify-content: center;
+    width: 100% !important;
+  }
+  .main-content main .region-content-news .region-content article .content .layout .block-views div .view-search-news .view-content .views-row article {
+    width: fit-content;
+  }
+  .main-content main .region-content-news .region-content article .content .layout .block-views div .view-search-news .view-content .views-row article .content {
+    padding: 10px;
+  }
+  .main-content main .region-content-news .region-content article .content .layout .block-views div .view-search-news .view-content .views-row article .content .row .bs-region--right {
+    width: 85vw !important;
+  }
+}
+@media only all and (max-width: 768px) {
+  .main-content main .region-content-news .region-content article .content .layout .block-views div .view-search-news .view-empty {
+    font-size: 18px;
+    line-height: 1;
+  }
+  .main-content main .region-content-news .region-content article .content .layout .block-views div .view-search-news .view-content .views-row article .content .row {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .main-content main .region-content-news .region-content article .content .layout .block-views div .view-search-news .view-content .views-row article .content .row .bs-region--left {
+    padding: 0 !important;
+    padding-bottom: 15px !important;
+    width: 100% !important;
+  }
+  .main-content main .region-content-news .region-content article .content .layout .block-views div .view-search-news .view-content .views-row article .content .row .bs-region--right {
+    border-top: 1px solid #C3C3C7;
+    width: 90vw !important;
+    max-width: 100% !important;
+    padding-top: 15px !important;
+  }
+  .main-content main .region-content-news .region-content article .content .layout .block-views div .view-search-news .view-content .views-row article .content .row .bs-region--right .block-layout-builder:nth-child(1) {
+    padding-left: 0 !important;
+    border-left: none !important;
+  }
+  .main-content main .region-content-news .region-content article .content .layout .block-views div .view-search-news .view-content .views-row article .content .row .bs-region--right .block-layout-builder:nth-child(1) .field--name-field-images-news img {
+    height: 48px !important;
+  }
+  .main-content main .region-content-news .region-content article .content .layout .block-views div .view-search-news .view-content .views-row article .content .row .bs-region--right .block-layout-builder:nth-child(6) {
+    padding-left: 0 !important;
+    border-left: none !important;
+  }
+  .main-content main .region-content-news .region-content article .content .layout .block-views div .view-search-news .view-content .views-row article .content .row .bs-region--right .block-layout-builder:nth-child(7) {
+    padding-left: 0 !important;
+    border-left: none !important;
+  }
+  .main-content main .region-content-news .region-content article .content .layout .block-views div .view-search-news .view-content .views-row article .content .row .bs-region--right .block-layout-builder:nth-child(8) {
+    padding-left: 0 !important;
+    border-left: none !important;
+  }
+}
+@media only all and (max-width: 576px) {
+  .main-content main .region-content-news .region-content article .content .layout .block-views div .view-search-news .view-content .views-row article .content .row:nth-child(1) .bs-region--right .block-layout-builder:nth-child(6) span {
+    line-height: 1 !important;
+    font-weight: 500;
+    font-size: 24px;
+  }
+  .main-content main .region-content-news .region-content article .content .layout .block-views div .view-search-news .view-content .views-row article .content .row:nth-child(1) .bs-region--right .block-layout-builder:nth-child(8) {
+    padding-bottom: 10px;
+  }
+}
+@media only all and (max-width: 425px) {
+  .main-content main .region-content-news .region-content article .content .layout .block-views div .view-search-news .view-empty {
+    font-size: 18px;
+    line-height: 1;
+  }
+  .main-content main .region-content-news .region-content article .content .layout .block-views div .view-search-news .view-content .views-row article .content {
+    padding: 0;
+  }
+  .main-content main .region-content-news .region-content article .content .layout .block-views div .view-search-news .view-content .views-row article .content .row {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .main-content main .region-content-news .region-content article .content .layout .block-views div .view-search-news .view-content .views-row article .content .row .bs-region--right {
+    justify-content: center;
+  }
+  .main-content main .region-content-news .region-content article .content .layout .block-views div .view-search-news .view-content .views-row article .content .row .bs-region--right .block-layout-builder:nth-child(1) {
+    padding-bottom: 10px;
+    width: 100% !important;
+  }
+  .main-content main .region-content-news .region-content article .content .layout .block-views div .view-search-news .view-content .views-row article .content .row .bs-region--right .block-layout-builder:nth-child(1) .field--name-field-images-news img {
+    height: 48px !important;
+  }
+  .main-content main .region-content-news .region-content article .content .layout .block-views div .view-search-news .view-content .views-row article .content .row .bs-region--right .block-layout-builder:nth-child(2) {
+    margin-left: 0 !important;
+  }
+  .main-content main .region-content-news .region-content article .content .layout .block-views div .view-search-news .view-content .views-row article .content .row .bs-region--right .block-layout-builder:nth-child(4) {
+    height: fit-content;
+  }
+}
 .main-content main .region-content-clients .region-content {
   padding: 0;
   max-width: 1220px;
@@ -2584,6 +2749,20 @@ h2::before {
   .main-content main .region-content-clients .region-content article .content .layout .block-views div .view-all-clients .view-content .views-row article .content .layout .block-layout-builder:nth-child(1) .field--name-field-images-clients a img {
     height: auto;
     width: 260px;
+  }
+}
+@media only all and (max-width: 576px) {
+  .main-content main .region-content-clients .region-content {
+    padding: 0;
+    max-width: 1220px;
+    margin: 0 auto;
+  }
+  .main-content main .region-content-clients .region-content article .content .layout .block-field-blocknodecliensfield-images-clients {
+    margin: 25px;
+  }
+  .main-content main .region-content-clients .region-content article .content .layout .block-field-blocknodepagetitle {
+    margin-top: 65px !important;
+    margin-bottom: 35px !important;
   }
 }
 .main-content main .region-content-contacts .region-content {
@@ -2658,7 +2837,7 @@ h2::before {
 }
 .main-content main .region-content-contacts .region-content article .content .layout--twocol-section .layout__region--second .block-layout-builder:nth-child(2) {
   font-size: 20px;
-  margin-bottom: 40px;
+  margin-bottom: 10px;
 }
 .main-content main .region-content-contacts .region-content article .content .layout--twocol-section .layout__region--second .block-layout-builder:nth-child(3) {
   width: 100%;
@@ -2733,7 +2912,7 @@ h2::before {
   }
 }
 .main-content main div .region-content-node-services {
-  width: 1220px;
+  max-width: 1220px;
   margin: 0 auto;
 }
 .main-content main div .region-content-node-services article .content .layout .block-layout-builder {
@@ -2773,7 +2952,7 @@ h2::before {
 }
 
 .main-content main div .region-content-node-projects {
-  width: 1220px;
+  max-width: 1220px;
   margin: 0 auto;
 }
 .main-content main div .region-content-node-projects article .content .layout .block-layout-builder {
@@ -2826,7 +3005,7 @@ h2::before {
 }
 
 .main-content main div .region-content-node-team {
-  width: 1220px;
+  max-width: 1220px;
   margin: 0 auto;
 }
 .main-content main div .region-content-node-team article {
@@ -2882,7 +3061,7 @@ h2::before {
 }
 
 .main-content main div .region-content-node-news {
-  width: 1220px;
+  max-width: 1220px;
   margin: 0 auto;
 }
 .main-content main div .region-content-node-news article .content {
@@ -2935,7 +3114,7 @@ h2::before {
 }
 
 .main-content main div .region-content-node-clients {
-  width: 1220px;
+  max-width: 1220px;
   margin: 0 auto;
 }
 .main-content main div .region-content-node-clients article .content {
@@ -2997,7 +3176,7 @@ h2::before {
 }
 
 .main-content main .region-content-error-path .region-content {
-  width: 1220px;
+  max-width: 1220px;
   margin: 100px auto;
   padding: 0;
 }

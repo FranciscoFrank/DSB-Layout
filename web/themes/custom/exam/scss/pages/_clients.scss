@@ -112,3 +112,34 @@
     }
   }
 }
+
+@include small {
+  .main-content {
+    main {
+      .region-content-clients {
+        .region-content {
+          padding: 0;
+          max-width: 1220px;
+          margin: 0 auto;
+
+          article {
+            .content {
+              .layout {
+                .block-field-block {
+                  &nodecliensfield-images-clients {
+                    margin: 25px;
+                  }
+
+                  &nodepagetitle {
+                    margin-top: 65px !important;
+                    margin-bottom: 35px !important;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

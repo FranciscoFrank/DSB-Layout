@@ -33,13 +33,3 @@
     @content
   }
 }
-
-@mixin xs-small {
-  @media only all and (max-width: 375px) {
-    @content
-  }
-}
-
-
-
-
