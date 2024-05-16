@@ -70,17 +70,18 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   function checkForNewLinks() {
-    const allLinks = document.querySelectorAll('a'); // Отримуємо всі посилання
+    const allLinks = document.querySelectorAll('a');
     allLinks.forEach(link => {
-      link.classList.add('processed'); // Додаємо клас "processed" для всіх посилань
+      link.classList.add('processed');
       link.addEventListener('click', () => handleLinkClick(link));
     });
   }
 
-  links.forEach(link => {
-    link.classList.add('processed');
-    link.addEventListener('click', () => handleLinkClick(link));
-  });
+  checkForNewLinks(); 
 
   window.addEventListener('resize', checkForNewLinks);
-}); 
+
+  window.addEventListener('load', checkForNewLinks);
+});
+
+
