@@ -52,6 +52,99 @@ p {
   min-height: 100hv;
 }
 
+.alert {
+  display: none;
+}
+
+h2, .view-header, .block-field-blocknodepagetitle {
+  margin-top: 65px;
+  margin-bottom: 25px;
+  justify-content: center;
+  display: flex;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+}
+h2 span, .view-header span, .block-field-blocknodepagetitle span {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+h2::before, h2::after, .view-header::before, .view-header::after, .block-field-blocknodepagetitle::before, .block-field-blocknodepagetitle::after {
+  content: " ";
+  top: 50%;
+  position: absolute;
+  width: 42%;
+  height: 1px;
+  background-color: #000;
+}
+h2::after, .view-header::after, .block-field-blocknodepagetitle::after {
+  right: 0;
+}
+h2::before, .view-header::before, .block-field-blocknodepagetitle::before {
+  left: 0;
+}
+
+h2 {
+  max-width: 1200px;
+  margin: 0 auto !important;
+  font-size: 32px;
+}
+
+.view-header {
+  font-size: 22px;
+}
+.view-header::before, .view-header::after {
+  content: " ";
+  top: 50%;
+  position: absolute;
+  width: 40%;
+  height: 1px;
+  background-color: #000;
+}
+
+@media only all and (max-width: 1220px) {
+  h2::before, h2::after, .block-field-blocknodepagetitle::before, .block-field-blocknodepagetitle::after {
+    width: 40% !important;
+  }
+}
+@media only all and (max-width: 980px) {
+  h2::before, h2::after, .block-field-blocknodepagetitle::before, .block-field-blocknodepagetitle::after {
+    width: 35% !important;
+  }
+  .block-field-blocknodepagetitle {
+    font-size: 22px !important;
+  }
+}
+@media only all and (max-width: 768px) {
+  h2 {
+    font-size: 28px !important;
+  }
+  .block-field-blocknodepagetitle::before, .block-field-blocknodepagetitle::after {
+    width: 40% !important;
+  }
+}
+@media only all and (max-width: 576px) {
+  h2 {
+    font-size: 26px !important;
+  }
+  h2::before, h2::after {
+    width: 30% !important;
+  }
+  .block-field-blocknodepagetitle::before, .block-field-blocknodepagetitle::after {
+    width: 35% !important;
+  }
+}
+@media only all and (max-width: 425px) {
+  h2::before, h2::after {
+    width: 25% !important;
+  }
+  .block-field-blocknodepagetitle {
+    font-size: 20px !important;
+  }
+  .block-field-blocknodepagetitle::before, .block-field-blocknodepagetitle::after {
+    width: 30% !important;
+  }
+}
 .block-social-media-links-block, .block-layout-builder {
   display: flex;
   align-items: center;
@@ -104,32 +197,6 @@ p {
   filter: brightness(75%);
 }
 
-.block-layout-builder:nth-of-type(1) {
-  display: flex;
-  position: relative;
-  margin-top: 65px;
-  margin-bottom: 25px;
-  justify-content: center;
-}
-.block-layout-builder:nth-of-type(1) span {
-  text-transform: uppercase;
-  font-weight: bold;
-}
-.block-layout-builder:nth-of-type(1)::before, .block-layout-builder:nth-of-type(1)::after {
-  content: "";
-  top: 50%;
-  position: absolute;
-  width: 44%;
-  height: 1px;
-  background-color: #000;
-}
-.block-layout-builder:nth-of-type(1)::before {
-  left: 0;
-}
-.block-layout-builder:nth-of-type(1)::after {
-  right: 0;
-}
-
 .pager {
   margin: 0;
   margin-bottom: 20px;
@@ -157,72 +224,6 @@ p {
   font-size: 22px;
 }
 
-h2 {
-  text-transform: uppercase;
-  max-width: 1200px;
-  margin: 0 auto !important;
-  font-size: 32px;
-  position: relative;
-  text-align: center;
-}
-h2::before, h2::after {
-  content: " ";
-  top: 50%;
-  position: absolute;
-  width: 42%;
-  height: 1px;
-  background-color: #000;
-}
-h2::after {
-  right: 0;
-}
-h2::before {
-  left: 0;
-}
-
-@media only all and (max-width: 1220px) {
-  h2::before, h2::after, .block-field-blocknodepagetitle::before, .block-field-blocknodepagetitle::after {
-    width: 40% !important;
-  }
-}
-@media only all and (max-width: 980px) {
-  h2::before, h2::after, .block-field-blocknodepagetitle::before, .block-field-blocknodepagetitle::after {
-    width: 35% !important;
-  }
-  .block-field-blocknodepagetitle {
-    font-size: 22px !important;
-  }
-}
-@media only all and (max-width: 768px) {
-  h2 {
-    font-size: 28px !important;
-  }
-  .block-field-blocknodepagetitle::before, .block-field-blocknodepagetitle::after {
-    width: 40% !important;
-  }
-}
-@media only all and (max-width: 576px) {
-  h2 {
-    font-size: 26px !important;
-  }
-  h2::before, h2::after {
-    width: 30% !important;
-  }
-  .block-field-blocknodepagetitle::before, .block-field-blocknodepagetitle::after {
-    width: 35% !important;
-  }
-}
-@media only all and (max-width: 425px) {
-  h2::before, h2::after {
-    width: 25% !important;
-  }
-  .block-field-blocknodepagetitle {
-    font-size: 20px !important;
-  }
-  .block-field-blocknodepagetitle::before, .block-field-blocknodepagetitle::after {
-    width: 30% !important;
-  }
-}
 .block-cheeseburger-menu-trigger {
   padding: 20px;
   z-index: 15 !important;
@@ -286,10 +287,6 @@ h2::before {
     padding: 5px;
   }
 }
-.alert {
-  display: none;
-}
-
 .top-page-banner-is header, .top-page-banner-not header {
   max-width: 1220px;
   margin: 0 auto;
@@ -763,6 +760,9 @@ h2::before {
   padding: 10px 15px;
 }
 
+.main-content main .region-content {
+  padding: 0;
+}
 .main-content main .region-content .region-content-simple-news {
   max-width: 1220px;
   margin: 35px auto;
@@ -3115,36 +3115,6 @@ h2::before {
   display: flex;
   flex-direction: column;
   margin: 40px 0;
-  /*
-                .field--name {
-                  justify-content: center;
-
-                  &-field-images-clients {
-                    justify-content: center;
-                    width: fit-content;
-                    margin-left: 20px;
-
-                    & > * {
-                      width: fit-content;
-                    }
-
-                    article {
-                      .field--type-image {
-                        .field--item {
-                          justify-content: center;
-                          display: flex;
-                        }
-                      }
-                    }
-                  }
-
-                  &-field-website {
-                    a:hover {
-                      text-decoration: none;
-                      filter: none;
-                    }
-                  }
-                }*/
 }
 .main-content main div .region-content-node-clients article .content > * {
   text-transform: uppercase;

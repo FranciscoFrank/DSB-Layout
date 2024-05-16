@@ -77,11 +77,10 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 
-  checkForNewLinks(); 
+  checkForNewLinks();
 
   window.addEventListener('resize', checkForNewLinks);
 
   window.addEventListener('load', checkForNewLinks);
 });
-
 

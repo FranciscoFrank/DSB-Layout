@@ -1,10 +1,16 @@
-h2 {
-  text-transform: uppercase;
-  max-width: 1200px;
-  margin: 0 auto !important;
-  font-size: 32px;
+h2, .view-header, .block-field-blocknodepagetitle {
+  margin-top: 65px;
+  margin-bottom: 25px;
+  justify-content: center;
+  display: flex;
   position: relative;
   text-align: center;
+  text-transform: uppercase;
+
+  span {
+    text-transform: uppercase;
+    font-weight: bold;
+  }
 
   &::before, &::after {
     content: ' ';
@@ -21,6 +27,25 @@ h2 {
 
   &::before {
     left: 0;
+  }
+}
+
+h2 {
+  max-width: 1200px;
+  margin: 0 auto !important;
+  font-size: 32px;
+}
+
+.view-header {
+  font-size: 22px;
+
+  &::before, &::after {
+    content: ' ';
+    top: 50%;
+    position: absolute;
+    width: 40%;
+    height: 1px;
+    background-color: #000;
   }
 }
 
@@ -41,6 +66,10 @@ h2 {
 
   .block-field-blocknodepagetitle {
     font-size: 22px !important;
+  }
+
+  .view-header {
+
   }
 }
 
