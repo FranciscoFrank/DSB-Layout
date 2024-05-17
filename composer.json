@@ -29,6 +29,7 @@
     "require": {
         "composer/installers": "^1.9",
         "drupal/admin_toolbar": "^3.4",
+        "drupal/asset_injector": "^2.20",
         "drupal/bootstrap5": "^3.0",
         "drupal/bootstrap_layouts": "^5.3",
         "drupal/cache_control_override": "^1.0",
@@ -41,6 +42,9 @@
         "drupal/core-project-message": "^9",
         "drupal/core-recommended": "^9",
         "drupal/entity": "^1.4",
+        "drupal/extrafield_views_integration": "^2.1",
+        "drupal/jquery_once": "^1.0",
+        "drupal/jquery_ui": "^1.6",
         "drupal/lb_plus": "^1.0",
         "drupal/likeit": "^3.1",
         "drupal/link_target": "^1.5",

@@ -16,6 +16,7 @@ bootstrap:
 
 libraries:
   - exam/exam
+  - exam/global-styling
 
 regions:
   header: Header

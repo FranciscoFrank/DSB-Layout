@@ -4,8 +4,4 @@ exam:
       css/style.css: {}
   js:
     js/script.js: {}
-  condition:
-    path:
-      '/admin*': FALSE
-
-
+    js/likeit_widget_2.js: {}

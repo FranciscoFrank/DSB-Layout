@@ -34,6 +34,8 @@
 
                         article {
                           .content {
+                            margin-top: 65px;
+
                             .layout {
                               width: fit-content;
                               display: flex;
@@ -59,6 +61,7 @@
                                 }
 
                                 &:nth-child(2) {
+                                  margin-top: 15px;
                                   width: fit-content;
                                   text-transform: uppercase;
                                 }
@@ -150,6 +153,10 @@
                         }
                       }
                     }
+
+                    .pager {
+                      margin-top: 65px;
+                    }
                   }
                 }
               }
@@ -169,8 +176,13 @@
           article {
             .content {
               .layout {
+
+                .block-field-blocknodepagetitle {
+                  margin-top: 65px !important;
+                }
+
                 .block-layout-builder:nth-of-type(1) {
-                  margin-top: 35px;
+                  margin-top: 0;
                 }
 
                 .block-views {

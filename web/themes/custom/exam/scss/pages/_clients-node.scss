@@ -3,6 +3,7 @@
     div {
       .region-content-node-clients {
         max-width: 1220px;
+        padding: 0 10px;
         margin: 0 auto;
 
         article {
@@ -43,6 +44,123 @@
                   text-decoration: none;
                   filter: brightness(85%);
                   color: $first-color;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include x-large {
+  .main-content {
+    main {
+      div {
+        .region-content-node-clients {
+          article {
+            .content {
+              .field--name-body {
+                margin: 20px 0;
+
+                p {
+                  font-size: 22px;
+                }
+              }
+
+              .field--type-link {
+                a {
+                  font-size: 22px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include medium {
+  .main-content {
+    main {
+      div {
+        .region-content-node-clients {
+          article {
+            .content {
+              .field--name-field-images-clients {
+                article {
+                  .field--type-image {
+                    .field--item {
+                      display: flex;
+                      justify-content: center;
+
+                      img {
+                        height: auto;
+                        width: 170px;
+                      }
+                    }
+                  }
+                }
+              }
+
+              .field--name-body {
+                margin: 15px 0;
+
+                p {
+                  font-size: 18px;
+                  line-height: 1.2;
+                }
+              }
+
+              .field--type-link {
+                a {
+                  font-size: 18px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include small {
+  .main-content {
+    main {
+      div {
+        .region-content-node-clients {
+          article {
+            .content {
+              .field--name-field-images-clients {
+                article {
+                  .field--type-image {
+                    .field--item {
+                      display: flex;
+                      justify-content: center;
+
+                      img {
+                        height: auto;
+                        width: 130px;
+                      }
+                    }
+                  }
+                }
+              }
+
+              .field--name-body {
+                margin: 10px 0;
+
+                p {
+                  font-size: 14px;
+                }
+              }
+
+              .field--type-link {
+                a {
+                  font-size: 14px;
                 }
               }
             }

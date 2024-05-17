@@ -2,7 +2,7 @@
   main {
     .region-content-contacts {
       .region-content {
-        padding: 0;
+        padding: 0 10px;
         max-width: 1220px;
         margin: 0 auto;
 
@@ -122,25 +122,11 @@
   }
 }
 
-@include x-large {
-  .main-content {
-    main {
-      .region-content-contacts {
-        .region-content {
-          padding: 0 10px;
-        }
-      }
-    }
-  }
-}
-
 @include medium {
   .main-content {
     main {
       .region-content-contacts {
         .region-content {
-          padding: 0 10px;
-
           article {
             .content {
               .layout--twocol-section {

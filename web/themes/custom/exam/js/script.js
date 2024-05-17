@@ -84,3 +84,17 @@ document.addEventListener('DOMContentLoaded', function() {
   window.addEventListener('load', checkForNewLinks);
 });
 
+
+
+
+
+(function ($, Drupal) {
+  Drupal.behaviors.myModuleBehavior = {
+    attach: function (context, settings) {
+      $(document).once('myCustomBehavior').ajaxComplete(function (event, xhr, settings) {
+
+      });
+    }
+  };
+})(jQuery, Drupal);
+

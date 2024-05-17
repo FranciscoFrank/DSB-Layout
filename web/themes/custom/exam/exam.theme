@@ -1,0 +1,4 @@
+<?php
+  function exam_js_alter(&$javascript) {
+    unset($javascript['modules/contrib/likeit/js/likeit_widget_2.js']);
+  }

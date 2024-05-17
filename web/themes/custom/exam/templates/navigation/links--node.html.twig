@@ -14,26 +14,14 @@
       {%- for item in links -%}
         <li{{ item.attributes }}>
           {% set link_url = item.link['#url'].toString() %}
-          {% if app.request.isXmlHttpRequest() %}
-            {% if '/about' in link_url %}
-              <a href="{{ link_url }}" rel="tag">More details</a>
-            {% elseif '/team' in link_url %}
-              <a href="{{ link_url }}" rel="tag">Look at me</a>
-            {% elseif '/projects' %}
-              <a href="{{ link_url }}" rel="tag">Details</a>
-            {% else %}
-              <a href="{{ link_url }}" rel="tag">Read more</a>
-            {% endif %}
+          {% if '/about' in link_url %}
+            <a href="{{ link_url }}" rel="tag">More details</a>
+          {% elseif '/team' in link_url %}
+            <a href="{{ link_url }}" rel="tag">Look at me</a>
+          {% elseif '/projects' in link_url %}
+            <a href="{{ link_url }}" rel="tag">Details</a>
           {% else %}
-            {% if '/about' in link_url %}
-              <a href="{{ link_url }}" rel="tag">More details</a>
-            {% elseif '/team' in link_url %}
-              <a href="{{ link_url }}" rel="tag">Look at me</a>
-            {% elseif '/projects' %}
-              <a href="{{ link_url }}" rel="tag">Details</a>
-            {% else %}
-              <a href="{{ link_url }}" rel="tag">Read more</a>
-            {% endif %}
+            <a href="{{ link_url }}" rel="tag">Read more</a>
           {% endif %}
         </li>
       {%- endfor -%}

@@ -3,6 +3,7 @@
     div {
       .region-content-node-news {
         max-width: 1220px;
+        padding: 0 10px;
         margin: 0 auto;
 
         article {
@@ -56,7 +57,7 @@
                 &:nth-child(4) {
                   position: absolute;
                   right: 0;
-                  top: 5%;
+                  top: 14px;
                   font-size: $average;
                   margin: 0 15px;
                 }
@@ -66,6 +67,200 @@
                   margin-bottom: 10px;
                   margin-top: 30px;
                   font-size: $large;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include x-large {
+  .main-content {
+    main {
+      div {
+        .region-content-node-news {
+          article {
+            .content {
+              .layout {
+
+                .block-layout-builder {
+                  &:nth-child(2) {
+                    font-size: 16px;
+                    margin: 0 10px;
+                  }
+
+                  &:nth-child(3) {
+                    font-size: 16px;
+                  }
+
+                  &:nth-child(4) {
+                    margin: 0;
+                    font-size: 16px;
+                  }
+
+                  &:nth-child(5) {
+                    font-size: $main;
+                  }
+
+                  &:nth-child(6) {
+                    font-size: $average;
+                    line-height: 1.5;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include medium {
+  .main-content {
+    main {
+      div {
+        .region-content-node-news {
+          article {
+            .content {
+              .layout {
+
+                .block-layout-builder {
+                  &:nth-child(1) {
+                    .field--name-field-images-news {
+                      img {
+                        width: 45px;
+                      }
+                    }
+                  }
+
+                  &:nth-child(2) {
+                    font-size: 14px;
+                  }
+
+                  &:nth-child(3) {
+                    font-size: 14px;
+                  }
+
+                  &:nth-child(4) {
+                    top: 9px;
+                    font-size: 14px;
+                  }
+
+                  &:nth-child(5) {
+                    font-size: $medium;
+                  }
+
+                  &:nth-child(6) {
+                    font-size: $average;
+                    line-height: 1.5;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include small {
+  .main-content {
+    main {
+      div {
+        .region-content-node-news {
+          article {
+            .content {
+              .layout {
+
+                .block-layout-builder {
+                  &:nth-child(2) {
+                    margin: 0 5px;
+                    font-size: 12px;
+                  }
+
+                  &:nth-child(3) {
+                    font-size: 12px;
+                  }
+
+                  &:nth-child(4) {
+                    top: 8px;
+                    font-size: 12px;
+                  }
+
+                  &:nth-child(5) {
+                    font-size: 18px;
+                  }
+
+                  &:nth-child(6) {
+                    font-size: 16px;
+                    line-height: 1.5;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include x-small {
+  .main-content {
+    main {
+      div {
+        .region-content-node-news {
+          article {
+            .content {
+              .layout {
+
+                .block-layout-builder {
+                  &:nth-child(1) {
+                    width: 100%;
+
+                    .field--name-field-images-news {
+                      img {
+                        width: 65px;
+                        height: auto;
+                      }
+                    }
+                  }
+
+                  &:nth-child(2) {
+                    justify-content: center;
+                    width: 50%;
+                    margin: 0;
+                    font-size: 12px;
+                  }
+
+                  &:nth-child(3) {
+                    justify-content: center;
+                    width: 50%;
+                    margin: 0;
+                    font-size: 12px;
+                  }
+
+                  &:nth-child(4) {
+                    justify-content: center;
+                    position: static;
+                    width: 100%;
+                    font-size: 12px;
+                  }
+
+                  &:nth-child(5) {
+                    font-size: 18px;
+                    line-height: 1;
+                  }
+
+                  &:nth-child(6) {
+                    font-size: 14px;
+                    line-height: 1.5;
+                  }
                 }
               }
             }
