@@ -5,6 +5,17 @@
         max-width: 1220px;
         margin: 0 auto;
         margin-top: 50px;
+        padding: 0 10px;
+
+        h2 {
+          color: $third-color;
+          margin: 0 auto !important;
+          font-size: 36px !important;
+
+          &::before, &::after {
+            width: 35% !important;
+          }
+        }
 
         .search-form {
           margin-bottom: 30px;
@@ -39,12 +50,6 @@
           }
         }
 
-        h2 {
-          font-size: 32px;
-          color: $third-color;
-          margin: 0 !important;
-        }
-
         .item-list {
           h3 {
             font-size: 32px;
@@ -53,6 +58,12 @@
             margin: 55px auto;
             padding: 10px 15px;
             border: 1px solid $third-color;
+          }
+
+          .search-result {
+            border: none;
+            margin: 0;
+            padding: 0;
           }
 
           .search-results {
@@ -83,6 +94,90 @@
                   }
                 }
               }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include x-large {
+  .main-content {
+    main {
+      .region-content {
+        .region-content-search-page {
+          h2 {
+            color: $third-color;
+            margin: 0 auto !important;
+            font-size: 32px !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include large {
+  .main-content {
+    main {
+      .region-content {
+        .region-content-search-page {
+          h2 {
+            color: $third-color;
+            margin: 0 auto !important;
+            font-size: 28px !important;
+
+            &::before, &::after {
+              width: 30% !important;
+            }
+          }
+
+          .item-list {
+            .search-results {
+              li {
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include medium {
+  .main-content {
+    main {
+      .region-content {
+        .region-content-search-page {
+          h2 {
+            color: $third-color;
+            margin: 0 auto !important;
+            font-size: 24px !important;
+
+            &::before, &::after {
+              width: 20% !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include x-small {
+  .main-content {
+    main {
+      .region-content {
+        .region-content-search-page {
+          h2 {
+            color: $third-color;
+            margin: 0 auto !important;
+            font-size: 22px !important;
+
+            &::before, &::after {
+              width: 15% !important;
             }
           }
         }

@@ -56,6 +56,11 @@ p {
   justify-content: center;
 }
 
+.region-content {
+  max-width: 1220px;
+  margin: 0 auto;
+}
+
 .alert {
   display: none;
 }
@@ -110,10 +115,16 @@ h2 {
   h2::before, h2::after, .block-field-blocknodepagetitle::before, .block-field-blocknodepagetitle::after {
     width: 40% !important;
   }
+  .view-header::before, .view-header::after {
+    width: 35% !important;
+  }
 }
 @media only all and (max-width: 980px) {
   h2::before, h2::after, .block-field-blocknodepagetitle::before, .block-field-blocknodepagetitle::after {
     width: 35% !important;
+  }
+  .view-header::before, .view-header::after {
+    width: 30% !important;
   }
   .block-field-blocknodepagetitle {
     font-size: 22px !important;
@@ -122,6 +133,9 @@ h2 {
 @media only all and (max-width: 768px) {
   h2 {
     font-size: 28px !important;
+  }
+  .view-header::before, .view-header::after {
+    width: 25% !important;
   }
   .block-field-blocknodepagetitle::before, .block-field-blocknodepagetitle::after {
     width: 40% !important;
@@ -137,16 +151,22 @@ h2 {
   .block-field-blocknodepagetitle::before, .block-field-blocknodepagetitle::after {
     width: 35% !important;
   }
+  .view-header::before, .view-header::after {
+    width: 20% !important;
+  }
 }
 @media only all and (max-width: 425px) {
   h2::before, h2::after {
     width: 25% !important;
   }
-  .block-field-blocknodepagetitle {
+  .block-field-blocknodepagetitle, .view-header {
     font-size: 20px !important;
   }
-  .block-field-blocknodepagetitle::before, .block-field-blocknodepagetitle::after {
+  .block-field-blocknodepagetitle::before, .block-field-blocknodepagetitle::after, .view-header::before, .view-header::after {
     width: 30% !important;
+  }
+  .view-header::before, .view-header::after {
+    width: 15% !important;
   }
 }
 .block-social-media-links-block, .block-layout-builder {
@@ -355,6 +375,7 @@ h2 {
   list-style: none;
 }
 .top-page-banner-is header .header .region-header .navigation .main-menu ul li:first-child a, .top-page-banner-not header .header .region-header .navigation .main-menu ul li:first-child a {
+  background-image: url("../images/Menu-homepage.png");
   color: transparent;
   background-repeat: no-repeat;
   padding: 0 10px;
@@ -422,13 +443,16 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
   width: 20%;
 }
 .top-page-banner-is header .header .region-header .search-block-form form .form-actions::before, .top-page-banner-not header .header .region-header .search-block-form form .form-actions::before {
+  display: block;
   position: absolute;
   content: "\f002";
   color: #C3C3C7;
   font-family: "FontAwesome";
+  pointer-events: none;
 }
 .top-page-banner-is header .header .region-header .search-block-form form .form-actions input, .top-page-banner-not header .header .region-header .search-block-form form .form-actions input {
   width: 100%;
@@ -681,6 +705,15 @@ h2 {
   max-width: 1220px;
   margin: 0 auto;
   margin-top: 50px;
+  padding: 0 10px;
+}
+.main-content main .region-content .region-content-search-page h2 {
+  color: #000000;
+  margin: 0 auto !important;
+  font-size: 36px !important;
+}
+.main-content main .region-content .region-content-search-page h2::before, .main-content main .region-content .region-content-search-page h2::after {
+  width: 35% !important;
 }
 .main-content main .region-content .region-content-search-page .search-form {
   margin-bottom: 30px;
@@ -706,11 +739,6 @@ h2 {
 .main-content main .region-content .region-content-search-page .search-form .search-advanced {
   display: none;
 }
-.main-content main .region-content .region-content-search-page h2 {
-  font-size: 32px;
-  color: #000000;
-  margin: 0 !important;
-}
 .main-content main .region-content .region-content-search-page .item-list h3 {
   font-size: 32px;
   width: fit-content;
@@ -718,6 +746,11 @@ h2 {
   margin: 55px auto;
   padding: 10px 15px;
   border: 1px solid #000000;
+}
+.main-content main .region-content .region-content-search-page .item-list .search-result {
+  border: none;
+  margin: 0;
+  padding: 0;
 }
 .main-content main .region-content .region-content-search-page .item-list .search-results {
   display: flex;
@@ -746,6 +779,46 @@ h2 {
   color: #C3C3C7;
 }
 
+@media only all and (max-width: 1220px) {
+  .main-content main .region-content .region-content-search-page h2 {
+    color: #000000;
+    margin: 0 auto !important;
+    font-size: 32px !important;
+  }
+}
+@media only all and (max-width: 980px) {
+  .main-content main .region-content .region-content-search-page h2 {
+    color: #000000;
+    margin: 0 auto !important;
+    font-size: 28px !important;
+  }
+  .main-content main .region-content .region-content-search-page h2::before, .main-content main .region-content .region-content-search-page h2::after {
+    width: 30% !important;
+  }
+  .main-content main .region-content .region-content-search-page .item-list .search-results li {
+    width: 100%;
+  }
+}
+@media only all and (max-width: 768px) {
+  .main-content main .region-content .region-content-search-page h2 {
+    color: #000000;
+    margin: 0 auto !important;
+    font-size: 24px !important;
+  }
+  .main-content main .region-content .region-content-search-page h2::before, .main-content main .region-content .region-content-search-page h2::after {
+    width: 20% !important;
+  }
+}
+@media only all and (max-width: 425px) {
+  .main-content main .region-content .region-content-search-page h2 {
+    color: #000000;
+    margin: 0 auto !important;
+    font-size: 22px !important;
+  }
+  .main-content main .region-content .region-content-search-page h2::before, .main-content main .region-content .region-content-search-page h2::after {
+    width: 15% !important;
+  }
+}
 .main-content main .region-content .region-content-login-page {
   max-width: 1220px;
   padding: 0 10px;
@@ -1033,7 +1106,7 @@ h2 {
   display: flex;
   padding-top: 50px;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 .main-content main .region-content .region-content-simple-projects .views-element-container .view .view-content .views-row {
   background-color: #FFFFFF;
@@ -1122,7 +1195,6 @@ h2 {
   .main-content main .region-content .region-content-simple-projects .views-element-container .view .view-content {
     padding: 0 10px;
     padding-top: 50px;
-    justify-content: center;
   }
   .main-content main .region-content .region-content-simple-projects .views-element-container .view .view-content .views-row {
     margin-right: 25px;
@@ -1335,7 +1407,8 @@ h2 {
   background-color: #373645;
 }
 .main-content-homepage main .region-content-homepage-content article .content .layout .block-views-blocklast-projects-last-projects h2 {
-  font-weight: 400;
+  letter-spacing: -2px;
+  font-weight: 300;
   margin-bottom: 25px !important;
 }
 .main-content-homepage main .region-content-homepage-content article .content .layout .block-views-blocklast-projects-last-projects div .view-last-projects {
@@ -1460,6 +1533,7 @@ h2 {
   display: none;
 }
 .main-content-homepage main .region-content-homepage-content article .content .layout .block-views-blocklast-teams-last-teams div .view-last-teams .view-content .views-row article .content .layout .block-layout-builder:nth-child(1) img {
+  cursor: pointer;
   margin-bottom: 30px;
   filter: grayscale(100%);
   transition: filter 1s ease;
@@ -1605,9 +1679,11 @@ h2 {
 }
 .main-content-homepage main .region-content-homepage-content article .content .layout .block-views-blocklast-news-last-news div .view-last-news .view-content .views-row:first-child {
   width: 50%;
+  padding-right: 5px;
 }
 .main-content-homepage main .region-content-homepage-content article .content .layout .block-views-blocklast-news-last-news div .view-last-news .view-content .views-row:last-child {
-  width: 48%;
+  width: 50%;
+  padding-left: 5px;
 }
 .main-content-homepage main .region-content-homepage-content article .content .layout .block-views-blocklast-news-last-news div .view-last-news .view-content .views-row article {
   display: flex;
@@ -1642,7 +1718,7 @@ h2 {
   display: none;
 }
 .main-content-homepage main .region-content-homepage-content article .content .layout .block-views-blocklast-news-last-news div .view-last-news .view-content .views-row article .content .row:nth-child(1) .bs-region--left .block-layout-builder:nth-child(1) {
-  font-size: 20px;
+  font-size: 24px;
   line-height: normal;
   font-weight: 400;
 }
@@ -1880,6 +1956,12 @@ h2 {
     display: flex;
     justify-content: center;
     width: 100% !important;
+  }
+  .main-content-homepage main .region-content-homepage-content article .content .layout .block-views-blocklast-news-last-news div .view-last-news .view-content .views-row:first-child {
+    padding-right: 0;
+  }
+  .main-content-homepage main .region-content-homepage-content article .content .layout .block-views-blocklast-news-last-news div .view-last-news .view-content .views-row:last-child {
+    padding-left: 0;
   }
   .main-content-homepage main .region-content-homepage-content article .content .layout .block-views-blocklast-news-last-news div .view-last-news .view-content .views-row article {
     width: fit-content;
@@ -2957,9 +3039,20 @@ h2 {
   text-transform: uppercase;
   font-weight: bold;
 }
-.main-content main .region-content-contacts .region-content article .content .layout--twocol-section .layout__region--second .block-layout-builder:nth-child(2) {
+.main-content main .region-content-contacts .region-content article .content .layout--twocol-section .layout__region--second .block-layout-builder:nth-child(2) .field--name-field-paragraph-additional {
+  margin-bottom: 15px;
+}
+.main-content main .region-content-contacts .region-content article .content .layout--twocol-section .layout__region--second .block-layout-builder:nth-child(2) .field--name-field-paragraph-additional .field--item .paragraph--type--text .field--name-field-paragraph-text .field--item p {
+  line-height: 1.5;
+}
+.main-content main .region-content-contacts .region-content article .content .layout--twocol-section .layout__region--second .block-layout-builder:nth-child(2) .field--name-field-paragraph-additional .field--item .paragraph--type--text .field--name-field-paragraph-text .field--item p a {
+  line-height: 1.5;
+  color: #000000;
   font-size: 20px;
   margin-bottom: 10px;
+}
+.main-content main .region-content-contacts .region-content article .content .layout--twocol-section .layout__region--second .block-layout-builder:nth-child(2) .field--name-field-paragraph-additional .field--item .paragraph--type--text .field--name-field-paragraph-text .field--item p a:hover {
+  text-decoration: underline;
 }
 .main-content main .region-content-contacts .region-content article .content .layout--twocol-section .layout__region--second .block-layout-builder:nth-child(3) {
   width: 100%;

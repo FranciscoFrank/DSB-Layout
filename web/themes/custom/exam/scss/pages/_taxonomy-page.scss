@@ -450,7 +450,7 @@
               display: flex;
               padding-top: 50px;
               flex-wrap: wrap;
-              justify-content: space-between;
+              justify-content: space-evenly;
 
               .views-row {
                 background-color: $main-color;
@@ -578,7 +578,6 @@
               .view-content {
                 padding: 0 10px;
                 padding-top: 50px;
-                justify-content: center;
 
                 .views-row {
                   margin-right: 25px;

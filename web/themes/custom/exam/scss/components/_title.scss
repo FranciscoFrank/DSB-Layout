@@ -55,6 +55,12 @@ h2 {
       width: 40% !important;
     }
   }
+
+  .view-header {
+    &::before, &::after {
+      width: 35% !important;
+    }
+  }
 }
 
 @include large {
@@ -64,12 +70,14 @@ h2 {
     }
   }
 
-  .block-field-blocknodepagetitle {
-    font-size: 22px !important;
+  .view-header {
+    &::before, &::after {
+      width: 30% !important;
+    }
   }
 
-  .view-header {
-
+  .block-field-blocknodepagetitle {
+    font-size: 22px !important;
   }
 }
 
@@ -78,6 +86,11 @@ h2 {
     font-size: 28px !important;
   }
 
+  .view-header {
+    &::before, &::after {
+      width: 25% !important;
+    }
+  }
   .block-field-blocknodepagetitle {
     &::before, &::after {
       width: 40% !important;
@@ -99,6 +112,12 @@ h2 {
       width: 35% !important;
     }
   }
+
+  .view-header {
+    &::before, &::after {
+      width: 20% !important;
+    }
+  }
 }
 
 @include x-small {
@@ -108,11 +127,17 @@ h2 {
     }
   }
 
-  .block-field-blocknodepagetitle {
+  .block-field-blocknodepagetitle, .view-header {
     font-size: 20px !important;
 
     &::before, &::after {
       width: 30% !important;
+    }
+  }
+
+  .view-header {
+    &::before, &::after {
+      width: 15% !important;
     }
   }
 }

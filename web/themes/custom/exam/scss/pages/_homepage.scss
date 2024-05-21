@@ -265,7 +265,8 @@
 
               &last-projects-last-projects {
                 h2 {
-                  font-weight: 400;
+                  letter-spacing: -2px;
+                  font-weight: 300;
                   margin-bottom: 25px !important;
                 }
 
@@ -432,6 +433,7 @@
                                   }
 
                                   img {
+                                    cursor: pointer;
                                     margin-bottom: 30px;
                                     filter: grayscale(100%);
                                     transition: filter 1s ease;
@@ -627,10 +629,12 @@
 
                         &:first-child {
                           width: 50%;
+                          padding-right: 5px;
                         }
 
                         &:last-child {
-                          width: 48%;
+                          width: 50%;
+                          padding-left: 5px;
                         }
 
                         article {
@@ -673,7 +677,7 @@
                                     }
 
                                     &:nth-child(1) {
-                                      font-size: $average;
+                                      font-size: 24px;
                                       line-height: normal;
                                       font-weight: 400;
                                     }
@@ -1061,6 +1065,14 @@
                           display: flex;
                           justify-content: center;
                           width: 100% !important;
+
+                          &:first-child {
+                            padding-right: 0;
+                          }
+
+                          &:last-child {
+                            padding-left: 0;
+                          }
 
                           article {
                             width: fit-content;

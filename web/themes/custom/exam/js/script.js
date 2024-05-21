@@ -1,3 +1,4 @@
+
 document.addEventListener('DOMContentLoaded', function() {
   function addSocialMediaLinksToBurgerMenu() {
     function hasSocialMediaBlockInBurgerMenu() {
@@ -84,17 +85,22 @@ document.addEventListener('DOMContentLoaded', function() {
   window.addEventListener('load', checkForNewLinks);
 });
 
-
-
-
-
-(function ($, Drupal) {
-  Drupal.behaviors.myModuleBehavior = {
+(function ($) {
+  Drupal.behaviors.customNodeLinks = {
     attach: function (context, settings) {
-      $(document).once('myCustomBehavior').ajaxComplete(function (event, xhr, settings) {
+      $('.node-link', context).once('customNodeLinks').each(function () {
+        var $link = $(this);
+        var href = $link.attr('href');
 
+        // Логіка для зміни посилань
+        if (href.indexOf('/about') !== -1) {
+          $link.text('More details');
+        } else if (href.indexOf('/team') !== -1) {
+          $link.text('Look at me');
+        } else if (href.indexOf('/projects') !== -1) {
+          $link.text('Details');
+        }
       });
     }
   };
-})(jQuery, Drupal);
-
+})(jQuery);

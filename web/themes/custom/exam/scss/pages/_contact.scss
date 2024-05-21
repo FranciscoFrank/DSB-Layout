@@ -94,8 +94,32 @@
                     }
 
                     &:nth-child(2) {
-                      font-size: $average;
-                      margin-bottom: 10px;
+                      .field--name-field-paragraph-additional {
+                        margin-bottom: 15px;
+
+                        .field--item {
+                          .paragraph--type--text {
+                            .field--name-field-paragraph-text {
+                              .field--item {
+                                p {
+                                  line-height: 1.5;
+
+                                  a {
+                                    line-height: 1.5;
+                                    color: $third-color;
+                                    font-size: $average;
+                                    margin-bottom: 10px;
+
+                                    &:hover {
+                                      text-decoration: underline;
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
                     }
 
                     &:nth-child(3) {
