@@ -1,3 +1,5 @@
+// A script that fixes the logic for the module Like it!
+
 (function ($, Drupal) {
 
   'use strict';
