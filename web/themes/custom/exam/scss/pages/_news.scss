@@ -267,7 +267,7 @@
                                             height: fit-content;
 
                                             a {
-                                              font-size: 18px;
+                                              font-size: $middle;
                                               font-weight: 400;
                                               padding: 7px;
                                               background-color: $fourth-color;
@@ -368,7 +368,7 @@
                   div {
                     .view-search-news {
                       .view-empty {
-                        font-size: 18px;
+                        font-size: $middle;
                         line-height: 1;
                       }
 
@@ -503,7 +503,7 @@
                   div {
                     .view-search-news {
                       .view-empty {
-                        font-size: 16px;
+                        font-size: $small;
                         line-height: 1;
                       }
 

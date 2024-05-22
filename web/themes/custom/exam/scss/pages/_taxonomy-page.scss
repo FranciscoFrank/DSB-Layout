@@ -211,7 +211,7 @@
                                     height: fit-content;
 
                                     a {
-                                      font-size: 18px;
+                                      font-size: $middle;
                                       font-weight: 400;
                                       padding: 7px;
                                       background-color: $fourth-color;
@@ -305,7 +305,7 @@
           .views-element-container {
             .view {
               .view-header {
-                font-size: 22px;
+                font-size: $medium;
 
                 &::before, &::after {
                   width: 25% !important;
@@ -381,7 +381,7 @@
           .views-element-container {
             .view {
               .view-header {
-                font-size: 18px;
+                font-size: $middle;
 
                 &::before, &::after {
                   width: 20% !important;
@@ -431,7 +431,7 @@
           .views-element-container {
             .view {
               .view-header {
-                font-size: 16px !important;
+                font-size: $small !important;
 
                 &::before, &::after {
                   width: 15% !important;

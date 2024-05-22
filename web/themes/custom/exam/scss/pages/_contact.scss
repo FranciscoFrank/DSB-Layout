@@ -166,7 +166,7 @@
                           justify-content: center;
 
                           .webform-button--submit {
-                            font-size: 22px;
+                            font-size: $medium;
                             padding: 10px 15px;
                           }
                         }
@@ -202,7 +202,7 @@
                       form {
                         .form-actions {
                           .webform-button--submit {
-                            font-size: 22px;
+                            font-size: $medium;
                             padding: 5px 10px;
                           }
                         }

@@ -35,7 +35,7 @@
               line-height: 1;
               letter-spacing: -2px;
               color: $first-color;
-              font-size: 18px;
+              font-size: $middle;
             }
           }
         }
@@ -468,7 +468,7 @@
 
                                     li {
                                       a {
-                                        font-size: 14px;
+                                        font-size: $x-small;
                                         padding: 6px;
                                         font-weight: 400;
                                         text-transform: uppercase;
@@ -677,7 +677,7 @@
                                     }
 
                                     &:nth-child(1) {
-                                      font-size: 24px;
+                                      font-size: $main;
                                       line-height: normal;
                                       font-weight: 400;
                                     }
@@ -824,7 +824,7 @@
                                             height: fit-content;
 
                                             a {
-                                              font-size: 18px;
+                                              font-size: $middle;
                                               font-weight: 400;
                                               padding: 7px;
                                               background-color: $fourth-color;
@@ -1153,7 +1153,7 @@
               }
 
               &:nth-child(3) {
-                font-size: 12px !important;
+                font-size: $s-small !important;
               }
             }
           }
@@ -1214,7 +1214,7 @@
               }
 
               &:nth-child(3) {
-                font-size: 12px !important;
+                font-size: $s-small !important;
               }
             }
           }
@@ -1249,7 +1249,7 @@
                                     margin-bottom: 7px;
 
                                     .field--name-body {
-                                      font-size: 16px;
+                                      font-size: $small;
                                       line-height: 1;
                                     }
                                   }
@@ -1260,7 +1260,7 @@
                                     ul {
                                       li {
                                         a {
-                                          font-size: 14px;
+                                          font-size: $x-small;
                                           padding: 0.5px 5px;
                                         }
                                       }
@@ -1329,7 +1329,7 @@
                   div {
                     .view-last-news {
                       .view-empty {
-                        font-size: 18px;
+                        font-size: $middle;
                         line-height: 1;
                       }
 
@@ -1424,12 +1424,12 @@
 
               &:nth-child(2) {
                 text-wrap: nowrap;
-                font-size: 22px !important;
+                font-size: $medium !important;
               }
 
               &:nth-child(3) {
                 letter-spacing: 0;
-                font-size: 12px !important;
+                font-size: $s-small !important;
               }
             }
           }
@@ -1459,7 +1459,7 @@
                                 .block-field-block {
                                   &nodepagetitle {
                                     span {
-                                      font-size: 24px;
+                                      font-size: $main;
                                     }
                                   }
 
@@ -1467,7 +1467,7 @@
                                     margin-bottom: 7px;
 
                                     .field--name-body {
-                                      font-size: 14px;
+                                      font-size: $x-small;
                                       line-height: 1;
                                     }
                                   }
@@ -1478,7 +1478,7 @@
                                     ul {
                                       li {
                                         a {
-                                          font-size: 12px;
+                                          font-size: $s-small;
                                           padding: 0.5px 5px;
                                         }
                                       }
@@ -1555,7 +1555,7 @@
 
               &:nth-child(2) {
                 text-wrap: nowrap;
-                font-size: 22px !important;
+                font-size: $medium !important;
               }
 
               &:nth-child(3) {
@@ -1580,7 +1580,7 @@
                   div {
                     .view-last-news {
                       .view-empty {
-                        font-size: 18px;
+                        font-size: $middle;
                         line-height: 1;
                       }
 

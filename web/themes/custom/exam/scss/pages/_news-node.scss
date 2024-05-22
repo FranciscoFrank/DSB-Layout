@@ -88,17 +88,17 @@
 
                 .block-layout-builder {
                   &:nth-child(2) {
-                    font-size: 16px;
+                    font-size: $small;
                     margin: 0 10px;
                   }
 
                   &:nth-child(3) {
-                    font-size: 16px;
+                    font-size: $small;
                   }
 
                   &:nth-child(4) {
                     margin: 0;
-                    font-size: 16px;
+                    font-size: $small;
                   }
 
                   &:nth-child(5) {
@@ -138,16 +138,16 @@
                   }
 
                   &:nth-child(2) {
-                    font-size: 14px;
+                    font-size: $x-small;
                   }
 
                   &:nth-child(3) {
-                    font-size: 14px;
+                    font-size: $x-small;
                   }
 
                   &:nth-child(4) {
                     top: 9px;
-                    font-size: 14px;
+                    font-size: $x-small;
                   }
 
                   &:nth-child(5) {
@@ -180,24 +180,24 @@
                 .block-layout-builder {
                   &:nth-child(2) {
                     margin: 0 5px;
-                    font-size: 12px;
+                    font-size: $s-small;
                   }
 
                   &:nth-child(3) {
-                    font-size: 12px;
+                    font-size: $s-small;
                   }
 
                   &:nth-child(4) {
                     top: 8px;
-                    font-size: 12px;
+                    font-size: $s-small;
                   }
 
                   &:nth-child(5) {
-                    font-size: 18px;
+                    font-size: $middle;
                   }
 
                   &:nth-child(6) {
-                    font-size: 16px;
+                    font-size: $small;
                     line-height: 1.5;
                   }
                 }
@@ -235,30 +235,30 @@
                     justify-content: center;
                     width: 50%;
                     margin: 0;
-                    font-size: 12px;
+                    font-size: $s-small;
                   }
 
                   &:nth-child(3) {
                     justify-content: center;
                     width: 50%;
                     margin: 0;
-                    font-size: 12px;
+                    font-size: $s-small;
                   }
 
                   &:nth-child(4) {
                     justify-content: center;
                     position: static;
                     width: 100%;
-                    font-size: 12px;
+                    font-size: $s-small;
                   }
 
                   &:nth-child(5) {
-                    font-size: 18px;
+                    font-size: $middle;
                     line-height: 1;
                   }
 
                   &:nth-child(6) {
-                    font-size: 14px;
+                    font-size: $x-small;
                     line-height: 1.5;
                   }
                 }

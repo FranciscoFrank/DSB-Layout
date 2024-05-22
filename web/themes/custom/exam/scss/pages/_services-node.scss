@@ -70,11 +70,11 @@
               .layout {
                 .block-layout-builder {
                   &:nth-child(1) {
-                    font-size: 24px;
+                    font-size: $main;
                   }
 
                   &:nth-child(3) {
-                    font-size: 24px;
+                    font-size: $main;
                     line-height: 32px;
                   }
                 }
@@ -97,7 +97,7 @@
               .layout {
                 .block-layout-builder {
                   &:nth-child(1) {
-                    font-size: 20px;
+                    font-size: $average;
                   }
 
                   &:nth-child(2) {
@@ -110,7 +110,7 @@
                   }
 
                   &:nth-child(3) {
-                    font-size: 20px;
+                    font-size: $average;
                     line-height: 26px;
                   }
                 }
@@ -133,11 +133,11 @@
               .layout {
                 .block-layout-builder {
                   &:nth-child(1) {
-                    font-size: 16px;
+                    font-size: $small;
                   }
 
                   &:nth-child(3) {
-                    font-size: 16px;
+                    font-size: $small;
                     line-height: 18px;
                   }
                 }

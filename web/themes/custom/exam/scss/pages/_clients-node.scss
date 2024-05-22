@@ -65,13 +65,13 @@
                 margin: 20px 0;
 
                 p {
-                  font-size: 22px;
+                  font-size: $medium;
                 }
               }
 
               .field--type-link {
                 a {
-                  font-size: 22px;
+                  font-size: $medium;
                 }
               }
             }
@@ -109,14 +109,14 @@
                 margin: 15px 0;
 
                 p {
-                  font-size: 18px;
+                  font-size: $middle;
                   line-height: 1.2;
                 }
               }
 
               .field--type-link {
                 a {
-                  font-size: 18px;
+                  font-size: $middle;
                 }
               }
             }
@@ -154,13 +154,13 @@
                 margin: 10px 0;
 
                 p {
-                  font-size: 14px;
+                  font-size: $x-small;
                 }
               }
 
               .field--type-link {
                 a {
-                  font-size: 14px;
+                  font-size: $x-small;
                 }
               }
             }
