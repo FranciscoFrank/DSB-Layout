@@ -1,16 +1,16 @@
-// Main font of the site.
+// Main font for text.
 @import url('https://fonts.googleapis.com/css2?family=Inter:slnt,wght@-10..0,100..900&display=swap');
 
 $BaseFont: 'Inter';
 
-// Font for the logo and slogan.
+// Font for the company name and slogan.
 @import url('https://fonts.cdnfonts.com/css/nexa-slab-free');
 
 $FirstFocusFont: 'Nexa Slab Bold FREE';
 $SecondFocusFont: 'Nexa Slab Regular FREE';
 
 
-// Font for the search icon.
+// Font for icons.
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css');
 
 $FontAwesome: 'FontAwesome'

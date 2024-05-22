@@ -1,14 +1,30 @@
+// A stylesheet for resetting basic browser styles.
 *, *::before, *::after {
   box-sizing: border-box;
 }
 
 html, body {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   padding: 0;
   margin: 0;
   border: 0;
 }
+
+
+a {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
 
 ul, ol, li {
   list-style: none;

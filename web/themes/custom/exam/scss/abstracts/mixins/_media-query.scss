@@ -1,33 +1,34 @@
-//
+// Media queries for responsiveness.
 
-//
+// Media queries for a very large screen.
 @mixin x-large {
   @media only all and (max-width: 1220px) {
     @content
   }
 }
 
-
+// Media queries for a large screen.
 @mixin large {
   @media only all and (max-width: 980px) {
     @content
   }
 }
 
+// Media queries for a medium screen.
 @mixin medium {
   @media only all and (max-width: 768px) {
     @content
   }
 }
 
-
+// Media queries for a small screen.
 @mixin small {
   @media only all and (max-width: 576px) {
     @content
   }
 }
 
-
+// Media queries for a very small screen.
 @mixin x-small {
   @media only all and (max-width: 425px) {
     @content

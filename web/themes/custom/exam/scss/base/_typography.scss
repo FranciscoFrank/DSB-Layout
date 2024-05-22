@@ -1,20 +1,9 @@
+// Stylesheets for typography (font, base size, etc.).
+
 body, html {
   font-family: $BaseFont, sans-serif;
   font-size: $main;
   font-weight: 500;
   line-height: 29.05px;
   text-align: left;
-}
-
-a {
-  text-decoration: none;
-}
-
-ul, li, ol {
-  list-style: none;
-}
-
-p {
-  margin: 0;
-  padding: 0;
 }
