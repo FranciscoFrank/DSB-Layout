@@ -1,5 +1,4 @@
-@import "../abstracts/mixins/media-query";
-
+// Styles for the header.
 .top-page-banner-is, .top-page-banner-not {
   header {
     max-width: 1220px;
@@ -17,6 +16,7 @@
         height: 108px;
         background-color: $main-color;
 
+        // Styles for the company name and slogan.
         .block-block-content {
           background-color: $fourth-color;
           text-align: center;
@@ -58,6 +58,7 @@
           }
         }
 
+        // Styles for the main menu.
         .navigation {
           height: 100%;
 
@@ -128,12 +129,14 @@
           }
         }
 
+        // Styles for social media links.
         .block-social-media-links-block {
           .platforms {
             margin: 0 10px;
           }
         }
 
+        // Styles for the search form.
         .search-block-form {
           margin-right: 25px;
           width: 15%;
@@ -185,6 +188,7 @@
           }
         }
 
+        // Styles for the burger menu icon.
         #block-burger-menu-icon {
           display: none;
           background-color: transparent;
@@ -197,6 +201,7 @@
           }
         }
 
+        // Styles for the burger menu.
         #block-burger-menu-list {
           z-index: 99;
           display: flex;
@@ -260,6 +265,7 @@
   }
 }
 
+// Adaptive design for the header.
 @include x-large {
   .top-page-banner-is, .top-page-banner-not {
     header {
@@ -312,7 +318,7 @@
                 width: 75%;
 
                 input {
-                  font-size: 20px;
+                  font-size: $average;
 
                   &::placeholder {
                     opacity: 0;
@@ -324,11 +330,11 @@
                 width: 25%;
 
                 &::before {
-                  font-size: 20px;
+                  font-size: $average;
                 }
 
                 input {
-                  font-size: 20px;
+                  font-size: $average;
                 }
               }
             }
@@ -338,7 +344,7 @@
             ul {
               li {
                 a {
-                  font-size: 20px;
+                  font-size: $average;
                 }
               }
             }
@@ -425,7 +431,7 @@
               p {
                 a {
                   &:first-child {
-                    font-size: 20px;
+                    font-size: $average;
                     line-height: 1;
                   }
 
