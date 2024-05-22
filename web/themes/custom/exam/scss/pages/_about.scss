@@ -1,5 +1,4 @@
-@import "../abstracts/mixins/media-query";
-
+// Styles for the About page.
 .main-content {
   main {
     .region-content-about {
@@ -33,6 +32,7 @@
   }
 }
 
+// Styles for responsiveness.
 @include x-large {
   .main-content {
     main {

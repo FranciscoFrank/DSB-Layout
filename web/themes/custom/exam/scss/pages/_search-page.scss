@@ -1,3 +1,4 @@
+// Styles for the search page linked from the header.
 .main-content {
   main {
     .region-content {
@@ -17,6 +18,7 @@
           }
         }
 
+        // Styles for the search form.
         .search-form {
           margin-bottom: 30px;
 
@@ -50,6 +52,7 @@
           }
         }
 
+        // Styles for the list of found items.
         .item-list {
           h3 {
             font-size: 32px;
@@ -102,6 +105,7 @@
   }
 }
 
+// Adaptive design for this page.
 @include x-large {
   .main-content {
     main {

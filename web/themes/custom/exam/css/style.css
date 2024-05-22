@@ -3664,6 +3664,9 @@ h2 {
   display: flex;
   justify-content: center;
 }
+.main-content main .region-content-error-path .region-content article .content .layout .block-layout-builder:nth-child(2)::before, .main-content main .region-content-error-path .region-content article .content .layout .block-layout-builder:nth-child(2)::after {
+  display: none;
+}
 .main-content main .region-content-error-path .region-content article .content .layout .block-layout-builder:nth-child(2) span {
   font-size: 24px;
 }

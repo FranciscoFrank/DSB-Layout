@@ -1,3 +1,4 @@
+// Styles for the clients page.
 .main-content {
   main {
     .region-content-clients {
@@ -66,6 +67,7 @@
   }
 }
 
+// Adaptive design for the clients page.
 @include medium {
   .main-content {
     main {
