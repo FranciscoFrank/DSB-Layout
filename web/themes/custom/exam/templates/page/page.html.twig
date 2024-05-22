@@ -1,8 +1,12 @@
+{# Twig for generating the HTML structure of a page depending on whether it is a homepage or not. #}
 {% set currentPath = path('<current>') %}
 {% set isAdminPath = '/admin' in currentPath %}
 {% set isLayoutPath = '/layout' in currentPath %}
 
+{# Generation of HTML structure for admin and Layout Builder pages. #}
 {% if not isAdminPath and not isLayoutPath %}
+
+  {# Generation of HTML structure for the Homepage. #}
   {% if is_front %}
     <div class="top-page-banner-is">
       <header class="header-wrapper">
@@ -24,6 +28,8 @@
     <div class="footer">
       {{ page.footer }}
     </div>
+
+  {# Generation of HTML structure for other pages. #}
   {% else %}
     <div class="top-page-banner-not">
       <header class="header-wrapper">
@@ -50,6 +56,8 @@
       {{ page.footer }}
     </div>
   {% endif %}
+
+{# Generation of HTML structure for admin and Layout Builder pages. #}
 {% else %}
   <div class="main-content">
     <main class="page-content" role="main">

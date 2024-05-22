@@ -1,3 +1,5 @@
+{# Twig for generating the HTML structure of the main content container (provides different classes depending on the URL path to avoid style conflicts). #}
+
 {% set currentUrl = path('<current>') %}
 
 {% if '/teams/' in currentUrl %}
