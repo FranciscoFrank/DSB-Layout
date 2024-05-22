@@ -1,3 +1,4 @@
+// Styles for the news node.
 .main-content {
   main {
     div {
@@ -24,6 +25,7 @@
                   text-transform: uppercase;
                 }
 
+                // Styles for the image.
                 &:nth-child(1) {
                   margin: 0;
                   width: fit-content;
@@ -37,12 +39,14 @@
                   }
                 }
 
+                // Styles for the first and last name.
                 &:nth-child(2) {
                   margin: 0 15px;
                   width: fit-content;
                   font-size: $average;
                 }
 
+                // Styles for the position.
                 &:nth-child(3) {
                   width: fit-content;
                   font-size: $average;
@@ -54,6 +58,7 @@
                   }
                 }
 
+                // Styles for the elapsed time since publication.
                 &:nth-child(4) {
                   position: absolute;
                   right: 0;
@@ -62,6 +67,7 @@
                   margin: 0 15px;
                 }
 
+                // Styles for the main text.
                 &:nth-child(5) {
                   width: 100%;
                   margin-bottom: 10px;
@@ -77,6 +83,7 @@
   }
 }
 
+// Adaptive design for this node.
 @include x-large {
   .main-content {
     main {

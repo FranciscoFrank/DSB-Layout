@@ -1,3 +1,4 @@
+// Styles for the project node.
 .main-content {
   main {
     div {
@@ -12,6 +13,7 @@
               .block-layout-builder {
                 display: block;
 
+                // Styles for the title.
                 &:nth-child(1) {
                   font-size: 32px;
                   line-height: 38px;
@@ -29,6 +31,7 @@
                   }
                 }
 
+                // Styles for the image.
                 &:nth-child(2) {
                   width: fit-content;
                   float: right;
@@ -42,6 +45,7 @@
                   }
                 }
 
+                // Styles for the main text.
                 &:nth-child(3) {
                   font-size: 32px;
                   line-height: 38px;
@@ -49,6 +53,7 @@
                   text-align: justify;
                 }
 
+                // Styles for the taxonomy term.
                 &:nth-child(4) {
                   margin-top: 50px;
                   margin-bottom: 50px;
@@ -80,6 +85,7 @@
   }
 }
 
+// Adaptive design for this node.
 @include x-large {
   .main-content {
     main {

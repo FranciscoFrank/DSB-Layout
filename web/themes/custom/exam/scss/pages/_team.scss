@@ -1,3 +1,4 @@
+// Styles for the team page.
 .main-content {
   main {
     .region-content-team {
@@ -43,6 +44,8 @@
                               align-items: center;
 
                               .block-layout-builder {
+
+                                // Styles for the image.
                                 &:nth-child(1) {
                                   &::before, &::after {
                                     display: none;
@@ -60,12 +63,14 @@
                                   }
                                 }
 
+                                // Styles for the first and last name.
                                 &:nth-child(2) {
                                   margin-top: 15px;
                                   width: fit-content;
                                   text-transform: uppercase;
                                 }
 
+                                // Styles for the position.
                                 &:nth-child(3) {
                                   width: fit-content;
                                   font-size: $s-small;
@@ -75,6 +80,7 @@
                                   color: $second-color;
                                 }
 
+                                // Styles for the link.
                                 &:nth-child(4) {
                                   width: fit-content;
                                   padding: 2.5px;
@@ -110,7 +116,8 @@
                               .col-sm-6 {
                                 padding: 0 !important;
 
-                                &:nth-child(1) {
+                                // Styles for social network links.
+                                &.bs-region--left {
                                   width: 60%;
 
                                   .block-layout-builder {
@@ -128,7 +135,8 @@
                                   }
                                 }
 
-                                &:nth-child(2) {
+                                // Styles for the likes block.
+                                &.bs-region--right {
                                   width: 40%;
 
                                   .block-layout-builder {
@@ -154,6 +162,7 @@
                       }
                     }
 
+                    // Styles for the pager.
                     .pager {
                       margin-top: 65px;
                     }
@@ -168,6 +177,7 @@
   }
 }
 
+// Adaptive design for this page.
 @include x-large {
   .main-content {
     main {

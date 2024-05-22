@@ -1,3 +1,4 @@
+// Styles for the services page.
 .main-content {
   main {
     .region-content-services {
@@ -43,6 +44,8 @@
                               }
 
                               .block-layout-builder {
+
+                                // Styles for the image.
                                 &:nth-child(1) {
                                   height: 150px;
 
@@ -57,6 +60,7 @@
                                   }
                                 }
 
+                                // Styles for the title.
                                 &:nth-child(2) {
                                   width: fit-content;
                                   margin: 0 auto;
@@ -68,6 +72,7 @@
                                   }
                                 }
 
+                                // Styles for short text.
                                 &:nth-child(3) {
                                   font-size: $s-small;
                                   text-align: center;
@@ -76,6 +81,7 @@
                                   color: $second-color;
                                 }
 
+                                // Styles for the link.
                                 &:nth-child(4) {
                                   width: fit-content;
                                   padding: 5px;
@@ -122,6 +128,7 @@
   }
 }
 
+// Adaptive design for this page.
 @include x-large {
   .main-content {
     main {
@@ -188,7 +195,7 @@
       }
     }
   }
-};
+}
 
 @include medium {
   .main-content {

@@ -1,3 +1,4 @@
+// Styles for the news page.
 .main-content {
   main {
     .region-content-news {
@@ -12,6 +13,7 @@
               .block-views {
                 div {
                   .view-search-news {
+                    // Styles for empty results.
                     .view-empty {
                       text-transform: uppercase;
                       width: fit-content;
@@ -22,7 +24,7 @@
                       background-color: $main-color;
                     }
 
-
+                    // Styles for search filters.
                     .view-filters {
                       max-width: 1220px;
                       margin: 0 auto;
@@ -73,6 +75,7 @@
                       }
                     }
 
+                    // Styles for found content.
                     .view-content {
                       display: flex;
                       flex-wrap: wrap;
@@ -102,6 +105,7 @@
                                   padding: 0;
                                 }
 
+                                // Styles for the right block with dates.
                                 .bs-region--left {
                                   width: fit-content;
                                   display: flex;
@@ -120,12 +124,14 @@
                                       display: none;
                                     }
 
+                                    // Styles for the month.
                                     &:nth-child(1) {
                                       font-size: $average;
                                       line-height: normal;
                                       font-weight: 400;
                                     }
 
+                                    // Styles for the date.
                                     &:nth-child(2) {
                                       color: $first-color;
                                       font-weight: 700;
@@ -133,6 +139,7 @@
                                       line-height: 0.75;
                                     }
 
+                                    // Styles for the year.
                                     &:nth-child(3) {
                                       line-height: 1;
                                       font-size: $small;
@@ -141,6 +148,7 @@
                                   }
                                 }
 
+                                // Styles for the left block with main content.
                                 .bs-region--right {
                                   position: relative;
                                   display: flex;
@@ -162,6 +170,7 @@
                                       display: none;
                                     }
 
+                                    // Styles for the image.
                                     &:nth-child(1) {
                                       width: fit-content;
                                       height: fit-content;
@@ -176,6 +185,7 @@
                                       }
                                     }
 
+                                    // Styles for the position.
                                     &:nth-child(2) {
                                       margin-left: 10px;
                                       height: fit-content;
@@ -185,6 +195,7 @@
                                       }
                                     }
 
+                                    // Styles for the first and last name.
                                     &:nth-child(3) {
                                       height: fit-content;
                                       width: fit-content;
@@ -198,6 +209,7 @@
                                       }
                                     }
 
+                                    // Styles for the taxonomy term.
                                     &:nth-child(4) {
                                       height: fit-content;
 
@@ -209,6 +221,7 @@
                                       }
                                     }
 
+                                    // Styles for the elapsed time since publication.
                                     &:nth-child(5) {
                                       height: fit-content;
                                       color: $second-color;
@@ -218,6 +231,7 @@
                                       right: 0;
                                     }
 
+                                    // Styles for the title.
                                     &:nth-child(6) {
                                       border-left: 1px solid $second-color;
                                       padding-left: 15px;
@@ -233,6 +247,7 @@
                                       }
                                     }
 
+                                    // Styles for the main text.
                                     &:nth-child(7) {
                                       width: 100%;
                                       border-left: 1px solid $second-color;
@@ -249,6 +264,7 @@
                                       }
                                     }
 
+                                    // Styles for the link.
                                     &:nth-child(8) {
                                       border-left: 1px solid $second-color;
                                       width: 100%;
@@ -301,6 +317,7 @@
   }
 }
 
+// Adaptive design for this page.
 @include x-large {
   .main-content {
     main {

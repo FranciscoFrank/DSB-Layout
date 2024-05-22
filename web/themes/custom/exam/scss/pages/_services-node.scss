@@ -1,3 +1,4 @@
+// Styles for the services node.
 .main-content {
   main {
     div {
@@ -12,6 +13,7 @@
               .block-layout-builder {
                 display: block;
 
+                // Styles for the title.
                 &:nth-child(1) {
                   font-size: 32px;
                   line-height: 38px;
@@ -29,6 +31,7 @@
                   }
                 }
 
+                // Styles for the image.
                 &:nth-child(2) {
                   width: fit-content;
                   float: right;
@@ -36,7 +39,7 @@
                   .field {
                     img {
                       margin: 50px;
-                      margin-top: 0px !important;
+                      margin-top: 0 !important;
                       margin-right: 0 !important;
                       height: auto;
                       width: 200px;
@@ -44,6 +47,7 @@
                   }
                 }
 
+                // Styles for the main text.
                 &:nth-child(3) {
                   font-size: 32px;
                   line-height: 38px;
@@ -60,6 +64,7 @@
   }
 }
 
+// Adaptive design for this node.
 @include x-large {
   .main-content {
     main {
