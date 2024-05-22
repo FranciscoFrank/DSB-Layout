@@ -1,4 +1,5 @@
-.top-page-banner-is {
+// Styles for banner.
+.top-page-banner-is   {
   position: relative;
   background-position-x: 25%;
 
@@ -6,6 +7,7 @@
     width: 970px;
     margin: 0 auto;
 
+    // Styles for text in the banner.
     .region-banner {
       .block-block-content {
         .field--name-body {
@@ -18,18 +20,21 @@
             line-height: 0.9;
             text-transform: uppercase;
 
+            // Styles for the main word.
             &:nth-child(1) {
               letter-spacing: -3px;
               color: $main-color;
               font-size: 70px;
             }
 
+            // Styles for explaining the main word.
             &:nth-child(2) {
               letter-spacing: -3px;
               color: $third-color;
               font-size: 46px;
             }
 
+            // Styles for regular text.
             &:nth-child(3) {
               margin-top: 5px;
               line-height: 1;
@@ -44,6 +49,7 @@
   }
 }
 
+// Styles for limiting the main content container.
 .main-content-homepage {
   main {
     .region-content-homepage-content {
@@ -56,6 +62,8 @@
             }
 
             .block-views-block {
+
+              // Styles for the About block.
               &about-about {
                 div {
                   .view-about {
@@ -98,6 +106,7 @@
                               align-items: center;
                               justify-content: space-between;
 
+                              // Styles for the title.
                               .block-field-blocknodepagetitle {
                                 width: fit-content;
 
@@ -110,6 +119,7 @@
                                 }
                               }
 
+                              // Styles for the main text.
                               .block-field-blocknodepagebody {
                                 display: flex;
                                 width: 100%;
@@ -125,6 +135,7 @@
                                 }
                               }
 
+                              // Styles for the link.
                               .block-extra-field-blocknodepagelinks {
                                 .node--links {
                                   display: flex;
@@ -159,6 +170,7 @@
                 }
               }
 
+              // Styles for the Services block.
               &last-services-last-services {
                 margin: 105px 0 !important;
 
@@ -191,6 +203,8 @@
                               }
 
                               .block-layout-builder {
+
+                                // Styles for the image.
                                 &:nth-child(1) {
                                   height: 150px;
 
@@ -205,6 +219,7 @@
                                   }
                                 }
 
+                                // Styles for the title.
                                 &:nth-child(2) {
                                   width: fit-content;
                                   margin: 0 auto;
@@ -216,6 +231,7 @@
                                   }
                                 }
 
+                                // Styles for short text.
                                 &:nth-child(3) {
                                   font-size: $s-small;
                                   text-align: center;
@@ -224,6 +240,7 @@
                                   color: $second-color;
                                 }
 
+                                // Styles for the link.
                                 &:nth-child(4) {
                                   width: fit-content;
                                   padding: 5px;
@@ -263,6 +280,7 @@
                 }
               }
 
+              // Styles for the Projects block.
               &last-projects-last-projects {
                 h2 {
                   letter-spacing: -2px;
@@ -309,6 +327,8 @@
                               }
 
                               .block-layout-builder {
+
+                                // Styles for the image.
                                 &:nth-child(1) {
                                   &::before, &::after {
                                     display: none;
@@ -321,6 +341,7 @@
                                   }
                                 }
 
+                                // Styles for the title.
                                 &:nth-child(2) {
                                   width: fit-content;
                                   margin: 0 auto;
@@ -332,6 +353,7 @@
                                   }
                                 }
 
+                                // Styles for the taxonomy term.
                                 &:nth-child(3) {
                                   font-size: $x-small;
                                   text-align: center;
@@ -365,6 +387,7 @@
                                   }
                                 }
 
+                                // Styles for the link.
                                 &:nth-child(4) {
                                   width: fit-content;
                                   padding: 5px;
@@ -398,6 +421,7 @@
                 }
               }
 
+              // Styles for the Teams block.
               &last-teams-last-teams {
                 margin: 85px 0;
                 margin-bottom: 145px;
@@ -427,6 +451,8 @@
                               align-items: center;
 
                               .block-layout-builder {
+
+                                // Styles for the image.
                                 &:nth-child(1) {
                                   &::before, &::after {
                                     display: none;
@@ -444,11 +470,13 @@
                                   }
                                 }
 
+                                // Styles for the first and last name.
                                 &:nth-child(2) {
                                   width: fit-content;
                                   text-transform: uppercase;
                                 }
 
+                                // Styles for the position.
                                 &:nth-child(3) {
                                   width: fit-content;
                                   font-size: $s-small;
@@ -458,6 +486,7 @@
                                   color: $second-color;
                                 }
 
+                                // Styles for the link.
                                 &:nth-child(4) {
                                   width: fit-content;
                                   padding: 2.5px;
@@ -493,6 +522,7 @@
                               .col-sm-6 {
                                 padding: 0;
 
+                                // Styles for social network links.
                                 &:nth-child(1) {
                                   width: 60%;
 
@@ -511,6 +541,7 @@
                                   }
                                 }
 
+                                // Styles for the likes block.
                                 &:nth-child(2) {
                                   margin: 0;
                                   width: 40%;
@@ -541,6 +572,7 @@
                 }
               }
 
+              // Styles for the News block.
               &last-news-last-news  {
                 h2 {
                   margin-bottom: 20px !important;
@@ -552,6 +584,7 @@
                     padding-bottom: 85px;
                     background: repeating-linear-gradient(-45deg, #fff, #fff 6px, rgba(200,200,200,0.3) 6px, rgba(200,200,200,0.3) 8px);
 
+                    // Styles for search filters.
                     .view-filters {
                       padding: 25px 10px;
                       max-width: 1220px;
@@ -606,6 +639,7 @@
                       }
                     }
 
+                    // Styles for empty results.
                     .view-empty {
                       text-transform: uppercase;
                       width: fit-content;
@@ -615,6 +649,7 @@
                       background-color: $main-color;
                     }
 
+                    // Styles for found content.
                     .view-content {
                       padding: 0 10px;
                       max-width: 1220px;
@@ -658,6 +693,7 @@
                                   padding: 0;
                                 }
 
+                                // Styles for the right block with dates.
                                 .bs-region--left {
                                   width: fit-content;
                                   display: flex;
@@ -676,12 +712,14 @@
                                       display: none;
                                     }
 
+                                    // Styles for the month.
                                     &:nth-child(1) {
                                       font-size: $main;
                                       line-height: normal;
                                       font-weight: 400;
                                     }
 
+                                    // Styles for the date.
                                     &:nth-child(2) {
                                       color: $first-color;
                                       font-weight: 700;
@@ -689,6 +727,7 @@
                                       line-height: 0.75;
                                     }
 
+                                    // Styles for the year.
                                     &:nth-child(3) {
                                       line-height: 1.5;
                                       font-size: $small;
@@ -697,6 +736,7 @@
                                   }
                                 }
 
+                                // Styles for the left block with main content.
                                 .bs-region--right {
                                   position: relative;
                                   display: flex;
@@ -718,6 +758,7 @@
                                       display: none;
                                     }
 
+                                    // Styles for the image.
                                     &:nth-child(1) {
                                       width: fit-content;
                                       height: fit-content;
@@ -732,6 +773,7 @@
                                       }
                                     }
 
+                                    // Styles for the position.
                                     &:nth-child(2) {
                                       margin-left: 10px;
                                       height: fit-content;
@@ -741,6 +783,7 @@
                                       }
                                     }
 
+                                    // Styles for the first and last name.
                                     &:nth-child(3) {
                                       height: fit-content;
                                       width: fit-content;
@@ -754,6 +797,7 @@
                                       }
                                     }
 
+                                    // Styles for the taxonomy term.
                                     &:nth-child(4) {
                                       height: fit-content;
 
@@ -765,6 +809,7 @@
                                       }
                                     }
 
+                                    // Styles for the elapsed time since publication.
                                     &:nth-child(5) {
                                       height: fit-content;
                                       color: $second-color;
@@ -774,6 +819,7 @@
                                       right: 0;
                                     }
 
+                                    // Styles for the title.
                                     &:nth-child(6) {
                                       border-left: 1px solid $second-color;
                                       padding-left: 15px;
@@ -789,6 +835,7 @@
                                       }
                                     }
 
+                                    // Styles for the main text.
                                     &:nth-child(7) {
                                       width: 100%;
                                       border-left: 1px solid $second-color;
@@ -806,6 +853,7 @@
                                       }
                                     }
 
+                                    // Styles for the link.
                                     &:nth-child(8) {
                                       border-left: 1px solid $second-color;
                                       width: 100%;
@@ -851,6 +899,7 @@
                 }
               }
 
+              // Styles for the Clients block.
               &clients-slick-clients {
                 margin-top: 25px;
                 margin-bottom: 130px;
@@ -913,6 +962,7 @@
   }
 }
 
+// Adaptive design for this page.
 @include x-large {
   .top-page-banner-is {
     .banner {

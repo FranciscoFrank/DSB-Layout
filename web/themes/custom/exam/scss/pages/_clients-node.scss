@@ -1,3 +1,4 @@
+// Styles for the client node.
 .main-content {
   main {
     div {
@@ -16,6 +17,7 @@
               text-transform: uppercase;
             }
 
+            // Styles for the image.
             .field--name-field-images-clients {
               article {
                 .field--type-image {
@@ -32,10 +34,12 @@
               }
             }
 
+            // Styles for the main text.
             .field--name-body {
               margin: 25px 0;
             }
 
+            // Styles for the link.
             .field--type-link {
               a {
                 color: $first-color;
@@ -54,6 +58,7 @@
   }
 }
 
+// Adaptive design for this page.
 @include x-large {
   .main-content {
     main {
