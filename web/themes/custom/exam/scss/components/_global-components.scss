@@ -1,4 +1,4 @@
-@import "../abstracts/mixins/media-query";
+// Styles for global components.
 
 // Styles for the banner.
 .top-page-banner-is {
@@ -9,16 +9,24 @@
   background-image: url("../images/header.png");
 }
 
-// Styles for the main content.
+// Styles for the main content container.
 .main-content {
   min-height: 100hv;
 }
 
+// Styles for centering text.
 .block-layout-builder:first-of-type {
   justify-content: center;
 }
 
+// Styles for limiting the main content container.
 .region-content {
   max-width: 1220px;
   margin: 0 auto;
 }
+
+// Styles for hiding messages.
+.alert {
+  display: none;
+}
+

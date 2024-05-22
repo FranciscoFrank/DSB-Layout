@@ -1,8 +1,10 @@
+// Styles for the burger menu trigger.
 .block-cheeseburger-menu-trigger {
   padding: 20px;
   z-index: 15 !important;
 }
 
+// Styles for the burger menu.
 .block-cheeseburger-menu {
   z-index: 9999;
   display: none;
@@ -78,6 +80,7 @@
   }
 }
 
+// Responsiveness for the burger menu.
 @include large {
   .block-cheeseburger-menu {
     display: block;

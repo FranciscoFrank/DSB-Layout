@@ -1,3 +1,4 @@
+// Styles for text and decorations in the title of a block or page.
 h2, .view-header, .block-field-blocknodepagetitle {
   margin-top: 65px;
   margin-bottom: 25px;
@@ -49,6 +50,7 @@ h2 {
   }
 }
 
+// Adaptations of text and decorations in the title of a block or page.
 @include x-large {
   h2, .block-field-blocknodepagetitle {
     &::before, &::after {
