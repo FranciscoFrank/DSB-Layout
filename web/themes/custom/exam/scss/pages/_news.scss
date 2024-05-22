@@ -12,6 +12,17 @@
               .block-views {
                 div {
                   .view-search-news {
+                    .view-empty {
+                      text-transform: uppercase;
+                      width: fit-content;
+                      margin: 10px auto;
+                      padding: 10px 15px;
+                      max-width: 1220px;
+                      border: 2.5px solid $second-color;
+                      background-color: $main-color;
+                    }
+
+
                     .view-filters {
                       max-width: 1220px;
                       margin: 0 auto;
@@ -437,6 +448,10 @@
                 .block-views {
                   div {
                     .view-search-news {
+                      .view-empty {
+                        margin: 10px 10px;
+                      }
+
                       .view-content {
                         .views-row {
                           article {
@@ -488,7 +503,7 @@
                   div {
                     .view-search-news {
                       .view-empty {
-                        font-size: 18px;
+                        font-size: 16px;
                         line-height: 1;
                       }
 

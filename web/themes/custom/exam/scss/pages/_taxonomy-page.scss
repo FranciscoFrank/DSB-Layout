@@ -11,13 +11,19 @@
 
         .views-element-container {
           .view {
+            .view-header {
+              &::before, &::after {
+                width: 35% !important;
+              }
+            }
+
             .view-content {
               display: flex;
               flex-wrap: wrap;
               justify-content: space-between;
 
               .views-row {
-                width: 47%;
+                width: 48%;
                 padding: 0;
                 margin: 0;
                 margin-bottom: 25px;
@@ -271,6 +277,26 @@
   }
 }
 
+@include large {
+  .main-content {
+    main {
+      .region-content {
+        .region-content-simple-news {
+          .views-element-container {
+            .view {
+              .view-header {
+                &::before, &::after {
+                  width: 30% !important;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 @include medium {
   .main-content {
     main {
@@ -278,6 +304,14 @@
         .region-content-simple-news {
           .views-element-container {
             .view {
+              .view-header {
+                font-size: 22px;
+
+                &::before, &::after {
+                  width: 25% !important;
+                }
+              }
+
               .view-content {
                 .views-row {
                   article {
@@ -346,6 +380,14 @@
         .region-content-simple-news {
           .views-element-container {
             .view {
+              .view-header {
+                font-size: 18px;
+
+                &::before, &::after {
+                  width: 20% !important;
+                }
+              }
+
               .view-content {
                 .views-row {
                   article {
@@ -388,6 +430,14 @@
         .region-content-simple-news {
           .views-element-container {
             .view {
+              .view-header {
+                font-size: 16px !important;
+
+                &::before, &::after {
+                  width: 15% !important;
+                }
+              }
+
               .view-content {
                 .views-row {
                   article {
